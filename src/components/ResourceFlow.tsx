@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, FileText, Download, GraduationCap, Code } from "lucide-react";
+import { useNavigate } from "react-router-dom"; // ADD THIS
 
 // Types
 interface Subject {
@@ -123,6 +124,7 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
   const [currentStep, setCurrentStep] = useState<FlowStep>("semesters");
   const [selectedSemester, setSelectedSemester] = useState<"semester1" | "semester2" | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
+  const navigate = useNavigate(); // ADD THIS
 
   const branch = branchData[selectedBranch];
 
@@ -149,8 +151,18 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
   };
 
   const handleResourceClick = (resourceType: string) => {
-    console.log(`Opening ${resourceType} for ${selectedSubject?.name}. This is a demo - PDFs would be embedded here.`);
+    // Only open real ResourceViewer for ECE → IDS → Notes
+    if (
+      resourceType === "Notes" &&
+      selectedBranch === "ECE" &&
+      selectedSubject?.id === "datascience"
+    ) {
+      navigate("/resources/ece/ids/notes"); // Opens the real notes page
+    } else {
+      alert(`Opening ${resourceType} for ${selectedSubject?.name}. This is a demo.`);
+    }
   };
+  
 
   return (
     <div className="fade-in relative z-10 p-4">
