@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, FileText, Download } from "lucide-react";
+import { ArrowLeft, BookOpen, FileText, Download, GraduationCap, Code } from "lucide-react";
 
 // Types
 interface Subject {
@@ -148,18 +149,17 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
   };
 
   const handleResourceClick = (resourceType: string) => {
-    // In a real app, this would open the PDF viewer
-    alert(`Opening ${resourceType} for ${selectedSubject?.name}. This is a demo - PDFs would be embedded here.`);
+    console.log(`Opening ${resourceType} for ${selectedSubject?.name}. This is a demo - PDFs would be embedded here.`);
   };
 
   return (
-    <div className="fade-in">
+    <div className="fade-in relative z-10 p-4">
       <div className="flex items-center gap-4 mb-6">
-        <Button variant="outline" onClick={handleBack} size="sm">
+        <Button variant="ghost" onClick={handleBack} size="sm" className="text-gray-400 hover:text-white hover:bg-transparent transition-colors duration-300">
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back
         </Button>
-        <div className="text-sm text-muted-foreground">
+        <div className="text-sm text-gray-400">
           {selectedBranch}
           {selectedSemester && ` → Semester ${selectedSemester === "semester1" ? "1" : "2"}`}
           {selectedSubject && ` → ${selectedSubject.name}`}
@@ -168,26 +168,27 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
 
       {currentStep === "semesters" && (
         <div>
-          <h2 className="text-2xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6">
             Select Semester - {branch.name}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="hover-lift cursor-pointer shadow-card" onClick={() => handleSemesterSelect("semester1")}>
+            <Card className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border-2 border-gray-700 bg-[hsl(var(--image-dark-background))] bg-opacity-70 backdrop-blur-sm group hover:border-[hsl(var(--image-accent-pink))]" 
+            onClick={() => handleSemesterSelect("semester1")}>
               <CardHeader>
-                <CardTitle className="text-center">Semester 1</CardTitle>
+                <CardTitle className="text-center text-white">Semester 1</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-center text-muted-foreground">
+                <p className="text-center text-gray-400">
                   {branch.subjects.semester1.length} subjects available
                 </p>
               </CardContent>
             </Card>
-            <Card className="hover-lift cursor-pointer shadow-card opacity-50">
+            <Card className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border-2 border-gray-700 bg-[hsl(var(--image-dark-background))] bg-opacity-70 backdrop-blur-sm group opacity-50">
               <CardHeader>
-                <CardTitle className="text-center">Semester 2</CardTitle>
+                <CardTitle className="text-center text-white">Semester 2</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-center text-muted-foreground">
+                <p className="text-center text-gray-400">
                   Coming Soon
                 </p>
               </CardContent>
@@ -198,20 +199,20 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
 
       {currentStep === "subjects" && selectedSemester && (
         <div>
-          <h2 className="text-2xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6">
             Select Subject - Semester {selectedSemester === "semester1" ? "1" : "2"}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {branch.subjects[selectedSemester].map((subject) => (
               <Card
                 key={subject.id}
-                className="hover-lift cursor-pointer shadow-card"
+                className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border-2 border-gray-700 bg-[hsl(var(--image-dark-background))] bg-opacity-70 backdrop-blur-sm group hover:border-[hsl(var(--image-accent-orange))]"
                 onClick={() => handleSubjectSelect(subject)}
               >
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3">
-                    <BookOpen className="h-5 w-5 text-primary" />
-                    <span className="font-medium text-foreground">{subject.name}</span>
+                    <BookOpen className="h-5 w-5 text-[hsl(var(--image-accent-pink))]" />
+                    <span className="font-medium text-white group-hover:text-[hsl(var(--image-accent-orange))] transition-colors duration-300">{subject.name}</span>
                   </div>
                 </CardContent>
               </Card>
@@ -222,29 +223,32 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
 
       {currentStep === "resources" && selectedSubject && (
         <div>
-          <h2 className="text-2xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl font-bold text-white mb-6">
             Resources - {selectedSubject.name}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="hover-lift cursor-pointer shadow-card" onClick={() => handleResourceClick("PYQs")}>
+            <Card className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border-2 border-gray-700 bg-[hsl(var(--image-dark-background))] bg-opacity-70 backdrop-blur-sm group hover:border-[hsl(var(--image-accent-pink))]" 
+            onClick={() => handleResourceClick("PYQs")}>
               <CardContent className="p-6 text-center">
-                <FileText className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-foreground mb-2">PYQs</h3>
-                <p className="text-muted-foreground text-sm">Previous Year Questions</p>
+                <FileText className="h-12 w-12 text-[hsl(var(--image-accent-pink))] mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="text-lg font-semibold text-white mb-2">PYQs</h3>
+                <p className="text-gray-400 text-sm">Previous Year Questions</p>
               </CardContent>
             </Card>
-            <Card className="hover-lift cursor-pointer shadow-card" onClick={() => handleResourceClick("Notes")}>
+            <Card className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border-2 border-gray-700 bg-[hsl(var(--image-dark-background))] bg-opacity-70 backdrop-blur-sm group hover:border-[hsl(var(--image-accent-pink))]" 
+            onClick={() => handleResourceClick("Notes")}>
               <CardContent className="p-6 text-center">
-                <BookOpen className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-foreground mb-2">Notes</h3>
-                <p className="text-muted-foreground text-sm">Study Notes & Materials</p>
+                <BookOpen className="h-12 w-12 text-[hsl(var(--image-accent-pink))] mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="text-lg font-semibold text-white mb-2">Notes</h3>
+                <p className="text-gray-400 text-sm">Study Notes & Materials</p>
               </CardContent>
             </Card>
-            <Card className="hover-lift cursor-pointer shadow-card" onClick={() => handleResourceClick("Books")}>
+            <Card className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border-2 border-gray-700 bg-[hsl(var(--image-dark-background))] bg-opacity-70 backdrop-blur-sm group hover:border-[hsl(var(--image-accent-pink))]" 
+            onClick={() => handleResourceClick("Books")}>
               <CardContent className="p-6 text-center">
-                <Download className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-foreground mb-2">Books</h3>
-                <p className="text-muted-foreground text-sm">Reference Books & PDFs</p>
+                <Download className="h-12 w-12 text-[hsl(var(--image-accent-pink))] mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="text-lg font-semibold text-white mb-2">Books</h3>
+                <p className="text-gray-400 text-sm">Reference Books & PDFs</p>
               </CardContent>
             </Card>
           </div>
