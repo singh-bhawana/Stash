@@ -7,22 +7,31 @@ import { useNavigate } from "react-router-dom"; // ADD THIS
 
 // New color palette in HSL
 const HSL_COLOR = {
-  bg_dark: "hsl(340, 20%, 15%)",
-  bg_light: "hsl(340, 20%, 20%)",
-  accent_red: "hsl(350, 60%, 45%)",
-  accent_orange: "hsl(20, 80%, 60%)",
-  text_light: "hsl(0, 0%, 95%)",
-  text_muted: "hsl(0, 0%, 75%)",
+  bg_solid_component: "hsl(220, 20%, 90%)",
+  text_primary: "hsl(220, 20%, 20%)",
+  text_muted: "hsl(220, 10%, 40%)",
+  accent_primary: "hsl(240, 60%, 70%)",
+  accent_secondary: "hsl(10, 70%, 80%)",
+  button_text_light: "hsl(0, 0%, 98%)",
 };
 
-// Commented out TypeScript interfaces for JSX usage
-// interface Subject { id: string; name: string; }
-// interface Branch { id: string; name: string; subjects: { semester1: Subject[]; semester2: Subject[]; }; }
-// interface ResourceFlowProps { selectedBranch: string; onBack: () => void; }
-// type FlowStep = "semesters" | "subjects" | "resources";
+// Types
+interface Subject {
+  id: string;
+  name: string;
+}
+
+interface Branch {
+  id: string;
+  name: string;
+  subjects: {
+    semester1: Subject[];
+    semester2: Subject[];
+  };
+}
 
 // Data
-const branchData = {
+const branchData: Record<string, Branch> = {
   CSE: {
     id: "CSE",
     name: "Computer Science & Engineering",
@@ -146,14 +155,26 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
 
   const handleResourceClick = (resourceType) => {
     if (!selectedSubject) return;
-    navigate(`/resources/${selectedBranch}/${selectedSubject.id}/${resourceType.toLowerCase()}`);
+    console.log(`Opening ${resourceType} for ${selectedSubject.name}. This is a demo.`);
   };
 
-  // Minimal getIcon placeholder to remove errors
-  const getIcon = (type) => <BookOpen className="h-5 w-5" style={{ color: HSL_COLOR.accent_red }} />;
+  const getIcon = (type) => {
+    switch (type) {
+      case "PYQs":
+        return <FileText className="h-12 w-12" style={{ color: HSL_COLOR.accent_primary }} />;
+      case "Notes":
+        return <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.accent_secondary }} />;
+      case "Books":
+        return <Download className="h-12 w-12" style={{ color: HSL_COLOR.accent_primary }} />;
+      case "Tutorial Sheets":
+        return <Code className="h-12 w-12" style={{ color: HSL_COLOR.accent_secondary }} />;
+      default:
+        return <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.text_muted }} />;
+    }
+  };
 
   return (
-    <div className="fade-in relative z-10 p-4" style={{ color: HSL_COLOR.text_light }}>
+    <div className="fade-in relative z-10 p-4" style={{ color: HSL_COLOR.text_primary }}>
       <div className="flex items-center gap-4 mb-6">
         <Button variant="ghost" onClick={handleBack} size="sm" style={{ color: HSL_COLOR.text_muted }}>
           <ArrowLeft className="h-4 w-4 mr-2" />
@@ -173,12 +194,12 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card
-              className="relative hover:scale-105 cursor-pointer transition-all duration-300 shadow-xl border border-transparent"
-              style={{ backgroundColor: HSL_COLOR.bg_light }}
+              className="relative hover-lift cursor-pointer transition-all duration-300 shadow-xl border border-transparent"
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
               onClick={() => handleSemesterSelect("semester1")}
             >
               <CardHeader>
-                <CardTitle className="text-center" style={{ color: HSL_COLOR.text_light }}>Semester 1</CardTitle>
+                <CardTitle className="text-center" style={{ color: HSL_COLOR.text_primary }}>Semester 1</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-center text-sm" style={{ color: HSL_COLOR.text_muted }}>
@@ -188,10 +209,10 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
             </Card>
             <Card
               className="relative transition-all duration-300 shadow-xl border border-transparent opacity-50"
-              style={{ backgroundColor: HSL_COLOR.bg_light }}
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
             >
               <CardHeader>
-                <CardTitle className="text-center" style={{ color: HSL_COLOR.text_light }}>Semester 2</CardTitle>
+                <CardTitle className="text-center" style={{ color: HSL_COLOR.text_primary }}>Semester 2</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-center text-sm" style={{ color: HSL_COLOR.text_muted }}>
@@ -213,12 +234,12 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
               <Card
                 key={subject.id}
                 className="hover-lift cursor-pointer shadow-xl border-2 border-transparent"
-                style={{ backgroundColor: HSL_COLOR.bg_light }}
+                style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
                 onClick={() => handleSubjectSelect(subject)}
               >
                 <CardContent className="p-4 flex items-center gap-3">
-                  <BookOpen className="h-5 w-5" style={{ color: HSL_COLOR.accent_red }} />
-                  <span className="font-medium" style={{ color: HSL_COLOR.text_light }}>{subject.name}</span>
+                  <BookOpen className="h-5 w-5" style={{ color: HSL_COLOR.accent_primary }} />
+                  <span className="font-medium" style={{ color: HSL_COLOR.text_primary }}>{subject.name}</span>
                 </CardContent>
               </Card>
             ))}
@@ -226,65 +247,59 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
         </div>
       )}
 
-{currentStep === "resources" && selectedSubject && (
-  <div>
-    <h2 className="text-2xl font-bold mb-6">
-      Resources - {selectedSubject.name}
-    </h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {/* Existing cards */}
-      <Card
-        className="hover-lift cursor-pointer shadow-xl border border-transparent"
-        style={{ backgroundColor: HSL_COLOR.bg_light }}
-        onClick={() => handleResourceClick("PYQs")}
-      >
-        <CardContent className="p-6 text-center">
-          {getIcon("PYQs")}
-          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>PYQs</h3>
-          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Previous Year Questions</p>
-        </CardContent>
-      </Card>
-
-      <Card
-        className="hover-lift cursor-pointer shadow-xl border border-transparent"
-        style={{ backgroundColor: HSL_COLOR.bg_light }}
-        onClick={() => handleResourceClick("Notes")}
-      >
-        <CardContent className="p-6 text-center">
-          {getIcon("Notes")}
-          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Notes</h3>
-          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Study Notes & Materials</p>
-        </CardContent>
-      </Card>
-
-      <Card
-        className="hover-lift cursor-pointer shadow-xl border border-transparent"
-        style={{ backgroundColor: HSL_COLOR.bg_light }}
-        onClick={() => handleResourceClick("Books")}
-      >
-        <CardContent className="p-6 text-center">
-          {getIcon("Books")}
-          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Books</h3>
-          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Reference Books & PDFs</p>
-        </CardContent>
-      </Card>
-
-      {/* NEW: Tutorial Sheets */}
-      <Card
-        className="hover-lift cursor-pointer shadow-xl border border-transparent"
-        style={{ backgroundColor: HSL_COLOR.bg_light }}
-        onClick={() => handleResourceClick("Tutorial Sheets")}
-      >
-        <CardContent className="p-6 text-center">
-          {getIcon("Tutorial Sheets")}
-          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Tutorial Sheets</h3>
-          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Practice & Tutorial PDFs</p>
-        </CardContent>
-      </Card>
-    </div>
-  </div>
-)}
-
+      {currentStep === "resources" && selectedSubject && (
+        <div>
+          <h2 className="text-2xl font-bold mb-6">
+            Resources - {selectedSubject.name}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card
+              className="hover-lift cursor-pointer shadow-xl border border-transparent"
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
+              onClick={() => handleResourceClick("PYQs")}
+            >
+              <CardContent className="p-6 text-center">
+                {getIcon("PYQs")}
+                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_primary }}>PYQs</h3>
+                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Previous Year Questions</p>
+              </CardContent>
+            </Card>
+            <Card
+              className="hover-lift cursor-pointer shadow-xl border border-transparent"
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
+              onClick={() => handleResourceClick("Notes")}
+            >
+              <CardContent className="p-6 text-center">
+                {getIcon("Notes")}
+                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_primary }}>Notes</h3>
+                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Study Notes & Materials</p>
+              </CardContent>
+            </Card>
+            <Card
+              className="hover-lift cursor-pointer shadow-xl border border-transparent"
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
+              onClick={() => handleResourceClick("Books")}
+            >
+              <CardContent className="p-6 text-center">
+                {getIcon("Books")}
+                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_primary }}>Books</h3>
+                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Reference Books & PDFs</p>
+              </CardContent>
+            </Card>
+            <Card
+              className="hover-lift cursor-pointer shadow-xl border border-transparent"
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
+              onClick={() => handleResourceClick("Tutorial Sheets")}
+            >
+              <CardContent className="p-6 text-center">
+                {getIcon("Tutorial Sheets")}
+                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_primary }}>Tutorial Sheets</h3>
+                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Practice & Tutorial PDFs</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

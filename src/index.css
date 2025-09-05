@@ -8,62 +8,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors from new design */
-    --background: 340 20% 15%; /* Dark, warm maroon-purple */
-    --foreground: 0 0% 95%; /* Off-white text */
+    /* New Base colors for a light, blue-pink theme */
+    --background: 200 100% 98%; /* Very light blue for base, though body will have gradient */
+    --foreground: 220 20% 20%; /* Darker grey/blue for text, to contrast light background */
 
-    /* Card colors */
-    --card: 340 15% 20%; /* Slightly lighter maroon for cards */
-    --card-foreground: 0 0% 95%;
+    /* Card colors - slightly darker than background, but still light */
+    --card: 220 20% 95%; /* Light grey/blue for cards */
+    --card-foreground: 220 20% 20%; /* Darker text for cards */
 
-    /* Popover colors */
-    --popover: 340 15% 20%;
-    --popover-foreground: 0 0% 95%;
+    /* Popover colors - similar to cards */
+    --popover: 220 20% 95%;
+    --popover-foreground: 220 20% 20%;
 
-    /* Primary theme - Red/Orange glow */
-    --primary: 350 60% 45%;
-    --primary-foreground: 0 0% 95%;
-    --primary-hover: 350 60% 40%;
+    /* Primary theme - Soft blue/purple for primary actions */
+    --primary: 240 60% 70%; /* Muted purple-blue */
+    --primary-foreground: 0 0% 98%; /* Off-white text for primary buttons */
+    --primary-hover: 240 60% 60%;
 
-    /* Secondary theme - Orange/Yellow accent */
-    --secondary: 20 80% 60%;
-    --secondary-foreground: 0 0% 15%;
-    --secondary-hover: 20 80% 50%;
+    /* Secondary theme - Soft pink/orange accent */
+    --secondary: 10 70% 80%; /* Light coral/pink */
+    --secondary-foreground: 220 20% 20%; /* Darker text for secondary elements */
+    --secondary-hover: 10 70% 70%;
 
-    /* Muted colors */
-    --muted: 340 10% 25%;
-    --muted-foreground: 0 0% 75%;
+    /* Muted colors - for subtle text/elements */
+    --muted: 220 15% 85%; /* Light grey-blue */
+    --muted-foreground: 220 10% 40%; /* Medium dark grey-blue for muted text */
 
-    /* Accent colors */
-    --accent: 20 80% 80%;
-    --accent-foreground: 340 20% 15%;
+    /* Accent colors - for highlight elements, could be a soft green or another shade of blue/pink */
+    --accent: 150 50% 70%; /* Soft green accent */
+    --accent-foreground: 220 20% 20%; /* Darker text for accents */
 
-    /* Status colors */
+    /* Status colors - kept standard */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     /* Border and input */
-    --border: 340 10% 30%;
-    --input: 340 10% 25%;
-    --ring: 350 60% 45%;
+    --border: 220 15% 80%; /* Lighter border */
+    --input: 220 15% 90%; /* Very light input background */
+    --ring: 240 60% 70%; /* Matching primary color for ring focus */
     
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(350 60% 45% / 0.15);
-    --shadow-card: 0 4px 15px -3px hsl(340 15% 20% / 0.1);
+    /* Shadows - adjusted to be lighter */
+    --shadow-elegant: 0 10px 30px -10px hsla(240, 60%, 70%, 0.15); /* Lighter shadow with primary hue */
+    --shadow-card: 0 4px 15px -3px hsla(220, 20%, 95%, 0.1); /* Lighter card shadow */
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
-    /* New custom colors for the specific UI design */
-    --design-bg: 340 20% 15%;
-    --design-fg: 0 0% 95%;
-    --design-accent-red: 350 60% 45%;
-    --design-accent-orange: 20 80% 60%;
-    --design-card: 340 15% 20%;
+    /* Custom colors from original design, updated to match new palette if needed, or removed if unused */
+    --design-bg: var(--background);
+    --design-fg: var(--foreground);
+    --design-accent-red: var(--primary); /* Using new primary */
+    --design-accent-orange: var(--secondary); /* Using new secondary */
+    --design-card: var(--card);
   }
 
+  /* Dark mode not explicitly requested, keeping light theme colors for consistency */
   .dark {
     --background: var(--design-bg);
     --foreground: var(--design-fg);
@@ -75,23 +76,23 @@ All colors MUST be HSL.
     --primary-foreground: var(--design-fg);
     --secondary: var(--design-accent-orange);
     --secondary-foreground: var(--design-fg);
-    --muted: 340 10% 25%;
-    --muted-foreground: 0 0% 75%;
-    --accent: var(--design-accent-orange);
+    --muted: var(--muted);
+    --muted-foreground: var(--muted-foreground);
+    --accent: var(--accent);
     --accent-foreground: var(--design-fg);
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 340 10% 30%;
-    --input: 340 10% 25%;
-    --ring: var(--design-accent-red);
+    --border: var(--border);
+    --input: var(--input);
+    --ring: var(--ring);
     --sidebar-background: var(--design-card);
     --sidebar-foreground: var(--design-fg);
     --sidebar-primary: var(--design-accent-red);
     --sidebar-primary-foreground: var(--design-fg);
     --sidebar-accent: var(--design-accent-orange);
     --sidebar-accent-foreground: var(--design-fg);
-    --sidebar-border: 340 10% 30%;
-    --sidebar-ring: var(--design-accent-red);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
   }
 }
 
@@ -101,7 +102,12 @@ All colors MUST be HSL.
   }
   
   body {
-    @apply bg-background text-foreground;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--foreground);
   }
 }
 
@@ -113,8 +119,23 @@ All colors MUST be HSL.
   .hover-lift {
     @apply transition-smooth hover:scale-105;
   }
+
+  .shadow-elegant-hover {
+    box-shadow: var(--shadow-elegant);
+  }
   
   .fade-in {
     @apply animate-fade-in;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 0;
+  pointer-events: none;
 }

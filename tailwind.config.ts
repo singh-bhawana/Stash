@@ -62,20 +62,12 @@ export default {
                     border: 'hsl(var(--sidebar-border))',
                     ring: 'hsl(var(--sidebar-ring))'
                 },
-                // Custom colors from the provided image
-                'blood-red': '#74070E',
-                'vanilla': '#F4E3B2',
-                'drab-dark-brown': '#45462A',
-                'cinereous': '#947268',
-                'black-bean': '#310E10',
-				'image-bg': 'hsl(var(--image-dark-background))',
-                'image-text': 'hsl(var(--image-text-light))',
-                'image-pink': 'hsl(var(--image-accent-pink))',
-                'image-orange': 'hsl(var(--image-accent-orange))',
-                'image-btn-bg': 'hsl(var(--image-button-bg))',
-                'image-btn-text': 'hsl(var(--image-button-text))',
-                'image-badge-bg': 'hsl(var(--image-badge-bg))',
-                'image-badge-text': 'hsl(var(--image-badge-text))',
+                // Custom colors from your design system, correctly mapped to HSL variables
+                'design-bg': 'hsl(var(--design-bg))',
+                'design-fg': 'hsl(var(--design-fg))',
+                'design-accent-red': 'hsl(var(--design-accent-red))',
+                'design-accent-orange': 'hsl(var(--design-accent-orange))',
+                'design-card': 'hsl(var(--design-card))',
             },
             borderRadius: {
                 lg: 'var(--radius)',
