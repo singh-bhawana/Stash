@@ -69,14 +69,34 @@ export const resources = {
     },
   
     "CSE-AI": {
-      python: {
-        notes: [
-          { name: "Python for AI", url: "/resources/CSE-AI/python/notes/Python for AI.pdf" },
-        ],
-        pyqs: [],
-        books: [],
-      },
-    },
+  stats: {
+    notes: [
+      { name: "Continuos Dist.1", url: "/resources/CSE-AI/stats/notes/Continuos Dist.1.pdf" },
+      { name: "Continuos Dist.2", url: "/resources/CSE-AI/stats/notes/Continuos Dist.2.pdf" },
+      { name: "Correlation and Regression", url: "/resources/CSE-AI/stats/notes/Correlation and Regression.pdf" },
+      { name: "Discrete Distributions1", url: "/resources/CSE-AI/stats/notes/Discrete Distributions1.pdf" },
+      { name: "Expectation, variance, covariance", url: "/resources/CSE-AI/stats/notes/Expectation, variance, covariance.pdf" },
+      { name: "Joint prob dist notes", url: "/resources/CSE-AI/stats/notes/joint prob dist notes.pdf" },
+      { name: "MOD-I", url: "/resources/CSE-AI/stats/notes/MOD-I.pdf" },
+      { name: "Moments and MGF", url: "/resources/CSE-AI/stats/notes/moments and mgf (1).pdf" },
+      { name: "PS notes", url: "/resources/CSE-AI/stats/notes/Ps notes.pdf" },
+      { name: "Random variables, pmf, pdf, cdf", url: "/resources/CSE-AI/stats/notes/random variables, pmf, pdf, cdf.pdf" },
+    ],
+    pyqs: [],
+    books: [
+      { name: "Fundamental of Mathematical Statistics", url: "/resources/CSE-AI/stats/books/FUNDAMENTAL OF MATHEMATICAL STATISTICS-S C GUPTA & V K KAPOOR.pdf" },
+      { name: "Schaum's Outline of Probability and Statistics", url: "/resources/CSE-AI/stats/books/Schaums-Outlines-of-Probability-and-Statistics-4th-Edition-pdf-free-download.pdf" },
+    ],
+    "tutorial sheets": [
+      { name: "PS tut 5", url: "/resources/CSE-AI/stats/tutorial sheets/PS tut 5.pdf" },
+      { name: "PS Tutorial Sheet-1", url: "/resources/CSE-AI/stats/tutorial sheets/PS Tutorial Sheet-1.pdf" },
+      { name: "PS Tutorial Sheet-2", url: "/resources/CSE-AI/stats/tutorial sheets/PS Tutorial Sheet-2.pdf" },
+      { name: "PS Tutorial Sheet-3", url: "/resources/CSE-AI/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
+      { name: "PS Tutorial Sheet-4-1", url: "/resources/CSE-AI/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
+    ]
+  },
+},
+
   
     "ECE-AI": {
       signals: {

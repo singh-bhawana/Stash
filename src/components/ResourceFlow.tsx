@@ -226,48 +226,65 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
         </div>
       )}
 
-      {currentStep === "resources" && selectedSubject && (
-        <div>
-          <h2 className="text-2xl font-bold mb-6">
-            Resources - {selectedSubject.name}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card
-              className="hover-lift cursor-pointer shadow-xl border border-transparent"
-              style={{ backgroundColor: HSL_COLOR.bg_light }}
-              onClick={() => handleResourceClick("PYQs")}
-            >
-              <CardContent className="p-6 text-center">
-                {getIcon("PYQs")}
-                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>PYQs</h3>
-                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Previous Year Questions</p>
-              </CardContent>
-            </Card>
-            <Card
-              className="hover-lift cursor-pointer shadow-xl border border-transparent"
-              style={{ backgroundColor: HSL_COLOR.bg_light }}
-              onClick={() => handleResourceClick("Notes")}
-            >
-              <CardContent className="p-6 text-center">
-                {getIcon("Notes")}
-                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Notes</h3>
-                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Study Notes & Materials</p>
-              </CardContent>
-            </Card>
-            <Card
-              className="hover-lift cursor-pointer shadow-xl border border-transparent"
-              style={{ backgroundColor: HSL_COLOR.bg_light }}
-              onClick={() => handleResourceClick("Books")}
-            >
-              <CardContent className="p-6 text-center">
-                {getIcon("Books")}
-                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Books</h3>
-                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Reference Books & PDFs</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      )}
+{currentStep === "resources" && selectedSubject && (
+  <div>
+    <h2 className="text-2xl font-bold mb-6">
+      Resources - {selectedSubject.name}
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* Existing cards */}
+      <Card
+        className="hover-lift cursor-pointer shadow-xl border border-transparent"
+        style={{ backgroundColor: HSL_COLOR.bg_light }}
+        onClick={() => handleResourceClick("PYQs")}
+      >
+        <CardContent className="p-6 text-center">
+          {getIcon("PYQs")}
+          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>PYQs</h3>
+          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Previous Year Questions</p>
+        </CardContent>
+      </Card>
+
+      <Card
+        className="hover-lift cursor-pointer shadow-xl border border-transparent"
+        style={{ backgroundColor: HSL_COLOR.bg_light }}
+        onClick={() => handleResourceClick("Notes")}
+      >
+        <CardContent className="p-6 text-center">
+          {getIcon("Notes")}
+          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Notes</h3>
+          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Study Notes & Materials</p>
+        </CardContent>
+      </Card>
+
+      <Card
+        className="hover-lift cursor-pointer shadow-xl border border-transparent"
+        style={{ backgroundColor: HSL_COLOR.bg_light }}
+        onClick={() => handleResourceClick("Books")}
+      >
+        <CardContent className="p-6 text-center">
+          {getIcon("Books")}
+          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Books</h3>
+          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Reference Books & PDFs</p>
+        </CardContent>
+      </Card>
+
+      {/* NEW: Tutorial Sheets */}
+      <Card
+        className="hover-lift cursor-pointer shadow-xl border border-transparent"
+        style={{ backgroundColor: HSL_COLOR.bg_light }}
+        onClick={() => handleResourceClick("Tutorial Sheets")}
+      >
+        <CardContent className="p-6 text-center">
+          {getIcon("Tutorial Sheets")}
+          <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_light }}>Tutorial Sheets</h3>
+          <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Practice & Tutorial PDFs</p>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+)}
+
     </div>
   );
 };
