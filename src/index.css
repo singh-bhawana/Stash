@@ -8,77 +8,113 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* --- LIGHT THEME (Adjust if you want a light theme option that matches the image's aesthetic) --- */
-    --background: 0 0% 100%; /* Default light background */
-    --foreground: 0 0% 15%; /* Default dark text */
+    /* Base colors from new design */
+    --background: 340 20% 15%; /* Dark, warm maroon-purple */
+    --foreground: 0 0% 95%; /* Off-white text */
 
-    /* If your default is meant to be light, adjust these to a light base */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    /* Card colors */
+    --card: 340 15% 20%; /* Slightly lighter maroon for cards */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    /* Popover colors */
+    --popover: 340 15% 20%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Other light theme variables... */
+    /* Primary theme - Red/Orange glow */
+    --primary: 350 60% 45%;
+    --primary-foreground: 0 0% 95%;
+    --primary-hover: 350 60% 40%;
 
-    /* Custom Color Palette (if you want these available outside of the dark theme) */
-    --image-dark-background: 240 5% 10%; /* Very dark grey/black */
-    --image-text-light: 0 0% 98%;      /* Near white */
-    --image-accent-pink: 320 100% 60%;  /* Bright pink */
-    --image-accent-orange: 30 100% 50%; /* Bright orange */
-    --image-button-bg: 240 5% 20%;      /* Dark button background */
-    --image-button-text: 0 0% 98%;      /* White button text */
-    --image-badge-bg: 240 5% 30%;       /* Badge background */
-    --image-badge-text: 0 0% 90%;       /* Badge text */
+    /* Secondary theme - Orange/Yellow accent */
+    --secondary: 20 80% 60%;
+    --secondary-foreground: 0 0% 15%;
+    --secondary-hover: 20 80% 50%;
+
+    /* Muted colors */
+    --muted: 340 10% 25%;
+    --muted-foreground: 0 0% 75%;
+
+    /* Accent colors */
+    --accent: 20 80% 80%;
+    --accent-foreground: 340 20% 15%;
+
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Border and input */
+    --border: 340 10% 30%;
+    --input: 340 10% 25%;
+    --ring: 350 60% 45%;
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(350 60% 45% / 0.15);
+    --shadow-card: 0 4px 15px -3px hsl(340 15% 20% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    /* New custom colors for the specific UI design */
+    --design-bg: 340 20% 15%;
+    --design-fg: 0 0% 95%;
+    --design-accent-red: 350 60% 45%;
+    --design-accent-orange: 20 80% 60%;
+    --design-card: 340 15% 20%;
   }
 
   .dark {
-    /* --- DARK THEME (This is where you'll make the most impactful changes to match the image) --- */
-    --background: 240 5% 10%; /* Very dark grey/black, like the image's main background */
-    --foreground: 0 0% 98%; /* Near white for main text, matching the image */
-
-    --card: 240 5% 15%; /* Slightly lighter dark for cards/popovers if needed */
-    --card-foreground: 0 0% 98%;
-
-    --popover: 240 5% 15%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 320 100% 60%; /* Use a key accent color for primary */
-    --primary-foreground: 0 0% 98%; /* White text on primary */
-
-    --secondary: 30 100% 50%; /* Another accent color for secondary */
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 5% 20%; /* Darker muted elements */
-    --muted-foreground: 0 0% 80%;
-
-    --accent: 240 5% 30%; /* Accent for badges or highlights */
-    --accent-foreground: 0 0% 90%;
-
-    --destructive: 0 80% 50%; /* Standard destructive red */
+    --background: var(--design-bg);
+    --foreground: var(--design-fg);
+    --card: var(--design-card);
+    --card-foreground: var(--design-fg);
+    --popover: var(--design-card);
+    --popover-foreground: var(--design-fg);
+    --primary: var(--design-accent-red);
+    --primary-foreground: var(--design-fg);
+    --secondary: var(--design-accent-orange);
+    --secondary-foreground: var(--design-fg);
+    --muted: 340 10% 25%;
+    --muted-foreground: 0 0% 75%;
+    --accent: var(--design-accent-orange);
+    --accent-foreground: var(--design-fg);
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
+    --border: 340 10% 30%;
+    --input: 340 10% 25%;
+    --ring: var(--design-accent-red);
+    --sidebar-background: var(--design-card);
+    --sidebar-foreground: var(--design-fg);
+    --sidebar-primary: var(--design-accent-red);
+    --sidebar-primary-foreground: var(--design-fg);
+    --sidebar-accent: var(--design-accent-orange);
+    --sidebar-accent-foreground: var(--design-fg);
+    --sidebar-border: 340 10% 30%;
+    --sidebar-ring: var(--design-accent-red);
+  }
+}
 
-    --border: 240 5% 20%; /* Dark border */
-    --input: 240 5% 20%; /* Dark input background */
-    --ring: 320 100% 60%; /* Ring color for focus, matching primary */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
 
-    --sidebar-background: 240 5% 12%; /* Slightly different dark for sidebar */
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 320 100% 60%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 5% 25%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 240 5% 20%;
-    --sidebar-ring: 320 100% 60%;
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
 
-    /* If you have custom colors defined like image-dark-background, you can use them here too */
-    --image-dark-background: 240 5% 10%;
-    --image-text-light: 0 0% 98%;
-    --image-accent-pink: 320 100% 60%;
-    --image-accent-orange: 30 100% 50%;
-    --image-button-bg: 240 5% 20%;
-    --image-button-text: 0 0% 98%;
-    --image-badge-bg: 240 5% 30%;
-    --image-badge-text: 0 0% 90%;
+  .hover-lift {
+    @apply transition-smooth hover:scale-105;
+  }
+  
+  .fade-in {
+    @apply animate-fade-in;
   }
 }
