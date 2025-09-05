@@ -38,6 +38,26 @@ export const resources = {
           { name: "Let Us C", url: "/resources/CSE/programming/books/Let us c - yashwantkanetkar.pdf" },
         ],
       },
+      math: {
+        notes: [],
+        pyqs: [],
+        books: [
+          { "name": "Unit 4 Part 1", "url": "public/resources/CSE/math/books/unit 4 part 1.pdf" },
+          { "name": "N.P. Bali", "url": "public/resources/CSE/math/books/N.P. Bali.pdf" },
+          { "name": "Unit 4 Part 2 (HK Das)", "url": "public/resources/CSE/math/books/unit 4 part 2(hk das).pdf" }
+        ],
+        "tutorial sheets": [
+          { "name": "PS Tutorial Sheet 1 - Matrices 1", "url": "public/resources/CSE/math/tutorial sheets/matrices tut-1.pdf" },
+          { "name": "PS Tutorial Sheet 2 - Matrices 2", "url": "public/resources/CSE/math/tutorial sheets/matrices tut-2.pdf" },
+          { "name": "PS Tutorial Sheet 3 - Matrices 3", "url": "public/resources/CSE/math/tutorial sheets/matrices tut-3.pdf" },
+          { "name": "PS Tutorial Sheet 4 - Curve Tracing", "url": "public/resources/CSE/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+          { "name": "PS Tutorial Sheet 5 - Integral Calculus", "url": "public/resources/CSE/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+          { "name": "PS Tutorial Sheet 6 - Vector Calculus", "url": "public/resources/CSE/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" },
+          { "name": "PS Tutorial Sheet 7 - Differential Calculus 1", "url": "public/resources/CSE/math/tutorial sheets/tut-8(differential calculas).pdf" },
+          { "name": "PS Tutorial Sheet 8 - Differential Calculus 2", "url": "public/resources/CSE/math/tutorial sheets/tut-7(differential calculas).pdf" }
+        ]
+      }
+      
     },
   
     IT: {
