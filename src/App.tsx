@@ -7,8 +7,11 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ResourceViewer from "./components/ResourceViewer";
+import GpaCalculator from "./pages/GpaCalculator";
 
 const queryClient = new QueryClient();
+
+
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -19,13 +22,15 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/branches" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gpa-calculator" element={<GpaCalculator />} /> {/* New Route */}
           <Route path="/resources/:branch/:subject/:type" element={<ResourceViewer />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
+
 
 export default App;
