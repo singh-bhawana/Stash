@@ -11,8 +11,10 @@ const Navigation = () => {
   { name: "Home", path: "/" },
   { name: "Branches", path: "/branches" },
   { name: "About Us", path: "/about" },
-  { name: "GPA Calculator", path: "/gpa-calculator" },  // New item
+  { name: "GPA Calculator", path: "/gpa-calculator" },
+  { name: "Student Hub", path: "/student-hub" },  // New combined page
 ];
+
 
 
   const isActive = (path: string) => location.pathname === path;

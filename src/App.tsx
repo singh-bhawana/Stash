@@ -8,6 +8,10 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ResourceViewer from "./components/ResourceViewer";
 import GpaCalculator from "./pages/GpaCalculator";
+import StudentHub from "./pages/StudentHub";
+
+
+
 
 const queryClient = new QueryClient();
 
@@ -26,6 +30,7 @@ const App = () => (
           <Route path="/gpa-calculator" element={<GpaCalculator />} /> {/* New Route */}
           <Route path="/resources/:branch/:subject/:type" element={<ResourceViewer />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/student-hub" element={<StudentHub />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
