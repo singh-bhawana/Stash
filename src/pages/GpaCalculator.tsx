@@ -40,7 +40,9 @@ const GpaCalculator = () => {
     value: string
   ) => {
     const updated = [...subjects];
-    updated[index][field] = field === "credits" || field === "marks" ? Number(value) : value;
+    (updated[index] as any)[field] =
+      field === "credits" || field === "marks" ? Number(value) : value;
+
     // Auto-calculate grade and gradePoint when marks change
     if (field === "marks") {
       const { grade, gp } = calculateGrade(Number(value));

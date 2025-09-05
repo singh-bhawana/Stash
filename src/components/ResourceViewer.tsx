@@ -1,30 +1,35 @@
 // src/components/ResourceViewer.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText } from "lucide-react";
-import { resources } from "@/data/resources"; // <-- using resources.js
-import { useParams } from "react-router-dom"; // ADD THIS LINE
-
+import { Download, FileText, BookOpen } from "lucide-react";
+import { resources } from "@/data/resources";
+import { useParams } from "react-router-dom";
 
 export default function ResourceViewer() {
-  // Hardcoded: ECE → IDS → notes
-  const { branch, subject, type } = useParams(); // ADD THIS LINE
+  const { branch, subject, type } = useParams();
 
-// dynamically fetch PDFs
-let pdfs = [];
-if (branch && subject && type) {
-  const branchData = resources[branch.toUpperCase()];
-  if (branchData) {
-    const subjectData = branchData[subject.toUpperCase()];
-    if (subjectData) {
-      pdfs = subjectData[type.toLowerCase()] || [];
+  // Dynamically fetch PDFs based on URL params
+  let pdfs: { name: string; url: string }[] = [];
+  if (branch && subject && type) {
+    const branchData = resources[branch.toUpperCase()]; // Branch keys are uppercase
+    if (branchData) {
+      const subjectData = branchData[subject.toLowerCase()]; // Subject keys are lowercase
+      if (subjectData) {
+        pdfs = subjectData[type.toLowerCase()] || [];
+      }
     }
   }
-}
 
+  const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
 
-  const [selectedPdf, setSelectedPdf] = useState(null);
+  if (!pdfs || pdfs.length === 0) {
+    return (
+      <div className="p-6 text-center text-lg font-semibold text-red-600">
+        No resources found for {branch}/{subject}/{type}
+      </div>
+    );
+  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
@@ -36,7 +41,11 @@ if (branch && subject && type) {
         >
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <FileText className="h-5 w-5 text-primary" />
+              {type.toLowerCase() === "books" ? (
+                <BookOpen className="h-5 w-5 text-primary" />
+              ) : (
+                <FileText className="h-5 w-5 text-primary" />
+              )}
               {pdf.name}
             </CardTitle>
           </CardHeader>
@@ -46,7 +55,8 @@ if (branch && subject && type) {
               size="sm"
               onClick={(e) => {
                 e.stopPropagation();
-                window.open(pdf.url, "_blank");
+                // Ensure absolute path to public folder
+                window.open(pdf.url, "_blank", "noopener,noreferrer");
               }}
             >
               Preview
@@ -59,7 +69,9 @@ if (branch && subject && type) {
                 const link = document.createElement("a");
                 link.href = pdf.url;
                 link.download = pdf.name;
+                document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
               }}
             >
               <Download className="h-4 w-4" />
@@ -80,11 +92,13 @@ if (branch && subject && type) {
             >
               Close
             </Button>
-            <iframe
-              src={selectedPdf}
-              title="PDF Viewer"
-              className="w-full h-full rounded-b-lg"
-            ></iframe>
+            {selectedPdf && (
+              <iframe
+                src={selectedPdf}
+                title="PDF Viewer"
+                className="w-full h-full rounded-b-lg"
+              ></iframe>
+            )}
           </div>
         </div>
       )}

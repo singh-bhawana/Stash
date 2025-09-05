@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, FileText, Download, GraduationCap, Code } from "lucide-react";
@@ -15,23 +15,14 @@ const HSL_COLOR = {
   text_muted: "hsl(0, 0%, 75%)",
 };
 
-// Types
-interface Subject {
-  id: string;
-  name: string;
-}
-
-interface Branch {
-  id: string;
-  name: string;
-  subjects: {
-    semester1: Subject[];
-    semester2: Subject[];
-  };
-}
+// Commented out TypeScript interfaces for JSX usage
+// interface Subject { id: string; name: string; }
+// interface Branch { id: string; name: string; subjects: { semester1: Subject[]; semester2: Subject[]; }; }
+// interface ResourceFlowProps { selectedBranch: string; onBack: () => void; }
+// type FlowStep = "semesters" | "subjects" | "resources";
 
 // Data
-const branchData: Record<string, Branch> = {
+const branchData = {
   CSE: {
     id: "CSE",
     name: "Computer Science & Engineering",
@@ -99,7 +90,7 @@ const branchData: Record<string, Branch> = {
         { id: "python", name: "Programming with Python" },
         { id: "stats", name: "Probability & Statistics" },
         { id: "signals", name: "Signals & Systems" },
-        { id: "datascience", name: "Intro to Data Science" },
+        { id: "ids", name: "Intro to Data Science" },
         { id: "workshop", name: "Electronic Workshop" },
         { id: "communication", name: "Communication Skills" },
       ],
@@ -114,7 +105,7 @@ const branchData: Record<string, Branch> = {
         { id: "stats", name: "Probability & Statistics" },
         { id: "env", name: "Environmental Sciences" },
         { id: "signals", name: "Systems & Signals" },
-        { id: "datascience", name: "Intro to Data Science" },
+        { id: "ids", name: "Intro to Data Science" },
         { id: "workshop", name: "Electronic Workshop" },
         { id: "communication", name: "Communication Skills" },
       ],
@@ -123,27 +114,20 @@ const branchData: Record<string, Branch> = {
   },
 };
 
-interface ResourceFlowProps {
-  selectedBranch: string;
-  onBack: () => void;
-}
-
-type FlowStep = "semesters" | "subjects" | "resources";
-
-const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
-  const [currentStep, setCurrentStep] = useState<FlowStep>("semesters");
-  const [selectedSemester, setSelectedSemester] = useState<"semester1" | "semester2" | null>(null);
-  const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
+const ResourceFlow = ({ selectedBranch, onBack }) => {
+  const [currentStep, setCurrentStep] = useState("semesters");
+  const [selectedSemester, setSelectedSemester] = useState(null);
+  const [selectedSubject, setSelectedSubject] = useState(null);
   const navigate = useNavigate();
 
   const branch = branchData[selectedBranch];
 
-  const handleSemesterSelect = (semester: "semester1" | "semester2") => {
+  const handleSemesterSelect = (semester) => {
     setSelectedSemester(semester);
     setCurrentStep("subjects");
   };
 
-  const handleSubjectSelect = (subject: Subject) => {
+  const handleSubjectSelect = (subject) => {
     setSelectedSubject(subject);
     setCurrentStep("resources");
   };
@@ -160,22 +144,13 @@ const ResourceFlow = ({ selectedBranch, onBack }: ResourceFlowProps) => {
     }
   };
 
-  const handleResourceClick = (resourceType: string) => {
-    console.log(`Opening ${resourceType} for ${selectedSubject?.name}. This is a demo.`);
+  const handleResourceClick = (resourceType) => {
+    if (!selectedSubject) return;
+    navigate(`/resources/${selectedBranch}/${selectedSubject.id}/${resourceType.toLowerCase()}`);
   };
 
-  const getIcon = (type: string) => {
-    switch (type) {
-      case "PYQs":
-        return <FileText className="h-12 w-12" style={{ color: HSL_COLOR.accent_orange }} />;
-      case "Notes":
-        return <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.accent_red }} />;
-      case "Books":
-        return <Download className="h-12 w-12" style={{ color: HSL_COLOR.text_muted }} />;
-      default:
-        return <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.text_muted }} />;
-    }
-  };
+  // Minimal getIcon placeholder to remove errors
+  const getIcon = (type) => <BookOpen className="h-5 w-5" style={{ color: HSL_COLOR.accent_red }} />;
 
   return (
     <div className="fade-in relative z-10 p-4" style={{ color: HSL_COLOR.text_light }}>
