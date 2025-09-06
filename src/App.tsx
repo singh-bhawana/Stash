@@ -8,7 +8,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ResourceViewer from "./components/ResourceViewer";
 import GpaCalculator from "./pages/GpaCalculator";
-import StudentHub from "./pages/StudentHub";
+
 import SubjectViewer from "./pages/SubjectViewer"; 
 import SubjectSectionViewer from "./pages/SubjectSectionViewer"; // Import the new component
 import CSE from "./pages/CSE";
@@ -46,7 +46,7 @@ const App = () => (
           <Route path="/resources/:branch/:subject" element={<SubjectSectionViewer />} />
           <Route path="/resources/:branch/:subject/:type" element={<ResourceViewer />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/student-hub" element={<StudentHub />} />
+          
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
