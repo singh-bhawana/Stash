@@ -20,7 +20,7 @@ interface BranchCardProps {
 
 const BranchCard = ({ name, fullName, onClick }: BranchCardProps) => {
   return (
-    <Card 
+    <Card
       className="relative hover-lift cursor-pointer shadow-xl border border-transparent"
       style={{
         backgroundColor: HSL_COLOR.bg_solid_component,
@@ -30,22 +30,30 @@ const BranchCard = ({ name, fullName, onClick }: BranchCardProps) => {
     >
       <CardContent className="p-6 text-center flex flex-col items-center">
         <div className="relative mb-4">
-          <div className="w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-               style={{ background: `linear-gradient(45deg, ${HSL_COLOR.accent_primary}, ${HSL_COLOR.accent_secondary})` }}>
+          <div
+            className="w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+            style={{ background: `linear-gradient(45deg, ${HSL_COLOR.accent_primary}, ${HSL_COLOR.accent_secondary})` }}
+          >
             <GraduationCap className="h-8 w-8" style={{ color: HSL_COLOR.button_text_light }} />
           </div>
         </div>
-        <h3 className="text-xl font-bold mb-2 transition-colors duration-300" style={{ color: HSL_COLOR.text_primary }}>{name}</h3>
-        <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>{fullName}</p>
-        <Button 
-          variant="ghost" 
+        <h3 className="text-xl font-bold mb-2 transition-colors duration-300" style={{ color: HSL_COLOR.text_primary }}>
+          {name}
+        </h3>
+        <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>
+          {fullName}
+        </p>
+        <Button
+          variant="ghost"
           className="mt-4 w-full transition-colors duration-300"
-          style={{ 
-            color: HSL_COLOR.button_text_light, 
+          style={{
+            color: HSL_COLOR.button_text_light,
             backgroundColor: HSL_COLOR.accent_primary,
-            boxShadow: `0 4px 10px ${HSL_COLOR.accent_primary}80`
+            boxShadow: `0 4px 10px ${HSL_COLOR.accent_primary}80`,
           }}
           size="sm"
+          type="button" 
+          onClick={onClick}  // add onClick here
         >
           Explore Resources
         </Button>
