@@ -130,14 +130,28 @@ export const resources = {
   python: {
     notes: [
       { name: "Python Complete Notes", url: "/resources/CSE-AI/python/notes/Python_Complete_Notes.pdf" },
+      { name: "Break & Continue Loops", url: "/resources/CSE-AI/python/notes/BREAK CONTINUE LOOP NOTES.pdf" },
+      { name: "Exception Handling", url: "/resources/CSE-AI/python/notes/exception handling.pdf" },
+      { name: "For Loop Notes", url: "/resources/CSE-AI/python/notes/FOR LOOP NOTES.pdf" },
+      { name: "File Handling", url: "/resources/CSE-AI/python/notes/File handling.pdf" },
+      { name: "Functions", url: "/resources/CSE-AI/python/notes/Functions.pdf" },
+      { name: "Notes Part 1", url: "/resources/CSE-AI/python/notes/notes pt1.pdf" },
+      { name: "Notes Part 2", url: "/resources/CSE-AI/python/notes/notes pt2.pdf" },
+      { name: "OOPs Part 2 (IIT Delhi)", url: "/resources/CSE-AI/python/notes/oops part 2 python iit delhi.pdf" },
+      { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/CSE-AI/python/notes/oops python iit delhi part 1.pdf" },
+      { name: "PP & DS Unit III", url: "/resources/CSE-AI/python/notes/PP&DS UNIT III.pdf" },
     ],
     pyqs: [],
-    books: [],
+    books: [
+      { name: "Intro to ML with Python", url: "/resources/CSE-AI/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
+    ],
     "tutorial sheets": [
       { name: "Python Exam Questions", url: "/resources/CSE-AI/python/tutorial sheets/Python_Exam_Questions.pdf" },
       { name: "Python Question Bank (BTETPE405E)", url: "/resources/CSE-AI/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
-    ]
+      { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/CSE-AI/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
+    ],
   }
+  
 },
 
   
