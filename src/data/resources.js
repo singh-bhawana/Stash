@@ -100,6 +100,52 @@ export const resources = {
           { name: "Unit III - Functions Complete", url: "/resources/programming/notes/Unit - III - Functions Complete.pdf" }
         ]
       },
+physics: {
+  books: [
+    { name: "HK Malik", url: "/resources/physics/books/HK MALIK.pdf" },
+    { name: "PHYS (A.K. Jha Vol1)", url: "/resources/physics/books/PHYS (A.K. JHA VOL1).pdf" }
+  ],
+
+  notes: [
+    { name: "Lecture 01 - Optics Interference", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_01_OpticsInterference.pdf" },
+    { name: "Lecture 02 - Optics Interference Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_02_OpticsInterferenceCont.pdf" },
+    { name: "Lecture 03 - Diffraction", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_03_Diffraction.pdf" },
+    { name: "Lecture 04 - Polarization", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_04_Polarization.pdf" },
+    { name: "Lecture 05 - Gradient, Divergence, Curl", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_05_GradientDivergenceCurl.pdf" },
+    { name: "Lecture 06 - Maxwell Equations", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_06_MaxwellEqns.pdf" },
+    { name: "Lecture 07 - Wave Equation", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_07_WaveEquation.pdf" },
+    { name: "Lecture 08 - Continuity Equation", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_08_ContinuityEquation.pdf" },
+    { name: "Lecture 09 - Skin Depth", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_09_SkinDepth.pdf" },
+    { name: "Lecture 10 - Lasers", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_10_Lasers.pdf" },
+    { name: "Lecture 12 - Quantum Mechanics Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_12_QuantumMechanicsCont.pdf" },
+    { name: "Lecture 13 - Group and Phase Velocities", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_13_GroupAndPhaseVelocities.pdf" },
+    { name: "Lecture 14 - Lasers", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_14_Lasers.pdf" },
+    { name: "Lecture 15 - Lasers Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_15LasersCont.pdf" },
+    { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
+  ],
+
+  pyqs: {
+    endsem: [
+      { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
+      { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
+      { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
+      { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" }
+    ],
+    midsem: [
+      { name: "MidSem Apr 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Apr2016_AP.pdf" },
+      { name: "MidSem Jan 2023 Part 1", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_1.pdf" },
+      { name: "MidSem Jan 2023 Part 2", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_2.pdf" },
+      { name: "MidSem Nov 2014", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov_2014_AP.pdf" },
+      { name: "MidSem Nov 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov2016_AP.pdf" },
+      { name: "MidSem Oct 2023", url: "/resources/physics/pyqs/MIDSEM/MidSem_Oct2023_AP.pdf" }
+    ]
+  },
+
+  tutorials: [
+    { name: "Unit I - Electromagnetic Theory", url: "/resources/physics/tutorial sheets/Unit I ELECTROMAGNETIC THEORY.pdf" }
+  ]
+}
+
     },
   
 
@@ -151,19 +197,65 @@ export const resources = {
     ],
   },
 
-        web: {
-        notes: [
-          { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
-          { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
-          { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
-          { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
-          { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
-          { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
-          { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
-          { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
-          { name: "XML", url: "/resources/web/notes/XML.pdf" }
-        ]
-      }
+  physics: {
+  books: [
+    { name: "HK Malik", url: "/resources/physics/books/HK MALIK.pdf" },
+    { name: "PHYS (A.K. Jha Vol1)", url: "/resources/physics/books/PHYS (A.K. JHA VOL1).pdf" }
+  ],
+
+  notes: [
+    { name: "Lecture 01 - Optics Interference", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_01_OpticsInterference.pdf" },
+    { name: "Lecture 02 - Optics Interference Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_02_OpticsInterferenceCont.pdf" },
+    { name: "Lecture 03 - Diffraction", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_03_Diffraction.pdf" },
+    { name: "Lecture 04 - Polarization", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_04_Polarization.pdf" },
+    { name: "Lecture 05 - Gradient, Divergence, Curl", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_05_GradientDivergenceCurl.pdf" },
+    { name: "Lecture 06 - Maxwell Equations", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_06_MaxwellEqns.pdf" },
+    { name: "Lecture 07 - Wave Equation", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_07_WaveEquation.pdf" },
+    { name: "Lecture 08 - Continuity Equation", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_08_ContinuityEquation.pdf" },
+    { name: "Lecture 09 - Skin Depth", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_09_SkinDepth.pdf" },
+    { name: "Lecture 10 - Lasers", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_10_Lasers.pdf" },
+    { name: "Lecture 12 - Quantum Mechanics Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_12_QuantumMechanicsCont.pdf" },
+    { name: "Lecture 13 - Group and Phase Velocities", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_13_GroupAndPhaseVelocities.pdf" },
+    { name: "Lecture 14 - Lasers", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_14_Lasers.pdf" },
+    { name: "Lecture 15 - Lasers Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_15LasersCont.pdf" },
+    { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
+  ],
+
+  pyqs: {
+    endsem: [
+      { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
+      { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
+      { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
+      { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" }
+    ],
+    midsem: [
+      { name: "MidSem Apr 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Apr2016_AP.pdf" },
+      { name: "MidSem Jan 2023 Part 1", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_1.pdf" },
+      { name: "MidSem Jan 2023 Part 2", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_2.pdf" },
+      { name: "MidSem Nov 2014", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov_2014_AP.pdf" },
+      { name: "MidSem Nov 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov2016_AP.pdf" },
+      { name: "MidSem Oct 2023", url: "/resources/physics/pyqs/MIDSEM/MidSem_Oct2023_AP.pdf" }
+    ]
+  },
+
+  tutorials: [
+    { name: "Unit I - Electromagnetic Theory", url: "/resources/physics/tutorial sheets/Unit I ELECTROMAGNETIC THEORY.pdf" }
+  ]
+},
+
+    web: {
+    notes: [
+      { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
+      { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
+      { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
+      { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
+      { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
+      { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
+      { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
+      { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
+      { name: "XML", url: "/resources/web/notes/XML.pdf" }
+    ]
+  }
     },
   
     AIML: {
