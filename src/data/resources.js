@@ -42,20 +42,22 @@ export const resources = {
         notes: [],
         pyqs: [],
         books: [
-          { "name": "Unit 4 Part 1", "url": "public/resources/CSE/math/books/unit 4 part 1.pdf" },
-          { "name": "N.P. Bali", "url": "public/resources/CSE/math/books/N.P. Bali.pdf" },
-          { "name": "Unit 4 Part 2 (HK Das)", "url": "public/resources/CSE/math/books/unit 4 part 2(hk das).pdf" }
-        ],
+        { name: "N.P. Bali", url: "/resources/CSE/math/books/N.P. Bali.pdf" },
+        { name: "Unit 4 Part 1", url: "/resources/CSE/math/books/unit 4 part 1.pdf" },
+        { name: "Unit 4 Part 2 (H.K. Das)", url: "/resources/CSE/math/books/unit 4 part 2(hk das).pdf" },
+      ],
+
         "tutorial sheets": [
-          { "name": "PS Tutorial Sheet 1 - Matrices 1", "url": "public/resources/CSE/math/tutorial sheets/matrices tut-1.pdf" },
-          { "name": "PS Tutorial Sheet 2 - Matrices 2", "url": "public/resources/CSE/math/tutorial sheets/matrices tut-2.pdf" },
-          { "name": "PS Tutorial Sheet 3 - Matrices 3", "url": "public/resources/CSE/math/tutorial sheets/matrices tut-3.pdf" },
-          { "name": "PS Tutorial Sheet 4 - Curve Tracing", "url": "public/resources/CSE/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
-          { "name": "PS Tutorial Sheet 5 - Integral Calculus", "url": "public/resources/CSE/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
-          { "name": "PS Tutorial Sheet 6 - Vector Calculus", "url": "public/resources/CSE/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" },
-          { "name": "PS Tutorial Sheet 7 - Differential Calculus 1", "url": "public/resources/CSE/math/tutorial sheets/tut-8(differential calculas).pdf" },
-          { "name": "PS Tutorial Sheet 8 - Differential Calculus 2", "url": "public/resources/CSE/math/tutorial sheets/tut-7(differential calculas).pdf" }
-        ]
+        { name: "Matrices Tut-1", url: "/resources/CSE/math/tutorial sheets/matrices tut-1.pdf" },
+        { name: "Matrices Tut-2", url: "/resources/CSE/math/tutorial sheets/matrices tut-2.pdf" },
+        { name: "Matrices Tut-3", url: "/resources/CSE/math/tutorial sheets/matrices tut-3.pdf" },
+        { name: "Tut-7 (Differential Calculus)", url: "/resources/CSE/math/tutorial sheets/tut-7(differential calculas).pdf" },
+        { name: "Tut-8 (Differential Calculus)", url: "/resources/CSE/math/tutorial sheets/tut-8(differential calculas).pdf" },
+        { name: "Tutorial Sheet-6 (Curve Tracing)", url: "/resources/CSE/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+        { name: "Tutorial Sheet-7 (Integral Calculus)", url: "/resources/CSE/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+        { name: "Tutorial Sheet-8 (Vector Calculus)", url: "/resources/CSE/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" },
+      ],
+
       }
       
     },
@@ -91,8 +93,8 @@ export const resources = {
     "CSE-AI": {
   stats: {
     notes: [
-      { name: "Continuos Dist.1", url: "/resources/CSE-AI/stats/notes/Continuos Dist.1.pdf" },
-      { name: "Continuos Dist.2", url: "/resources/CSE-AI/stats/notes/Continuos Dist.2.pdf" },
+      { name: "Continuos Dist1", url: "/resources/CSE-AI/stats/notes/Continuos Dist1.pdf" },
+      { name: "Continuos Dist2", url: "/resources/CSE-AI/stats/notes/Continuos Dist2.pdf" },
       { name: "Correlation and Regression", url: "/resources/CSE-AI/stats/notes/Correlation and Regression.pdf" },
       { name: "Discrete Distributions1", url: "/resources/CSE-AI/stats/notes/Discrete Distributions1.pdf" },
       { name: "Expectation, variance, covariance", url: "/resources/CSE-AI/stats/notes/Expectation, variance, covariance.pdf" },
@@ -115,6 +117,27 @@ export const resources = {
       { name: "PS Tutorial Sheet-4-1", url: "/resources/CSE-AI/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
     ]
   },
+
+  communication: {
+    notes: [
+      { name: "CS Complete Notes", url: "/resources/CSE-AI/communication/notes/CS complete notes.pdf" },
+    ],
+    pyqs: [],
+    books: [],
+    "tutorial sheets": []
+  },
+
+  python: {
+    notes: [
+      { name: "Python Complete Notes", url: "/resources/CSE-AI/python/notes/Python_Complete_Notes.pdf" },
+    ],
+    pyqs: [],
+    books: [],
+    "tutorial sheets": [
+      { name: "Python Exam Questions", url: "/resources/CSE-AI/python/tutorial sheets/Python_Exam_Questions.pdf" },
+      { name: "Python Question Bank (BTETPE405E)", url: "/resources/CSE-AI/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
+    ]
+  }
 },
 
   
