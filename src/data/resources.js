@@ -2,6 +2,17 @@
 
 export const resources = {
     ECE: {
+      subjects: {
+        semester1: [
+          { id: "python", name: "Programming with Python" },
+          { id: "stats", name: "Probability & Statistics" },
+          { id: "signals", name: "Signals & Systems" },
+          { id: "ids", name: "Intro to Data Science" },
+          { id: "workshop", name: "Electronic Workshop" },
+          { id: "communication", name: "Communication Skills" },
+        ],
+        semester2: [],
+      },
       signals: {
       notes: [
         { name: "Unit-2", url: "/resources/ECE/signals/notes/ch2_copy.pdf" },
@@ -29,6 +40,16 @@ export const resources = {
     },
   
     CSE: {
+      subjects: {
+        semester1: [
+          { id: "math", name: "Applied Mathematics" },
+          { id: "physics", name: "Applied Physics" },
+          { id: "bee", name: "Basics of Electrical Engineering" },
+          { id: "communication", name: "Communication Skills" },
+          { id: "programming", name: "Programming with C" },
+        ],
+        semester2: [],
+      },
       programming: {
         notes: [
           { name: "All Units - Additional Info", url: "/resources/CSE/programming/notes/All Units-Additonal-Info-_C_programming.pdf" },
@@ -71,6 +92,17 @@ export const resources = {
     },
   
     IT: {
+      subjects: {
+        semester1: [
+          { id: "math", name: "Applied Mathematics" },
+          { id: "physics", name: "Applied Physics" },
+          { id: "python", name: "Programming with Python" },
+          { id: "bee", name: "BEE" },
+          { id: "web", name: "Web Development" },
+          { id: "communication", name: "Communication Skills" },
+        ],
+        semester2: [],
+      },
       python: {
         notes: [
           { name: "Python Basics", url: "/resources/IT/python/notes/Python Basics.pdf" },
@@ -82,6 +114,17 @@ export const resources = {
     },
   
     AIML: {
+      subjects: {
+        semester1: [
+          { id: "python", name: "Programming with Python" },
+          { id: "stats", name: "Probability & Statistics" },
+          { id: "env", name: "Environmental Sciences" },
+          { id: "bee", name: "BEE" },
+          { id: "web", name: "Web Development" },
+          { id: "communication", name: "Communication Skills" },
+        ],
+        semester2: [],
+      },
       python: {
         notes: [
           { name: "Python for AI", url: "/resources/AIML/python/notes/Python for AI.pdf" },
@@ -99,6 +142,17 @@ export const resources = {
     },
   
     "CSE-AI": {
+      subjects: {
+        semester1: [
+          { id: "python", name: "Programming with Python" },
+          { id: "stats", name: "Probability & Statistics" },
+          { id: "env", name: "Environmental Sciences" },
+          { id: "bee", name: "BEE" },
+          { id: "workshop", name: "IT Workshop" },
+          { id: "communication", name: "Communication Skills" },
+        ],
+        semester2: [],
+      },
   stats: {
     notes: [
       { name: "Continuos Dist1", url: "/resources/CSE-AI/stats/notes/Continuos Dist1.pdf" },
@@ -164,6 +218,17 @@ export const resources = {
 
   
     "ECE-AI": {
+      subjects: {
+        semester1: [
+          { id: "stats", name: "Probability & Statistics" },
+          { id: "env", name: "Environmental Sciences" },
+          { id: "signals", name: "Systems & Signals" },
+          { id: "ids", name: "Intro to Data Science" },
+          { id: "workshop", name: "Electronic Workshop" },
+          { id: "communication", name: "Communication Skills" },
+        ],
+        semester2: [],
+      },
       signals: {
         notes: [
           { name: "Signals & Systems", url: "/resources/ECE-AI/signals/notes/Signals & Systems.pdf" },
