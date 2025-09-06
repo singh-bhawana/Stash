@@ -1,8 +1,8 @@
 import React from "react";
-import BranchCard from "@/components/BranchCard";
-import { resources } from "@/data/resources";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import BranchCard from "@/components/BranchCard";
+import { Button } from "@/components/ui/button";
 import { BookOpen, Users, Award } from "lucide-react";
 
 // Updated color palette in HSL to match the new light theme from index.css
@@ -21,7 +21,7 @@ const Index = () => {
 
   const handleBranchClick = (branchName) => {
     // This is the key change: we navigate to the subjects page
-    navigate(`/resources/${branchName.toUpperCase()}`);
+    navigate(`/resources/${branchName}`);
   };
 
   const branches = [
@@ -34,7 +34,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative homepage-bg">
       <div className="overlay"></div>
       <div className="relative z-10" style={{ color: HSL_COLOR.text_primary }}>
         <Navigation />
@@ -57,18 +57,17 @@ const Index = () => {
             Access PYQs, notes, and books organized by branch and semester.
             Created by seniors to help juniors succeed.
           </p>
-          <button
+          <Button
             variant="hero"
             size="xl"
             className="animate-scale-in"
             style={{ backgroundColor: HSL_COLOR.accent_primary, color: HSL_COLOR.button_text_light }}
             onClick={() => {
-                // A simple scroll to the branches section
                 document.getElementById('branches-section').scrollIntoView({ behavior: 'smooth' });
             }}
           >
             Explore Resources Below
-          </button>
+          </Button>
         </section>
 
         {/* Stats Section */}

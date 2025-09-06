@@ -111,6 +111,11 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes pan-bg {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 100%; }
+}
+
 @layer utilities {
   .transition-smooth {
     transition: var(--transition-smooth);
@@ -127,6 +132,13 @@ All colors MUST be HSL.
   .fade-in {
     @apply animate-fade-in;
   }
+}
+
+.homepage-bg {
+  background-image: url('/images/igdtuw_background.png');
+  background-size: cover;
+  background-position: center;
+  animation: pan-bg 20s infinite alternate linear;
 }
 
 .overlay {
