@@ -1,5 +1,4 @@
-// src/components/ResourceViewer.jsx
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, FileText, BookOpen } from "lucide-react";
@@ -10,18 +9,17 @@ export default function ResourceViewer() {
   const { branch, subject, type } = useParams();
 
   // Dynamically fetch PDFs based on URL params
-  let pdfs: { name: string; url: string }[] = [];
+  let pdfs = [];
   if (branch && subject && type) {
-    const branchData = resources[branch.toUpperCase()]; // Branch keys are uppercase
+    const branchData = resources[branch.toUpperCase()];
     if (branchData) {
-      const subjectData = branchData[subject.toLowerCase()]; // Subject keys are lowercase
+      const subjectData = branchData[subject.toLowerCase()];
       if (subjectData) {
+        // Use a generic property access for different types
         pdfs = subjectData[type.toLowerCase()] || [];
       }
     }
   }
-
-  const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
 
   if (!pdfs || pdfs.length === 0) {
     return (
@@ -37,7 +35,6 @@ export default function ResourceViewer() {
         <Card
           key={idx}
           className="hover:shadow-lg transition cursor-pointer"
-          onClick={() => setSelectedPdf(pdf.url)}
         >
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -55,7 +52,7 @@ export default function ResourceViewer() {
               size="sm"
               onClick={(e) => {
                 e.stopPropagation();
-                // Ensure absolute path to public folder
+                // This is the correct way to open the PDF in a new tab.
                 window.open(pdf.url, "_blank", "noopener,noreferrer");
               }}
             >
@@ -79,29 +76,6 @@ export default function ResourceViewer() {
           </CardContent>
         </Card>
       ))}
-
-      {/* PDF Modal Viewer */}
-      {selectedPdf && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-xl w-11/12 h-5/6 relative">
-            <Button
-              className="absolute top-2 right-2"
-              variant="destructive"
-              size="sm"
-              onClick={() => setSelectedPdf(null)}
-            >
-              Close
-            </Button>
-            {selectedPdf && (
-              <iframe
-                src={selectedPdf}
-                title="PDF Viewer"
-                className="w-full h-full rounded-b-lg"
-              ></iframe>
-            )}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

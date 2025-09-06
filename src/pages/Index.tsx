@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Navigation from "@/components/Navigation";
+import React from "react";
 import BranchCard from "@/components/BranchCard";
-import ResourceFlow from "@/components/ResourceFlow";
-import { Button } from "@/components/ui/button";
+import { resources } from "@/data/resources";
+import { useNavigate } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 import { BookOpen, Users, Award } from "lucide-react";
 
 // Updated color palette in HSL to match the new light theme from index.css
@@ -17,7 +17,12 @@ const HSL_COLOR = {
 };
 
 const Index = () => {
-  const [selectedBranch, setSelectedBranch] = useState<string | null>(null);
+  const navigate = useNavigate();
+
+  const handleBranchClick = (branchName) => {
+    // This is the key change: we navigate to the subjects page
+    navigate(`/resources/${branchName.toUpperCase()}`);
+  };
 
   const branches = [
     { id: "CSE", name: "CSE", fullName: "Computer Science & Engineering" },
@@ -28,27 +33,9 @@ const Index = () => {
     { id: "ECE-AI", name: "ECE-AI", fullName: "ECE - Artificial Intelligence" },
   ];
 
-  if (selectedBranch) {
-    return (
-      <div className="min-h-screen relative" style={{ backgroundColor: HSL_COLOR.bg_solid_component, color: HSL_COLOR.text_primary }}>
-        <Navigation />
-        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <ResourceFlow
-            selectedBranch={selectedBranch}
-            onBack={() => setSelectedBranch(null)}
-          />
-        </main>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen relative">
-      {/* The overlay is still present, but its opacity should be very low (e.g., 0.05) in index.css
-          or you can remove it if not needed for subtle tinting over the gradient */}
       <div className="overlay"></div>
-
-      {/* Main Content - now directly inside the div, no Parallax */}
       <div className="relative z-10" style={{ color: HSL_COLOR.text_primary }}>
         <Navigation />
         
@@ -57,7 +44,7 @@ const Index = () => {
           <div className="flex justify-center mb-8">
             <div className="w-24 h-24 rounded-full flex items-center justify-center shadow-elegant"
                  style={{ background: `linear-gradient(45deg, ${HSL_COLOR.accent_primary}, ${HSL_COLOR.accent_secondary})` }}>
-              <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.button_text_light }} /> {/* Icon color adjusted */}
+              <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.button_text_light }} />
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -70,10 +57,18 @@ const Index = () => {
             Access PYQs, notes, and books organized by branch and semester.
             Created by seniors to help juniors succeed.
           </p>
-          <Button variant="hero" size="xl" className="animate-scale-in" 
-                  style={{ backgroundColor: HSL_COLOR.accent_primary, color: HSL_COLOR.button_text_light }}> {/* Button text color adjusted */}
+          <button
+            variant="hero"
+            size="xl"
+            className="animate-scale-in"
+            style={{ backgroundColor: HSL_COLOR.accent_primary, color: HSL_COLOR.button_text_light }}
+            onClick={() => {
+                // A simple scroll to the branches section
+                document.getElementById('branches-section').scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Explore Resources Below
-          </Button>
+          </button>
         </section>
 
         {/* Stats Section */}
@@ -109,7 +104,7 @@ const Index = () => {
         </section>
 
         {/* Branches Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ color: HSL_COLOR.text_primary }}>
+        <section id="branches-section" className="py-16 px-4 sm:px-6 lg:px-8" style={{ color: HSL_COLOR.text_primary }}>
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -126,7 +121,7 @@ const Index = () => {
                   <BranchCard
                     name={branch.name}
                     fullName={branch.fullName}
-                    onClick={() => setSelectedBranch(branch.id)}
+                    onClick={() => handleBranchClick(branch.id)}
                   />
                 </div>
               ))}

@@ -9,13 +9,10 @@ import NotFound from "./pages/NotFound";
 import ResourceViewer from "./components/ResourceViewer";
 import GpaCalculator from "./pages/GpaCalculator";
 import StudentHub from "./pages/StudentHub";
-
-
-
+import SubjectViewer from "./pages/SubjectViewer"; 
+import SubjectSectionViewer from "./pages/SubjectSectionViewer"; // Import the new component
 
 const queryClient = new QueryClient();
-
-
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -27,7 +24,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/branches" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/gpa-calculator" element={<GpaCalculator />} /> {/* New Route */}
+          <Route path="/gpa-calculator" element={<GpaCalculator />} />
+          <Route path="/resources/:branch" element={<SubjectViewer />} />
+          {/* New route for viewing subject sections */}
+          <Route path="/resources/:branch/:subject" element={<SubjectSectionViewer />} />
           <Route path="/resources/:branch/:subject/:type" element={<ResourceViewer />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/student-hub" element={<StudentHub />} />
@@ -36,6 +36,5 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-
 
 export default App;
