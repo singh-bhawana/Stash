@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const cards = [
+const cardsData = [
   { id: 1, code: "AS", img: "https://deckofcardsapi.com/static/img/AS.png" },
   { id: 2, code: "2S", img: "https://deckofcardsapi.com/static/img/2S.png" },
   { id: 3, code: "3S", img: "https://deckofcardsapi.com/static/img/3S.png" },
@@ -11,17 +11,17 @@ const cards = [
   { id: 8, code: "8S", img: "https://deckofcardsapi.com/static/img/8S.png" },
 ];
 
-const cardBack =
+const cardBackURL =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Card_back_06.svg/200px-Card_back_06.svg.png";
 
 function shuffleArray<T>(array: T[]): T[] {
   return array
-    .map((value) => ({ value, sort: Math.random() }))
+    .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 }
 
-type CardType = {
+type Card = {
   id: number;
   code: string;
   img: string;
@@ -30,136 +30,106 @@ type CardType = {
 };
 
 export default function FunGame() {
-  const [deck, setDeck] = useState<CardType[]>([]);
-  const [flippedCards, setFlippedCards] = useState<CardType[]>([]);
-  const [disableAll, setDisableAll] = useState(false);
+  const [deck, setDeck] = useState<Card[]>([]);
+  const [flippedCards, setFlippedCards] = useState<Card[]>([]);
+  const [disableInput, setDisableInput] = useState(true);
   const [matches, setMatches] = useState(0);
   const [gameOver, setGameOver] = useState(false);
-  const [gameStarted, setGameStarted] = useState(false);
-  const [showTime, setShowTime] = useState<number | null>(null);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const startTimeRef = useRef<number | null>(null);
+  const [elapsedTime, setElapsedTime] = useState<number | null>(null);
 
   useEffect(() => {
     initGame();
   }, []);
 
-  // Initialize: shuffle, all face up, then flip down after 4 seconds
   const initGame = () => {
-    const doubled = [...cards, ...cards];
-    const shuffledDeck = shuffleArray(doubled).map((c, idx) => ({
+    const doubled = [...cardsData, ...cardsData];
+    const shuffled = shuffleArray(doubled).map((c, idx) => ({
       ...c,
       id: idx,
-      flipped: true,    // Start all flipped up
+      flipped: true, // Show all cards face-up initially
       matched: false,
     }));
-    setDeck(shuffledDeck);
+    setDeck(shuffled);
     setFlippedCards([]);
-    setDisableAll(true);
+    setDisableInput(true);
     setMatches(0);
     setGameOver(false);
-    setShowTime(null);
-    setGameStarted(false);
+    setElapsedTime(null);
 
-    // After 4s, flip all down, enable game, start timer
+    // After 2s, flip all down and enable input
     setTimeout(() => {
-      setDeck((oldDeck) =>
-        oldDeck.map((card) => ({ ...card, flipped: false }))
+      setDeck(oldDeck =>
+        oldDeck.map(card => ({ ...card, flipped: false }))
       );
-      setDisableAll(false);
-      setGameStarted(true);
+      setDisableInput(false);
       startTimeRef.current = Date.now();
-    }, 4000);
+    }, 2000);
   };
 
   useEffect(() => {
-    if (matches === cards.length && !gameOver) {
-      // Game won
+    if (matches === cardsData.length && !gameOver) {
       setGameOver(true);
-      setDisableAll(true);
+      setDisableInput(true);
       if (startTimeRef.current) {
-        setShowTime(Math.floor((Date.now() - startTimeRef.current) / 1000));
+        setElapsedTime(Math.floor((Date.now() - startTimeRef.current) / 1000));
       }
     }
   }, [matches, gameOver]);
 
   const flipCard = (id: number) => {
-    if (disableAll) return;
+    if (disableInput) return;
+    const clickedCard = deck.find(card => card.id === id);
+    if (!clickedCard || clickedCard.flipped || clickedCard.matched) return;
 
-    const flipped = deck.find((card) => card.id === id);
-    if (!flipped || flipped.flipped || flipped.matched) return;
-
-    const newDeck = deck.map((card) =>
+    const newDeck = deck.map(card =>
       card.id === id ? { ...card, flipped: true } : card
     );
-    const newFlippedCards = [...flippedCards, { ...flipped, flipped: true }];
+    const newFlipped = [...flippedCards, { ...clickedCard, flipped: true }];
 
     setDeck(newDeck);
-    setFlippedCards(newFlippedCards);
+    setFlippedCards(newFlipped);
 
-    if (newFlippedCards.length === 2) {
-      setDisableAll(true);
-      setTimeout(() => {
-        checkMatch(newFlippedCards, newDeck);
-      }, 1000);
+    if (newFlipped.length === 2) {
+      setDisableInput(true);
+      setTimeout(() => checkMatch(newFlipped, newDeck), 1000);
     }
   };
 
-  const checkMatch = (flipped: CardType[], currentDeck: CardType[]) => {
-    const [card1, card2] = flipped;
+  const checkMatch = (flipped: Card[], currentDeck: Card[]) => {
+    const [first, second] = flipped;
     let newDeck = [...currentDeck];
-    if (card1.code === card2.code) {
-      // Mark matched
-      newDeck = newDeck.map((card) =>
-        card.code === card1.code ? { ...card, matched: true } : card
+    if (first.code === second.code) {
+      newDeck = newDeck.map(card =>
+        card.code === first.code ? { ...card, matched: true } : card
       );
-      setMatches((prev) => prev + 1);
+      setMatches(prev => prev + 1);
     } else {
-      // Flip back
-      newDeck = newDeck.map((card) =>
-        card.id === card1.id || card.id === card2.id
+      newDeck = newDeck.map(card =>
+        card.id === first.id || card.id === second.id
           ? { ...card, flipped: false }
           : card
       );
     }
     setDeck(newDeck);
     setFlippedCards([]);
-    setDisableAll(false);
-  };
-
-  const resetGame = () => {
-    initGame();
+    setDisableInput(false);
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg select-none">
-      <h3
-        className="text-center text-2xl font-bold mb-6"
-        style={{
-          background: "linear-gradient(90deg, #6a84ff, #d776e7)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
-      >
-        Card Memory Match
-      </h3>
-
-      {!gameStarted && (
-        <p className="text-center mb-4 font-medium text-neutral-600">
-          All cards shown face-up for 4 seconds. Get ready to memorize!
-        </p>
-      )}
+    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg select-none">
+      <h2 className="text-center text-2xl font-bold mb-6 text-indigo-600">Card Memory Match</h2>
 
       <div className="grid grid-cols-4 gap-4 mb-6">
-        {deck.map((card) => (
+        {deck.map(card => (
           <button
             key={card.id}
             onClick={() => flipCard(card.id)}
-            disabled={!gameStarted || card.flipped || card.matched || disableAll}
+            disabled={disableInput || card.flipped || card.matched}
             className="outline-none focus:outline-none"
           >
             <img
-              src={card.flipped || card.matched ? card.img : cardBack}
+              src={card.flipped || card.matched ? card.img : cardBackURL}
               alt={card.code}
               className="w-20 h-28 rounded-lg shadow-md"
             />
@@ -167,23 +137,22 @@ export default function FunGame() {
         ))}
       </div>
 
-      {gameOver && (
-        <div className="text-center">
-          <p className="text-indigo-600 font-semibold mb-3">
-            🎉 You matched all cards in {showTime} seconds! 🎉
-          </p>
-          <button
-            onClick={resetGame}
-            className="px-6 py-2 bg-gradient-to-r from-blue-400 to-pink-400 text-white rounded shadow hover:scale-105 transition"
-          >
-            Play Again
-          </button>
+      {gameOver && elapsedTime !== null && (
+        <div className="text-center text-indigo-700 font-semibold">
+          🎉 You matched all cards in {elapsedTime} seconds! 🎉
         </div>
       )}
 
-      {!gameOver && gameStarted && (
-        <p className="text-center text-gray-600">Match all pairs to win.</p>
+      {!gameOver && (
+        <p className="text-center text-gray-600">Match all pairs to win!</p>
       )}
+
+      <button
+        onClick={initGame}
+        className="mt-6 w-full bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600 transition"
+      >
+        Restart Game
+      </button>
     </div>
   );
 }
