@@ -6,31 +6,31 @@ const About = () => {
   const teamMembers = [
    {
       name: "Akanksha Pal",
-      role: "CSE 1, Batch 2028",
+       role: "CSE'28",
       linkedin: "https://www.linkedin.com/in/akankshapal1268",
       email: "akanksha011btcse24@igdtuw.ac.in",
     },
     {
       name: "Apoorva Shrivastava",
-      role: "CSE 1, Batch 2028",
+      role: "CSE'28",
       linkedin: "https://www.linkedin.com/in/apoorva-shrivastava-a3955321b/",
       email: "apoorva038btcse24@igdtuw.ac.in",
     },
     {
       name: "Bhawana Singh",
-      role: "CSE 1, Batch 2028",
+      role: "CSE'28",
       linkedin: "https://www.linkedin.com/in/bhawana-singh-ba74a6322/",
       email: "bhawana050btcse24@igdtuw.ac.in",
     },
     {
       name: "Disha Jain",
-      role: "CSE 1, Batch 2028",
+      role: "CSE'28",
       linkedin: "https://www.linkedin.com/in/dishajain15",
       email: "disha061btcse24@igdtuw.ac.in",
     },
     {
       name: "Kanika Bhardwaj",
-      role: "CSE 1, Batch 2028",
+      role: "CSE'28",
       linkedin: "https://www.linkedin.com/in/ikanikabhardwaj",
       email: "kanika087btcse24@igdtuw.ac.in",
     },

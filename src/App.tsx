@@ -8,8 +8,9 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ResourceViewer from "./components/ResourceViewer";
 import GpaCalculator from "./pages/GpaCalculator";
-import SubjectViewer from "./pages/SubjectViewer";
-import SubjectSectionViewer from "./pages/SubjectSectionViewer";
+
+import SubjectViewer from "./pages/SubjectViewer"; 
+import SubjectSectionViewer from "./pages/SubjectSectionViewer"; // Import the new component
 import CSE from "./pages/CSE";
 import ECE from "./pages/ECE";
 import IT from "./pages/IT";
@@ -32,17 +33,20 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/gpa-calculator" element={<GpaCalculator />} />
           <Route path="/resources/:branch" element={<SubjectViewer />} />
-          <Route path="/fun-game" element={<FunGame />} />
+          // In your routing config (e.g., App.tsx or routes)
+<Route path="/fun-game" element={<FunGame />} />
+
           {/* New route for viewing subject sections */}
           <Route path="/resources/CSE" element={<CSE />} />
-          <Route path="/resources/ECE" element={<ECE />} />
-          <Route path="/resources/IT" element={<IT />} />
-          <Route path="/resources/AIML" element={<AIML />} />
-          <Route path="/resources/CSE-AI" element={<CSEAI />} />
-          <Route path="/resources/ECE-AI" element={<ECEAI />} />
+  <Route path="/resources/ECE" element={<ECE />} />
+  <Route path="/resources/IT" element={<IT />} />
+  <Route path="/resources/AIML" element={<AIML />} />
+  <Route path="/resources/CSE-AI" element={<CSEAI />} />
+  <Route path="/resources/ECE-AI" element={<ECEAI />} />
           <Route path="/resources/:branch/:subject" element={<SubjectSectionViewer />} />
           <Route path="/resources/:branch/:subject/:type" element={<ResourceViewer />} />
           <Route path="*" element={<NotFound />} />
+          
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

@@ -39,26 +39,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo / Title */}
         <Link to="/" className="flex flex-col items-start justify-center select-none">
-          <span
-            className="font-black text-3xl tracking-tight"
-            style={{
-              background: "linear-gradient(90deg, hsl(240, 60%, 70%), hsl(10, 70%, 80%))",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              letterSpacing: "-2px",
-              userSelect: "none",
-            }}
-          >
-            STASH
-          </span>
-          <span
-            className="text-xs font-light text-neutral-500"
-            style={{ letterSpacing: "0.02em" }}
-          >
-            (IGDTUW version)
-          </span>
-        </Link>
-
+         <img 
+            src="/images/Black and White Circular Art & Design Logo.png" 
+            alt="STASH Logo" 
+            className="h-16 w-auto" 
+          />
+          </Link>
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-1">
           {navItems.map((item) => (

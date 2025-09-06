@@ -40,3 +40,6 @@
 .read-the-docs {
   color: #888;
 }
+.main-content {
+  padding-top: 80px; /* Adjust this value if your header's height is different */
+}
