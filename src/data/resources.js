@@ -70,7 +70,20 @@ export const resources = {
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ]
       },
-      
+      web: {
+        notes: [
+          { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
+          { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
+          { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
+          { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
+          { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
+          { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
+          { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
+          { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
+          { name: "XML", url: "/resources/web/notes/XML.pdf" }
+        ]
+      }
+
     },
   
 
@@ -121,6 +134,20 @@ export const resources = {
       { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
     ],
   },
+
+        web: {
+        notes: [
+          { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
+          { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
+          { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
+          { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
+          { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
+          { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
+          { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
+          { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
+          { name: "XML", url: "/resources/web/notes/XML.pdf" }
+        ]
+      }
     },
   
     AIML: {
@@ -146,6 +173,20 @@ export const resources = {
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
     },
+
+          web: {
+        notes: [
+          { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
+          { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
+          { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
+          { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
+          { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
+          { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
+          { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
+          { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
+          { name: "XML", url: "/resources/web/notes/XML.pdf" }
+        ]
+      },
 
     python: {
     notes: [
@@ -294,7 +335,7 @@ export const resources = {
         pyqs: [],
         books: [],
       },
-      
+
     },
   };
   
