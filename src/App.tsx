@@ -17,6 +17,7 @@ import IT from "./pages/IT";
 import AIML from "./pages/AIML";
 import CSEAI from "./pages/CSEAI";
 import ECEAI from "./pages/ECEAI";
+import FunGame from "@/components/FunGame";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,9 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/gpa-calculator" element={<GpaCalculator />} />
           <Route path="/resources/:branch" element={<SubjectViewer />} />
+          // In your routing config (e.g., App.tsx or routes)
+<Route path="/fun-game" element={<FunGame />} />
+
           {/* New route for viewing subject sections */}
           <Route path="/resources/CSE" element={<CSE />} />
   <Route path="/resources/ECE" element={<ECE />} />
