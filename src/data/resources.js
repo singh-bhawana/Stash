@@ -2,6 +2,14 @@
 
 export const resources = {
     ECE: {
+      signals: {
+      notes: [
+        { name: "Unit-2", url: "/resources/ECE/signals/notes/ch2_copy.pdf" },
+        { name: "Unit-1", url: "/resources/ECE/signals/notes/https.pdf" },
+        { name: "Signals and Systems (Slideshare PPT)", url: "/resources/ECE/signals/notes/slideshare_net_slideshow_signals_systems_ppt_75004666.pdf" },
+        { name: "Signals and Systems Lecture ", url: "/resources/ECE/signals/notes/sysytem and signals lecture 1.pdf" }
+      ],
+    },
       ids: {
         notes: [
           { name: "Common NumPy Array Functions", url: "/resources/ECE/IDS/notes/Common NumPy Array Functions.pdf" },
