@@ -102,6 +102,7 @@ All colors MUST be HSL.
   }
   
   body {
+    /* Default linear gradient background for all pages */
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     background-size: cover;
     background-position: center;
@@ -111,6 +112,7 @@ All colors MUST be HSL.
   }
 }
 
+/* This animation is defined for a separate class */
 @keyframes pan-bg {
   from { background-position: 0% 0%; }
   to { background-position: 100% 100%; }
@@ -134,6 +136,7 @@ All colors MUST be HSL.
   }
 }
 
+/* This is the new class for the homepage background with the image and animation */
 .homepage-bg {
   background-image: url('/images/igdtuw_background.png');
   background-size: cover;

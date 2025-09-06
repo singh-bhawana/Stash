@@ -1,11 +1,9 @@
 import React from "react";
-import BranchCard from "@/components/BranchCard";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import BranchCard from "@/components/BranchCard";
 import { BookOpen, Users, Award } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
-
 
 // Updated color palette in HSL to match the new light theme from index.css
 const HSL_COLOR = {
@@ -31,12 +29,12 @@ const Index = () => {
   const navigate = useNavigate();
 
   // Navigate to Department's semester page on click
-  const handleBranchClick = (branchId: string) => {
+  const handleBranchClick = (branchId) => {
     navigate(`/resources/${branchId}`);
   };
 
   return (
-    <div className="min-h-screen relative">
+    <div className="homepage-bg min-h-screen relative">
       <div className="overlay"></div>
       <div className="relative z-10" style={{ color: HSL_COLOR.text_primary }}>
         <Navigation />
