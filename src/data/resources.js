@@ -13,6 +13,13 @@ export const resources = {
         ],
         semester2: [],
       },
+
+      communication: {
+      notes: [
+        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+      ]
+    },
+
       signals: {
       notes: [
         { name: "Unit-2", url: "/resources/ECE/signals/notes/ch2_copy.pdf" },
@@ -39,6 +46,7 @@ export const resources = {
       },
     },
   
+
     CSE: {
       subjects: {
         semester1: [
@@ -50,47 +58,21 @@ export const resources = {
         ],
         semester2: [],
       },
-      programming: {
+      
+      bee: {
+      books: [
+        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+      ],
+    },
+      communication: {
         notes: [
-          { name: "All Units - Additional Info", url: "/resources/CSE/programming/notes/All Units-Additonal-Info-_C_programming.pdf" },
-          { name: "Functions Complete", url: "/resources/CSE/programming/notes/Unit - III - Functions Complete.pdf" },
-          { name: "Operators and Expressions", url: "/resources/CSE/programming/notes/Unit 1 - Operators and Expressions.pdf" },
-          { name: "Programming Fundamentals - Part A", url: "/resources/CSE/programming/notes/Unit 1 - Programming Fundamentals-Part a (1).pdf" },
-          { name: "Arrays", url: "/resources/CSE/programming/notes/Unit II - Arrays.pdf" },
-          { name: "Strings", url: "/resources/CSE/programming/notes/Unit II - Strings.pdf" },
-          { name: "Control Structures", url: "/resources/CSE/programming/notes/Unit-II-Control-Structures.pdf" },
-          { name: "Constants, Variables & Data Types", url: "/resources/CSE/programming/notes/Unit1-Constants-Variables-DataTypes.pdf" },
-          { name: "Programming Fundamentals - Part B", url: "/resources/CSE/programming/notes/Unit1-Programming Fundamental-DataTypes-part b.pdf" },
-        ],
-        pyqs: [],
-        books: [
-          { name: "Let Us C", url: "/resources/CSE/programming/books/Let us c - yashwantkanetkar.pdf" },
-        ],
+          { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+        ]
       },
-      math: {
-        notes: [],
-        pyqs: [],
-        books: [
-        { name: "N.P. Bali", url: "/resources/CSE/math/books/N.P. Bali.pdf" },
-        { name: "Unit 4 Part 1", url: "/resources/CSE/math/books/unit 4 part 1.pdf" },
-        { name: "Unit 4 Part 2 (H.K. Das)", url: "/resources/CSE/math/books/unit 4 part 2(hk das).pdf" },
-      ],
-
-        "tutorial sheets": [
-        { name: "Matrices Tut-1", url: "/resources/CSE/math/tutorial sheets/matrices tut-1.pdf" },
-        { name: "Matrices Tut-2", url: "/resources/CSE/math/tutorial sheets/matrices tut-2.pdf" },
-        { name: "Matrices Tut-3", url: "/resources/CSE/math/tutorial sheets/matrices tut-3.pdf" },
-        { name: "Tut-7 (Differential Calculus)", url: "/resources/CSE/math/tutorial sheets/tut-7(differential calculas).pdf" },
-        { name: "Tut-8 (Differential Calculus)", url: "/resources/CSE/math/tutorial sheets/tut-8(differential calculas).pdf" },
-        { name: "Tutorial Sheet-6 (Curve Tracing)", url: "/resources/CSE/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
-        { name: "Tutorial Sheet-7 (Integral Calculus)", url: "/resources/CSE/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
-        { name: "Tutorial Sheet-8 (Vector Calculus)", url: "/resources/CSE/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" },
-      ],
-
-      }
       
     },
   
+
     IT: {
       subjects: {
         semester1: [
@@ -103,14 +85,18 @@ export const resources = {
         ],
         semester2: [],
       },
-      python: {
+      bee: {
+      books: [
+        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+      ],
+    },
+
+      communication: {
         notes: [
-          { name: "Python Basics", url: "/resources/IT/python/notes/Python Basics.pdf" },
-          { name: "Web Development Intro", url: "/resources/IT/python/notes/Web Development Intro.pdf" },
-        ],
-        pyqs: [],
-        books: [],
-      },
+          { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+        ]
+    },
+      
     },
   
     AIML: {
@@ -125,20 +111,17 @@ export const resources = {
         ],
         semester2: [],
       },
-      python: {
-        notes: [
-          { name: "Python for AI", url: "/resources/AIML/python/notes/Python for AI.pdf" },
-        ],
-        pyqs: [],
-        books: [],
-      },
-      stats: {
-        notes: [
-          { name: "Probability & Statistics", url: "/resources/AIML/stats/notes/Probability & Statistics.pdf" },
-        ],
-        pyqs: [],
-        books: [],
-      },
+      communication: {
+      notes: [
+        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+      ]
+    },
+
+      bee: {
+      books: [
+        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+      ],
+    },
     },
   
     "CSE-AI": {
@@ -180,15 +163,6 @@ export const resources = {
     ]
   },
 
-  communication: {
-    notes: [
-      { name: "CS Complete Notes", url: "/resources/CSE-AI/communication/notes/CS complete notes.pdf" },
-    ],
-    pyqs: [],
-    books: [],
-    "tutorial sheets": []
-  },
-
   python: {
     notes: [
       { name: "Python Complete Notes", url: "/resources/CSE-AI/python/notes/Python_Complete_Notes.pdf" },
@@ -212,7 +186,18 @@ export const resources = {
       { name: "Python Question Bank (BTETPE405E)", url: "/resources/CSE-AI/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
       { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/CSE-AI/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
     ],
-  }
+  },
+  bee: {
+      books: [
+        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+      ],
+    },
+
+    communication: {
+      notes: [
+        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+      ]
+    },
   
 },
 
@@ -236,6 +221,11 @@ export const resources = {
         pyqs: [],
         books: [],
       },
+      communication: {
+      notes: [
+        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+      ]
+    },
     },
   };
   
