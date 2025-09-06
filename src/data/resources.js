@@ -82,8 +82,23 @@ export const resources = {
           { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
           { name: "XML", url: "/resources/web/notes/XML.pdf" }
         ]
-      }
-
+      },
+      programming: {
+        books: [
+          { name: "Let Us C - Yashwant Kanetkar", url: "/resources/programming/books/Let us c - yashwantkanetkar.pdf" }
+        ],
+        notes: [
+          { name: "All Units - Additional Info", url: "/resources/programming/notes/All Units-Additonal-Info-_C_programming.pdf" },
+          { name: "Unit I - Operators and Expressions", url: "/resources/programming/notes/Unit 1 - Operators and Expressions.pdf" },
+          { name: "Unit 1 - Programming Fundamentals Part A", url: "/resources/programming/notes/Unit 1 - Programming Fundamentals-Part a (1).pdf" },
+          { name: "Unit II - Arrays", url: "/resources/programming/notes/Unit II - Arrays.pdf" },
+          { name: "Unit II - Strings", url: "/resources/programming/notes/Unit II - Strings.pdf" },
+          { name: "Unit I - Constants, Variables, Data Types", url: "/resources/programming/notes/Unit1-Constants-Variables-DataTypes.pdf" },
+          { name: "Unit I - Programming Fundamentals Data Types Part B", url: "/resources/programming/notes/Unit1-Programming Fundamental-DataTypes-part b.pdf" },
+          { name: "Unit II - Control Structures", url: "/resources/programming/notes/Unit-II-Control-Structures.pdf" },
+          { name: "Unit III - Functions Complete", url: "/resources/programming/notes/Unit - III - Functions Complete.pdf" }
+        ]
+      },
     },
   
 
