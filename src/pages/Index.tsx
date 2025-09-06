@@ -5,7 +5,8 @@ import Navigation from "@/components/Navigation";
 import { BookOpen, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
-
+import FunGame from "@/components/FunGame";
+import { Star, BookMarked } from "lucide-react";
 
 // Updated color palette in HSL to match the new light theme from index.css
 const HSL_COLOR = {
@@ -47,41 +48,70 @@ const Index = () => {
 
         {/* Stats Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ color: HSL_COLOR.text_primary }}>
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div className="fade-in">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ background: `linear-gradient(45deg, ${HSL_COLOR.accent_primary}, ${HSL_COLOR.accent_secondary})` }}
-                >
-                  <BookOpen className="h-8 w-8" style={{ color: HSL_COLOR.button_text_light }} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">6 Branches</h3>
-                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Complete coverage of all major engineering branches</p>
-              </div>
-              <div className="fade-in">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ background: `linear-gradient(45deg, ${HSL_COLOR.accent_primary}, ${HSL_COLOR.accent_secondary})` }}
-                >
-                  <Users className="h-8 w-8" style={{ color: HSL_COLOR.button_text_light }} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Community Driven</h3>
-                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Created and maintained by passionate seniors</p>
-              </div>
-              <div className="fade-in">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ background: `linear-gradient(45deg, ${HSL_COLOR.accent_primary}, ${HSL_COLOR.accent_secondary})` }}
-                >
-                  <Award className="h-8 w-8" style={{ color: HSL_COLOR.button_text_light }} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Quality Resources</h3>
-                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Curated PYQs, notes, and reference materials</p>
-              </div>
-            </div>
-          </div>
-        </section>
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+
+    {/* Left: FunGame component */}
+   {/* Left: Open FunGame in new tab button */}
+<div className="flex-1 fade-in flex flex-col items-center justify-center max-w-xs mx-auto">
+  <div
+    className="w-20 h-20 rounded-full flex items-center justify-center mb-4 shadow"
+    style={{ background: "linear-gradient(135deg, #6a84ff 0%, #ffd6e6 100%)" }}
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-6.518-3.76A1 1 0 007 8.236v7.528a1 1 0 001.234.97l6.518-1.88a1 1 0 00.75-.97v-3.154a1 1 0 00-.75-.482z" />
+    </svg>
+  </div>
+  <h3 className="text-2xl font-bold mb-2">Play Fun Game</h3>
+  <p className="text-base mb-4 text-neutral-600 text-center">
+    Take a quick concentration break with our mini game — open in a new tab!
+  </p>
+  <button
+    className="px-5 py-2 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-400 to-pink-400 shadow hover:scale-105 transition"
+    onClick={() => window.open('/fun-game', '_blank')}
+  >
+    Launch Game
+  </button>
+</div>
+
+
+    {/* Middle: Divider Callout */}
+    <div className="mx-0 md:mx-8 flex flex-col items-center justify-center fade-in select-none">
+      <div className="w-14 h-14 rounded-full bg-gradient-to-r from-pink-300 to-blue-300 flex items-center justify-center shadow mb-2">
+        <Star className="h-7 w-7 text-white" />
+      </div>
+      <div className="font-bold text-lg md:text-xl mb-1" style={{ color: '#4f5b70' }}>
+        Try These!
+      </div>
+      <div className="text-neutral-500 text-base text-center max-w-xs">
+        Unlock backbencher tools. Experience the true STASH magic—your notes, your way!
+      </div>
+      <div className="hidden md:block h-28 w-1 bg-gradient-to-b from-blue-400 to-pink-400 opacity-30 mt-3" />
+    </div>
+
+    {/* Right: One-Tap Stash Feature */}
+    <div className="flex-1 text-center fade-in">
+      <div
+        className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow"
+        style={{
+          background: "linear-gradient(135deg, #d776e7 0%, #6a84ff 100%)",
+        }}
+      >
+        <BookMarked className="h-10 w-10 text-white" />
+      </div>
+      <h3 className="text-2xl font-bold mb-2">One-Tap Stash</h3>
+      <p className="text-base mb-4 text-neutral-600">
+        Save any note or resource instantly—no login required, no signup hassle.
+      </p>
+      <button
+        className="px-5 py-2 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-400 to-pink-400 shadow hover:scale-105 transition"
+        onClick={() => alert('Feature coming soon!')}
+      >
+        Stash Now
+      </button>
+    </div>
+
+  </div>
+</section>
 
         {/* Branches Section */}
         <section
