@@ -282,19 +282,35 @@ physics: {
       ],
     },
 
-          web: {
-        notes: [
-          { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
-          { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
-          { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
-          { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
-          { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
-          { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
-          { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
-          { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
-          { name: "XML", url: "/resources/web/notes/XML.pdf" }
-        ]
-      },
+  env: {
+    books: [
+      { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
+    ],
+
+    notes: [
+      { name: "E-WASTE", url: "/resources/env/notes/E WASTE.pdf" },
+      { name: "Eco-friendly Polymers 2024-2025", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+      { name: "Energy Resources 2024-25 Complete", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+      { name: "Green Tech and Green Chemistry 2023-2024", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+      { name: "Hazardous Waste 2024-2025", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+      { name: "Solid Waste Pollution 2024-2025", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+      { name: "Water Pollution 2024-25 Final", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" }
+    ]
+  },
+
+    web: {
+    notes: [
+      { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
+      { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
+      { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
+      { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
+      { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
+      { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
+      { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
+      { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
+      { name: "XML", url: "/resources/web/notes/XML.pdf" }
+    ]
+  },
 
     python: {
     notes: [
@@ -362,6 +378,22 @@ physics: {
     ]
   },
 
+    env: {
+    books: [
+      { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
+    ],
+
+    notes: [
+      { name: "E-WASTE", url: "/resources/env/notes/E WASTE.pdf" },
+      { name: "Eco-friendly Polymers 2024-2025", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+      { name: "Energy Resources 2024-25 Complete", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+      { name: "Green Tech and Green Chemistry 2023-2024", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+      { name: "Hazardous Waste 2024-2025", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+      { name: "Solid Waste Pollution 2024-2025", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+      { name: "Water Pollution 2024-25 Final", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" }
+    ]
+  },
+  
   python: {
     notes: [
       { name: "Python Complete Notes", url: "/resources/python/notes/Python_Complete_Notes.pdf" },
