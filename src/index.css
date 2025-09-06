@@ -144,7 +144,7 @@ All colors MUST be HSL.
   animation: pan-bg 20s infinite alternate linear;
 }
 
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,4 +153,4 @@ All colors MUST be HSL.
   background: rgba(0, 0, 0, 0.05);
   z-index: 0;
   pointer-events: none;
-}
+}*/
