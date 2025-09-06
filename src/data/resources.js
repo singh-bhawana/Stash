@@ -4,8 +4,8 @@ export const resources = {
     ECE: {
       subjects: {
         semester1: [
-          { id: "python", name: "Programming with Python" },
-          { id: "stats", name: "Probability & Statistics" },
+          { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
+          { id: "math", name: "Probability & Statistics" },
           { id: "signals", name: "Signals & Systems" },
           { id: "ids", name: "Intro to Data Science" },
           { id: "workshop", name: "Electronic Workshop" },
@@ -55,6 +55,7 @@ export const resources = {
           { id: "bee", name: "Basics of Electrical Engineering" },
           { id: "communication", name: "Communication Skills" },
           { id: "programming", name: "Programming with C" },
+          { id: "web", name: "Web Development" },
         ],
         semester2: [],
       },
@@ -96,7 +97,30 @@ export const resources = {
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ]
     },
-      
+      python: {
+    notes: [
+      { name: "Python Complete Notes", url: "/resources/python/notes/Python_Complete_Notes.pdf" },
+      { name: "Break & Continue Loops", url: "/resources/python/notes/BREAK CONTINUE LOOP NOTES.pdf" },
+      { name: "Exception Handling", url: "/resources/python/notes/exception handling.pdf" },
+      { name: "For Loop Notes", url: "/resources/python/notes/FOR LOOP NOTES.pdf" },
+      { name: "File Handling", url: "/resources/python/notes/File handling.pdf" },
+      { name: "Functions", url: "/resources/python/notes/Functions.pdf" },
+      { name: "Notes Part 1", url: "/resources/python/notes/notes pt1.pdf" },
+      { name: "Notes Part 2", url: "/resources/python/notes/notes pt2.pdf" },
+      { name: "OOPs Part 2 (IIT Delhi)", url: "/resources/python/notes/oops part 2 python iit delhi.pdf" },
+      { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
+      { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
+    ],
+    pyqs: [],
+    books: [
+      { name: "Intro to ML with Python", url: "/resources/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
+    ],
+    "tutorial sheets": [
+      { name: "Python Exam Questions", url: "/resources/python/tutorial sheets/Python_Exam_Questions.pdf" },
+      { name: "Python Question Bank (BTETPE405E)", url: "/resources/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
+      { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
+    ],
+  },
     },
   
     AIML: {
@@ -122,6 +146,32 @@ export const resources = {
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
     },
+
+    python: {
+    notes: [
+      { name: "Python Complete Notes", url: "/resources/python/notes/Python_Complete_Notes.pdf" },
+      { name: "Break & Continue Loops", url: "/resources/python/notes/BREAK CONTINUE LOOP NOTES.pdf" },
+      { name: "Exception Handling", url: "/resources/python/notes/exception handling.pdf" },
+      { name: "For Loop Notes", url: "/resources/python/notes/FOR LOOP NOTES.pdf" },
+      { name: "File Handling", url: "/resources/python/notes/File handling.pdf" },
+      { name: "Functions", url: "/resources/python/notes/Functions.pdf" },
+      { name: "Notes Part 1", url: "/resources/python/notes/notes pt1.pdf" },
+      { name: "Notes Part 2", url: "/resources/python/notes/notes pt2.pdf" },
+      { name: "OOPs Part 2 (IIT Delhi)", url: "/resources/python/notes/oops part 2 python iit delhi.pdf" },
+      { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
+      { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
+    ],
+    pyqs: [],
+    books: [
+      { name: "Intro to ML with Python", url: "/resources/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
+    ],
+    "tutorial sheets": [
+      { name: "Python Exam Questions", url: "/resources/python/tutorial sheets/Python_Exam_Questions.pdf" },
+      { name: "Python Question Bank (BTETPE405E)", url: "/resources/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
+      { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
+    ],
+  },
+
     },
   
     "CSE-AI": {
@@ -165,28 +215,29 @@ export const resources = {
 
   python: {
     notes: [
-      { name: "Python Complete Notes", url: "/resources/CSE-AI/python/notes/Python_Complete_Notes.pdf" },
-      { name: "Break & Continue Loops", url: "/resources/CSE-AI/python/notes/BREAK CONTINUE LOOP NOTES.pdf" },
-      { name: "Exception Handling", url: "/resources/CSE-AI/python/notes/exception handling.pdf" },
-      { name: "For Loop Notes", url: "/resources/CSE-AI/python/notes/FOR LOOP NOTES.pdf" },
-      { name: "File Handling", url: "/resources/CSE-AI/python/notes/File handling.pdf" },
-      { name: "Functions", url: "/resources/CSE-AI/python/notes/Functions.pdf" },
-      { name: "Notes Part 1", url: "/resources/CSE-AI/python/notes/notes pt1.pdf" },
-      { name: "Notes Part 2", url: "/resources/CSE-AI/python/notes/notes pt2.pdf" },
-      { name: "OOPs Part 2 (IIT Delhi)", url: "/resources/CSE-AI/python/notes/oops part 2 python iit delhi.pdf" },
-      { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/CSE-AI/python/notes/oops python iit delhi part 1.pdf" },
-      { name: "PP & DS Unit III", url: "/resources/CSE-AI/python/notes/PP&DS UNIT III.pdf" },
+      { name: "Python Complete Notes", url: "/resources/python/notes/Python_Complete_Notes.pdf" },
+      { name: "Break & Continue Loops", url: "/resources/python/notes/BREAK CONTINUE LOOP NOTES.pdf" },
+      { name: "Exception Handling", url: "/resources/python/notes/exception handling.pdf" },
+      { name: "For Loop Notes", url: "/resources/python/notes/FOR LOOP NOTES.pdf" },
+      { name: "File Handling", url: "/resources/python/notes/File handling.pdf" },
+      { name: "Functions", url: "/resources/python/notes/Functions.pdf" },
+      { name: "Notes Part 1", url: "/resources/python/notes/notes pt1.pdf" },
+      { name: "Notes Part 2", url: "/resources/python/notes/notes pt2.pdf" },
+      { name: "OOPs Part 2 (IIT Delhi)", url: "/resources/python/notes/oops part 2 python iit delhi.pdf" },
+      { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
+      { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
     pyqs: [],
     books: [
-      { name: "Intro to ML with Python", url: "/resources/CSE-AI/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
+      { name: "Intro to ML with Python", url: "/resources/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
     ],
     "tutorial sheets": [
-      { name: "Python Exam Questions", url: "/resources/CSE-AI/python/tutorial sheets/Python_Exam_Questions.pdf" },
-      { name: "Python Question Bank (BTETPE405E)", url: "/resources/CSE-AI/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
-      { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/CSE-AI/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
+      { name: "Python Exam Questions", url: "/resources/python/tutorial sheets/Python_Exam_Questions.pdf" },
+      { name: "Python Question Bank (BTETPE405E)", url: "/resources/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
+      { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
     ],
   },
+  
   bee: {
       books: [
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
