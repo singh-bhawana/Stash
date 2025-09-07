@@ -20,7 +20,7 @@ const Navigation = () => {
     { name: "Branches", path: "/branches" },
     { name: "About Us", path: "/about" },
     { name: "GPA Calculator", path: "/gpa-calculator" },
-    { name: "Student Hub", path: "/student-hub" },
+  
   ];
 
   const isActive = (path) => location.pathname === path;
