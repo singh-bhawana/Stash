@@ -55,7 +55,7 @@ const Navigation = () => {
             className="text-xs font-light text-neutral-500"
             style={{ letterSpacing: "0.02em" }}
           >
-            (IGDTUW version)
+            (IGDTUW EXCLUSIVE)
           </span>
         </Link>
 
