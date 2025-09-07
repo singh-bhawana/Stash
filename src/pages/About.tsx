@@ -1,12 +1,13 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Heart, BookOpen } from "lucide-react";
+import { Users, BookOpen } from "lucide-react"; 
+// Removed Heart import as it's no longer needed for the hero icon
 
 const About = () => {
   const teamMembers = [
-   {
+    {
       name: "Akanksha Pal",
-       role: "CSE'28",
+      role: "CSE'28",
       linkedin: "https://www.linkedin.com/in/akankshapal1268",
       email: "akanksha011btcse24@igdtuw.ac.in",
     },
@@ -44,13 +45,20 @@ const About = () => {
         {/* Hero Section */}
         <div className="text-center fade-in mb-16">
           <div className="flex justify-center mb-6">
-            <div className="w-20 h-20 bg-gradient-to-tr from-indigo-400 to-purple-300 rounded-full flex items-center justify-center shadow-lg">
-              <Heart className="h-10 w-10 text-white" />
-            </div>
+            {/* Removed the gradient circle wrapper */}
+            <img
+              src="/images/stash_logo.png"
+              alt="Stash Logo"
+              className="h-24 w-24 rounded-full object-contain"
+            />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#232947] mb-6">About Us</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#232947] mb-6">
+            About Us
+          </h1>
           <p className="text-xl text-[#445183] max-w-3xl mx-auto leading-relaxed">
-            This portal is created by seniors at IGDTUW to help juniors with PYQs, notes, and books, organized by branch and semester. We believe in the power of shared knowledge and community support.
+            This portal is created by seniors at IGDTUW to help juniors with PYQs,
+            notes, and books, organized by branch and semester. We believe in the
+            power of shared knowledge and community support.
           </p>
         </div>
 
@@ -61,9 +69,12 @@ const About = () => {
               <div className="w-16 h-16 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Community First</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Community First
+              </h3>
               <p className="text-[#d5e0fc]">
-                Built by students, for students. We understand the challenges you face and are here to help.
+                Built by students, for students. We understand the challenges you
+                face and are here to help.
               </p>
             </CardContent>
           </Card>
@@ -73,21 +84,31 @@ const About = () => {
               <div className="w-16 h-16 bg-gradient-to-tr from-indigo-400 to-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Quality Resources</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Quality Resources
+              </h3>
               <p className="text-[#d5e0fc]">
-                Carefully curated and verified academic materials to ensure you get the best study resources.
+                Carefully curated and verified academic materials to ensure you get
+                the best study resources.
               </p>
             </CardContent>
           </Card>
 
           <Card className="shadow-xl text-center bg-gradient-to-br from-[#232947] to-[#4062b5] border-0">
             <CardContent className="p-8">
-              <div className="w-16 h-16 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-white" />
+              <div className="flex items-center justify-center mx-auto mb-4">
+                <img
+                  src="/images/stash_logo.png"
+                  alt="Stash Logo"
+                  className="h-12 w-12 rounded-full object-contain"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Pay It Forward</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Pay It Forward
+              </h3>
               <p className="text-[#d5e0fc]">
-                Just as seniors helped us, we're here to help you succeed in your academic journey.
+                Just as seniors helped us, we're here to help you succeed in your
+                academic journey.
               </p>
             </CardContent>
           </Card>
@@ -96,7 +117,9 @@ const About = () => {
         {/* Team Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#4062b5] mb-4">Meet Our Team</h2>
-          <p className="text-[#445183] text-lg">The passionate seniors who made this portal possible</p>
+          <p className="text-[#445183] text-lg">
+            The passionate seniors who made this portal possible
+          </p>
         </div>
 
         {/* Five team members in single row */}
@@ -141,7 +164,11 @@ const About = () => {
                   </a>
                 </p>
                 <p className="break-all text-[0.95rem]" style={{ color: "#d5e0fc" }}>
-                  <a href={`mailto:${member.email}`} className="underline" style={{ color: "#d5e0fc" }}>
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="underline"
+                    style={{ color: "#d5e0fc" }}
+                  >
                     {member.email}
                   </a>
                 </p>
@@ -156,10 +183,12 @@ const About = () => {
             Want to Contribute?
           </h3>
           <p className="text-lg opacity-90 mb-6">
-            If you have quality study materials, PYQs, or notes that could help other students,
-            we'd love to include them in our portal.
+            If you have quality study materials, PYQs, or notes that could help other
+            students, we'd love to include them in our portal.
           </p>
-          <p className="opacity-75">Contact us through the college portal or reach out to any team member.</p>
+          <p className="opacity-75">
+            Contact us through the college portal or reach out to any team member.
+          </p>
         </div>
       </main>
     </div>
