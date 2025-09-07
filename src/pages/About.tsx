@@ -47,7 +47,7 @@ const About = () => {
           <div className="flex justify-center mb-6">
             {/* Removed the gradient circle wrapper */}
             <img
-              src="/images/stash_logo.png"
+              src="/images/Screenshot_2025-09-07_231956-removebg-preview.png"
               alt="Stash Logo"
               className="h-24 w-24 rounded-full object-contain"
             />

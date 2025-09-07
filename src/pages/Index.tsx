@@ -40,7 +40,7 @@ const Index = () => {
         {/* --- HERO SECTION START --- */}
         <div className="flex flex-col items-center justify-center pt-14 pb-10">
           <img
-            src="/images/stash_logo.png" // Adjust path/filename as needed
+            src="/images/Screenshot_2025-09-07_231956-removebg-preview.png" // Adjust path/filename as needed
             alt="Stash Logo"
             className="w-32 h-32 mb-4"
           />
