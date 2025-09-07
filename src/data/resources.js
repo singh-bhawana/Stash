@@ -5,13 +5,39 @@ export const resources = {
       subjects: {
         semester1: [
           { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
-          { id: "math", name: "Probability & Statistics" },
+          { id: "stats", name: "Probability & Statistics" },
           { id: "signals", name: "Signals & Systems" },
           { id: "ids", name: "Intro to Data Science" },
           { id: "workshop", name: "Electronic Workshop" },
           { id: "communication", name: "Communication Skills" },
         ],
         semester2: [],
+      },
+      stats: {
+        notes: [
+          { name: "Continuos Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
+          { name: "Continuos Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
+          { name: "Correlation and Regression", url: "/resources/stats/notes/Correlation and Regression.pdf" },
+          { name: "Discrete Distributions1", url: "/resources/stats/notes/Discrete Distributions1.pdf" },
+          { name: "Expectation, variance, covariance", url: "/resources/stats/notes/Expectation, variance, covariance.pdf" },
+          { name: "Joint prob dist notes", url: "/resources/stats/notes/joint prob dist notes.pdf" },
+          { name: "MOD-I", url: "/resources/stats/notes/MOD-I.pdf" },
+          { name: "Moments and MGF", url: "/resources/stats/notes/moments and mgf (1).pdf" },
+          { name: "PS notes", url: "/resources/stats/notes/Ps notes.pdf" },
+          { name: "Random variables, pmf, pdf, cdf", url: "/resources/stats/notes/random variables, pmf, pdf, cdf.pdf" },
+        ],
+        pyqs: [],
+        books: [
+          { name: "Fundamental of Mathematical Statistics", url: "/resources/stats/books/FUNDAMENTAL OF MATHEMATICAL STATISTICS-S C GUPTA & V K KAPOOR.pdf" },
+          { name: "Schaum's Outline of Probability and Statistics", url: "/resources/stats/books/Schaums-Outlines-of-Probability-and-Statistics-4th-Edition-pdf-free-download.pdf" },
+        ],
+        "tutorial sheets": [
+          { name: "PS tut 5", url: "/resources/stats/tutorial sheets/PS tut 5.pdf" },
+          { name: "PS Tutorial Sheet-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-1.pdf" },
+          { name: "PS Tutorial Sheet-2", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-2.pdf" },
+          { name: "PS Tutorial Sheet-3", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
+          { name: "PS Tutorial Sheet-4-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
+        ]
       },
 
       communication: {
