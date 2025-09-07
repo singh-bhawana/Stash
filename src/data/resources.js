@@ -45,6 +45,20 @@ export const resources = {
         pyqs: [],
         books: [],
       },
+
+      math: {
+
+    tutorials: [
+      { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
+      { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
+      { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
+      { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
+      { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
+      { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+      { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+      { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
+    ]
+},
     },
   
 
@@ -144,7 +158,20 @@ physics: {
   tutorials: [
     { name: "Unit I - Electromagnetic Theory", url: "/resources/physics/tutorial sheets/Unit I ELECTROMAGNETIC THEORY.pdf" }
   ]
-}
+},
+      math: {
+
+    tutorials: [
+      { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
+      { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
+      { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
+      { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
+      { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
+      { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+      { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+      { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
+    ]
+},
 
     },
   
@@ -161,6 +188,21 @@ physics: {
         ],
         semester2: [],
       },
+
+            math: {
+
+    tutorials: [
+      { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
+      { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
+      { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
+      { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
+      { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
+      { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+      { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+      { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
+    ]
+},
+
       bee: {
       books: [
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
@@ -465,7 +507,7 @@ physics: {
     "ECE-AI": {
       subjects: {
         semester1: [
-          { id: "stats", name: "Probability & Statistics" },
+          { id: "math", name: "Applied Mathematics" },
           { id: "env", name: "Environmental Sciences" },
           { id: "signals", name: "Systems & Signals" },
           { id: "ids", name: "Intro to Data Science" },
@@ -475,7 +517,20 @@ physics: {
         semester2: [],
       },
 
-      
+            math: {
+
+    tutorials: [
+      { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
+      { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
+      { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
+      { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
+      { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
+      { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+      { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+      { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
+    ]
+},
+
       signals: {
       notes: [
         { name: "Unit-2", url: "/resources/signals/notes/ch2_copy.pdf" },
