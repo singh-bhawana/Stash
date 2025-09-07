@@ -53,9 +53,10 @@ const Navigation = () => {
           </span>
           <span
             className="text-xs font-light text-neutral-500"
-            style={{ letterSpacing: "0.02em" }}
-          >
-            (IGDTUW EXCLUSIVE)
+            style={{ letterSpacing: "-0.03em" }}
+      >
+ (IGDTUW EXCLUSIVE)
+       
           </span>
         </Link>
 

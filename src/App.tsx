@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'; // Step 1: Import Analytics
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,8 +9,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ResourceViewer from "./components/ResourceViewer";
 import GpaCalculator from "./pages/GpaCalculator";
-import Navigation from "./components/Navigation"; // Import the Navigation component
-
+import Navigation from "./components/Navigation";
 import SubjectViewer from "./pages/SubjectViewer"; 
 import SubjectSectionViewer from "./pages/SubjectSectionViewer";
 import CSE from "./pages/CSE";
@@ -29,7 +29,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Navigation />
-        <main style={{ paddingTop: '80px' }}> {/* Applying inline style for padding */}
+        <main style={{ paddingTop: '80px' }}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/branches" element={<Index />} />
@@ -48,6 +48,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+        <Analytics />  {/* Step 2: Add Analytics here */}
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
