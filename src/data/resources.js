@@ -114,7 +114,7 @@ export const resources = {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
-      books: [
+                books: [
     { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
     { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
@@ -176,7 +176,7 @@ physics: {
     { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
   ],
 
-  pyqs: [
+pyqs: [
       { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
       { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
       { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
@@ -223,7 +223,7 @@ physics: {
         semester2: [],
       },
 
-    math: {
+  math: {
 
     tutorials: [
       { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
@@ -247,7 +247,7 @@ physics: {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
-      books: [
+                books: [
     { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
     { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
@@ -312,7 +312,7 @@ physics: {
     { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
   ],
 
-  pyqs: [
+pyqs: [
       { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
       { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
       { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
