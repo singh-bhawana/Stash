@@ -15,8 +15,8 @@ export const resources = {
       },
       stats: {
         notes: [
-          { name: "Continuos Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
-          { name: "Continuos Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
+          { name: "Continous Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
+          { name: "Continous Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
           { name: "Correlation and Regression", url: "/resources/stats/notes/Correlation and Regression.pdf" },
           { name: "Discrete Distributions1", url: "/resources/stats/notes/Discrete Distributions1.pdf" },
           { name: "Expectation, variance, covariance", url: "/resources/stats/notes/Expectation, variance, covariance.pdf" },
@@ -122,7 +122,11 @@ export const resources = {
           { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
           { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
           { name: "XML", url: "/resources/web/notes/XML.pdf" }
-        ]
+        ],
+        tutorials: [
+    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+  ]
       },
       programming: {
         books: [
@@ -322,7 +326,11 @@ physics: {
       { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
       { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
       { name: "XML", url: "/resources/web/notes/XML.pdf" }
-    ]
+    ],
+    tutorials: [
+    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+  ]
   }
     },
   
@@ -405,7 +413,11 @@ physics: {
       { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
       { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
       { name: "XML", url: "/resources/web/notes/XML.pdf" }
-    ]
+    ],
+    tutorials: [
+    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+  ]
   },
 
     python: {
