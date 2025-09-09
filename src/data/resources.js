@@ -1,6 +1,183 @@
 // src/data/resources.js
 
 export const resources = {
+  MAC: {
+    subjects: {
+      semester1: [
+        { id: "calc1", name: "Calculus-1" },
+        { id: "env", name: "Environmental Sciences" },
+        { id: "programming", name: "Programming with C" },
+        { id: "bee", name: "Basics of Electrical Engineering" },
+        { id: "web", name: "Web Application Development" },
+        { id: "communication", name: "Communication Skills" },
+      ],
+      semester2: [],
+    },
+    programming:{
+      books: [
+        { name: "Let Us C - Yashwant Kanetkar", url: "/resources/programming/books/Let us c - yashwantkanetkar.pdf" }
+      ],
+      notes: [
+        { name: "All Units - Additional Info", url: "/resources/programming/notes/All Units-Additonal-Info-_C_programming.pdf" },
+        { name: "Unit I - Operators and Expressions", url: "/resources/programming/notes/Unit 1 - Operators and Expressions.pdf" },
+        { name: "Unit 1 - Programming Fundamentals Part A", url: "/resources/programming/notes/Unit 1 - Programming Fundamentals-Part a (1).pdf" },
+        { name: "Unit II - Arrays", url: "/resources/programming/notes/Unit II - Arrays.pdf" },
+        { name: "Unit II - Strings", url: "/resources/programming/notes/Unit II - Strings.pdf" },
+        { name: "Unit I - Constants, Variables, Data Types", url: "/resources/programming/notes/Unit1-Constants-Variables-DataTypes.pdf" },
+        { name: "Unit I - Programming Fundamentals Data Types Part B", url: "/resources/programming/notes/Unit1-Programming Fundamental-DataTypes-part b.pdf" },
+        { name: "Unit II - Control Structures", url: "/resources/programming/notes/Unit-II-Control-Structures.pdf" },
+        { name: "Unit III - Functions Complete", url: "/resources/programming/notes/Unit - III - Functions Complete.pdf" }
+      ]
+    },
+    bee: {
+      books: [
+        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+      ],
+    },
+    web:{
+      notes: [
+      { name: "Unit 1 (1)", url: "/resources/web/notes/Unit-1(1).pdf" },
+      { name: "Unit 1 (2)", url: "/resources/web/notes/Unit-1(2).pdf" },
+      { name: "Unit 2 (1)", url: "/resources/web/notes/Unit 2 (1).pdf" },
+      { name: "Unit 2 (2)", url: "/resources/web/notes/Unit 2 (2).pdf" },
+      { name: "Unit 3 (1)", url: "/resources/web/notes/Unit-3(1).pdf" },
+      { name: "Unit 3 (2)", url: "/resources/web/notes/Unit-3(2).pdf" },
+      { name: "Unit 4 (1)", url: "/resources/web/notes/Unit-4(1).pdf" },
+      { name: "Unit 4 (2)", url: "/resources/web/notes/Unit-4(2).pdf" },
+      { name: "XML", url: "/resources/web/notes/XML.pdf" }
+    ],
+    tutorials: [
+    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+  ]
+    },
+    communication:{
+      notes: [
+      { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+    ],
+      books: [
+  { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+  { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+],
+
+    },
+    env:{
+      books: [
+        { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
+      ],
+  
+      notes: [
+        { name: "E-WASTE", url: "/resources/env/notes/E WASTE.pdf" },
+        { name: "Eco-friendly Polymers 2024-2025", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+        { name: "Energy Resources 2024-25 Complete", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+        { name: "Green Tech and Green Chemistry 2023-2024", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+        { name: "Hazardous Waste 2024-2025", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+        { name: "Solid Waste Pollution 2024-2025", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+        { name: "Water Pollution 2024-25 Final", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" }
+      ]
+    },
+    calc1:{
+
+    },
+  },
+  MAE:{
+    subjects: {
+      semester1: [
+        { id: "math", name: "Applied Mathematics" },
+        { id: "physics", name: "Applied Physics" },
+        { id: "bee", name: "Baiscs of Electrical Engineering " },
+        { id: "ids", name: "Intro to Data Science" },
+        { id: "workshop", name: "Workshop Practice" },
+        { id: "communication", name: "Communication Skills" },
+      ],
+      semester2: [],
+    },
+    math:{
+      tutorials: [
+        { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
+        { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
+        { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
+        { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
+        { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
+        { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+        { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+        { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
+      ]
+    },
+    physics:{
+      books: [
+        { name: "HK Malik", url: "/resources/physics/books/HK MALIK.pdf" },
+        { name: "PHYS (A.K. Jha Vol1)", url: "/resources/physics/books/PHYS (A.K. JHA VOL1).pdf" }
+      ],
+    
+      notes: [
+        { name: "Lecture 01 - Optics Interference", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_01_OpticsInterference.pdf" },
+        { name: "Lecture 02 - Optics Interference Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_02_OpticsInterferenceCont.pdf" },
+        { name: "Lecture 03 - Diffraction", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_03_Diffraction.pdf" },
+        { name: "Lecture 04 - Polarization", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_04_Polarization.pdf" },
+        { name: "Lecture 05 - Gradient, Divergence, Curl", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_05_GradientDivergenceCurl.pdf" },
+        { name: "Lecture 06 - Maxwell Equations", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_06_MaxwellEqns.pdf" },
+        { name: "Lecture 07 - Wave Equation", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_07_WaveEquation.pdf" },
+        { name: "Lecture 08 - Continuity Equation", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_08_ContinuityEquation.pdf" },
+        { name: "Lecture 09 - Skin Depth", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_09_SkinDepth.pdf" },
+        { name: "Lecture 10 - Lasers", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_10_Lasers.pdf" },
+        { name: "Lecture 12 - Quantum Mechanics Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_12_QuantumMechanicsCont.pdf" },
+        { name: "Lecture 13 - Group and Phase Velocities", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_13_GroupAndPhaseVelocities.pdf" },
+        { name: "Lecture 14 - Lasers", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_14_Lasers.pdf" },
+        { name: "Lecture 15 - Lasers Continued", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_15LasersCont.pdf" },
+        { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
+      ],
+    
+      pyqs: [
+          { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
+          { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
+          { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
+          { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" },
+          { name: "MidSem Apr 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Apr2016_AP.pdf" },
+          { name: "MidSem Jan 2023 Part 1", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_1.pdf" },
+          { name: "MidSem Jan 2023 Part 2", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_2.pdf" },
+          { name: "MidSem Nov 2014", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov_2014_AP.pdf" },
+          { name: "MidSem Nov 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov2016_AP.pdf" },
+          { name: "MidSem Oct 2023", url: "/resources/physics/pyqs/MIDSEM/MidSem_Oct2023_AP.pdf" }
+      ],
+    
+      tutorials: [
+        { name: "Unit I - Electromagnetic Theory", url: "/resources/physics/tutorial sheets/Unit I ELECTROMAGNETIC THEORY.pdf" }
+      ]
+    },
+    ids:{
+      notes: [
+        { name: "Common NumPy Array Functions", url: "/resources/ids/notes/Common NumPy Array Functions.pdf" },
+        { name: "Data Manipulation with Pandas", url: "/resources/ids/notes/Data Manipulation in Python using Pandas.pdf" },
+        { name: "Data Science Unit 1", url: "/resources/ids/notes/data science UNIT 1.docx" },
+        { name: "Data Wrangling", url: "/resources/ids/notes/Data Wrangling.pdf" },
+        { name: "NumPy Arithmetic Operations", url: "/resources/ids/notes/NumPy Arithmetic Array Operations.pdf" },
+        { name: "NumPy Array Indexing", url: "/resources/ids/notes/Numpy Array Indexing.pdf" },
+        { name: "NumPy Array Slicing", url: "/resources/ids/notes/NumPy Array Slicing Notes.pdf" },
+        { name: "Pandas Notes", url: "/resources/ids/notes/pandas.docx" },
+        { name: "Tableau Unit 4", url: "/resources/ids/notes/TABLEAU UNIT 4.docx" },
+        { name: "Unit 2-1", url: "/resources/ids/notes/UNIT 2-1.docx" },
+      ],
+      pyqs: [],
+      books: [],
+    },
+    workshop:{},
+    communication:{
+      notes: [
+        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+      ],
+        books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
+    },
+    bee:{
+      books: [
+        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+      ],
+    },
+
+  },
     ECE: {
       subjects: {
         semester1: [
