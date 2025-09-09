@@ -65,27 +65,42 @@ export const resources = {
       books: [
         { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
       ],
-  
-      notes: [
-        { name: "E-WASTE", url: "/resources/env/notes/E WASTE.pdf" },
-        { name: "Eco-friendly Polymers 2024-2025", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
-        { name: "Energy Resources 2024-25 Complete", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
-        { name: "Green Tech and Green Chemistry 2023-2024", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
-        { name: "Hazardous Waste 2024-2025", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
-        { name: "Solid Waste Pollution 2024-2025", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
-        { name: "Water Pollution 2024-25 Final", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" }
-      ]
+  notes: [
+    { "name": "Air Pollution (Unit 2)", "url": "public/resources/env/notes/Air Pollution Unit 2.pdf" },
+    { "name": "Carbon Credits (Book)", "url": "public/resources/env/notes/Carbon credits_ book.pdf" },
+    { "name": "Chemical Toxicology (Unit 4)", "url": "public/resources/env/notes/Chemical Toxicology unit 4.pdf" },
+    { "name": "Classification of Water Pollutants (Unit 2)", "url": "public/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
+    { "name": "DOC-20230512-WA0015", "url": "public/resources/env/notes/DOC-20230512-WA0015..pdf" },
+    { "name": "E-Waste", "url": "public/resources/env/notes/E WASTE.pdf" },
+    { "name": "Eco-friendly Polymers (PPT)", "url": "public/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
+    { "name": "Eco-friendly Polymers (2024-2025)", "url": "public/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+    { "name": "Energy Resources (2024-25, Complete PPT)", "url": "public/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+    { "name": "Environmental Management System (Final)", "url": "public/resources/env/notes/Env Management Sysem-final.pdf" },
+    { "name": "Environmental Laws (1)", "url": "public/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
+    { "name": "Green Tech & Green Chemistry (2023-2024)", "url": "public/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+    { "name": "Hazardous Waste (2024-2025)", "url": "public/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+    { "name": "Hydrogen Energy", "url": "public/resources/env/notes/HYDROGEN ENERGY.pdf" },
+    { "name": "Solid Waste Pollution (2024-2025)", "url": "public/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+    { "name": "Water Chemistry (Solved & Unsolved Numericals)", "url": "public/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
+    { "name": "Water Conservation & Rain Water Harvesting", "url": "public/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
+    { "name": "Water Pollution (2024-25, Final)", "url": "public/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
+    { "name": "Water Treatment Numericals (Unit 1)", "url": "public/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
+  ],
     },
+
     calc1:{
 
     },
   },
+
+
+
   MAE:{
     subjects: {
       semester1: [
         { id: "math", name: "Applied Mathematics" },
         { id: "physics", name: "Applied Physics" },
-        { id: "bee", name: "Baiscs of Electrical Engineering " },
+        { id: "bee", name: "Basics of Electrical Engineering " },
         { id: "ids", name: "Intro to Data Science" },
         { id: "workshop", name: "Workshop Practice" },
         { id: "communication", name: "Communication Skills" },
@@ -178,95 +193,7 @@ export const resources = {
     },
 
   },
-    ECE: {
-      subjects: {
-        semester1: [
-          { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
-          { id: "stats", name: "Probability & Statistics" },
-          { id: "signals", name: "Signals & Systems" },
-          { id: "ids", name: "Intro to Data Science" },
-          { id: "workshop", name: "Electronic Workshop" },
-          { id: "communication", name: "Communication Skills" },
-        ],
-        semester2: [],
-      },
-      stats: {
-        notes: [
-          { name: "Continous Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
-          { name: "Continous Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
-          { name: "Correlation and Regression", url: "/resources/stats/notes/Correlation and Regression.pdf" },
-          { name: "Discrete Distributions1", url: "/resources/stats/notes/Discrete Distributions1.pdf" },
-          { name: "Expectation, variance, covariance", url: "/resources/stats/notes/Expectation, variance, covariance.pdf" },
-          { name: "Joint prob dist notes", url: "/resources/stats/notes/joint prob dist notes.pdf" },
-          { name: "MOD-I", url: "/resources/stats/notes/MOD-I.pdf" },
-          { name: "Moments and MGF", url: "/resources/stats/notes/moments and mgf (1).pdf" },
-          { name: "PS notes", url: "/resources/stats/notes/Ps notes.pdf" },
-          { name: "Random variables, pmf, pdf, cdf", url: "/resources/stats/notes/random variables, pmf, pdf, cdf.pdf" },
-        ],
-        pyqs: [],
-        books: [
-          { name: "Fundamental of Mathematical Statistics", url: "/resources/stats/books/FUNDAMENTAL OF MATHEMATICAL STATISTICS-S C GUPTA & V K KAPOOR.pdf" },
-          { name: "Schaum's Outline of Probability and Statistics", url: "/resources/stats/books/Schaums-Outlines-of-Probability-and-Statistics-4th-Edition-pdf-free-download.pdf" },
-        ],
-        "tutorial sheets": [
-          { name: "PS tut 5", url: "/resources/stats/tutorial sheets/PS tut 5.pdf" },
-          { name: "PS Tutorial Sheet-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-1.pdf" },
-          { name: "PS Tutorial Sheet-2", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-2.pdf" },
-          { name: "PS Tutorial Sheet-3", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
-          { name: "PS Tutorial Sheet-4-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
-        ]
-      },
 
-      communication: {
-      notes: [
-        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-      ],
-        books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
-  ],
-    },
-
-      signals: {
-      notes: [
-        { name: "Unit-2", url: "/resources/signals/notes/ch2_copy.pdf" },
-        { name: "Unit-1", url: "/resources/signals/notes/https.pdf" },
-        { name: "Signals and Systems (Slideshare PPT)", url: "/resources/signals/notes/slideshare_net_slideshow_signals_systems_ppt_75004666.pdf" },
-        { name: "Signals and Systems Lecture ", url: "/resources/signals/notes/sysytem and signals lecture 1.pdf" }
-      ],
-    },
-
-      ids: {
-        notes: [
-          { name: "Common NumPy Array Functions", url: "/resources/ids/notes/Common NumPy Array Functions.pdf" },
-          { name: "Data Manipulation with Pandas", url: "/resources/ids/notes/Data Manipulation in Python using Pandas.pdf" },
-          { name: "Data Science Unit 1", url: "/resources/ids/notes/data science UNIT 1.docx" },
-          { name: "Data Wrangling", url: "/resources/ids/notes/Data Wrangling.pdf" },
-          { name: "NumPy Arithmetic Operations", url: "/resources/ids/notes/NumPy Arithmetic Array Operations.pdf" },
-          { name: "NumPy Array Indexing", url: "/resources/ids/notes/Numpy Array Indexing.pdf" },
-          { name: "NumPy Array Slicing", url: "/resources/ids/notes/NumPy Array Slicing Notes.pdf" },
-          { name: "Pandas Notes", url: "/resources/ids/notes/pandas.docx" },
-          { name: "Tableau Unit 4", url: "/resources/ids/notes/TABLEAU UNIT 4.docx" },
-          { name: "Unit 2-1", url: "/resources/ids/notes/UNIT 2-1.docx" },
-        ],
-        pyqs: [],
-        books: [],
-      },
-
-      math: {
-
-    tutorials: [
-      { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
-      { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
-      { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
-      { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
-      { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
-      { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
-      { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
-      { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
-    ]
-},
-    },
   
 
     CSE: {
@@ -291,7 +218,7 @@ export const resources = {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
-                books: [
+          books: [
     { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
     { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
@@ -587,15 +514,27 @@ pyqs: [
       { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
     ],
 
-    notes: [
-      { name: "E-WASTE", url: "/resources/env/notes/E WASTE.pdf" },
-      { name: "Eco-friendly Polymers 2024-2025", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
-      { name: "Energy Resources 2024-25 Complete", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
-      { name: "Green Tech and Green Chemistry 2023-2024", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
-      { name: "Hazardous Waste 2024-2025", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
-      { name: "Solid Waste Pollution 2024-2025", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
-      { name: "Water Pollution 2024-25 Final", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" }
-    ]
+  notes: [
+    { "name": "Air Pollution (Unit 2)", "url": "public/resources/env/notes/Air Pollution Unit 2.pdf" },
+    { "name": "Carbon Credits (Book)", "url": "public/resources/env/notes/Carbon credits_ book.pdf" },
+    { "name": "Chemical Toxicology (Unit 4)", "url": "public/resources/env/notes/Chemical Toxicology unit 4.pdf" },
+    { "name": "Classification of Water Pollutants (Unit 2)", "url": "public/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
+    { "name": "DOC-20230512-WA0015", "url": "public/resources/env/notes/DOC-20230512-WA0015..pdf" },
+    { "name": "E-Waste", "url": "public/resources/env/notes/E WASTE.pdf" },
+    { "name": "Eco-friendly Polymers (PPT)", "url": "public/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
+    { "name": "Eco-friendly Polymers (2024-2025)", "url": "public/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+    { "name": "Energy Resources (2024-25, Complete PPT)", "url": "public/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+    { "name": "Environmental Management System (Final)", "url": "public/resources/env/notes/Env Management Sysem-final.pdf" },
+    { "name": "Environmental Laws (1)", "url": "public/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
+    { "name": "Green Tech & Green Chemistry (2023-2024)", "url": "public/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+    { "name": "Hazardous Waste (2024-2025)", "url": "public/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+    { "name": "Hydrogen Energy", "url": "public/resources/env/notes/HYDROGEN ENERGY.pdf" },
+    { "name": "Solid Waste Pollution (2024-2025)", "url": "public/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+    { "name": "Water Chemistry (Solved & Unsolved Numericals)", "url": "public/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
+    { "name": "Water Conservation & Rain Water Harvesting", "url": "public/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
+    { "name": "Water Pollution (2024-25, Final)", "url": "public/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
+    { "name": "Water Treatment Numericals (Unit 1)", "url": "public/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
+  ],
   },
 
     web: {
@@ -697,15 +636,27 @@ pyqs: [
       { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
     ],
 
-    notes: [
-      { name: "E-WASTE", url: "/resources/env/notes/E WASTE.pdf" },
-      { name: "Eco-friendly Polymers 2024-2025", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
-      { name: "Energy Resources 2024-25 Complete", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
-      { name: "Green Tech and Green Chemistry 2023-2024", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
-      { name: "Hazardous Waste 2024-2025", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
-      { name: "Solid Waste Pollution 2024-2025", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
-      { name: "Water Pollution 2024-25 Final", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" }
-    ]
+  notes: [
+    { "name": "Air Pollution (Unit 2)", "url": "public/resources/env/notes/Air Pollution Unit 2.pdf" },
+    { "name": "Carbon Credits (Book)", "url": "public/resources/env/notes/Carbon credits_ book.pdf" },
+    { "name": "Chemical Toxicology (Unit 4)", "url": "public/resources/env/notes/Chemical Toxicology unit 4.pdf" },
+    { "name": "Classification of Water Pollutants (Unit 2)", "url": "public/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
+    { "name": "DOC-20230512-WA0015", "url": "public/resources/env/notes/DOC-20230512-WA0015..pdf" },
+    { "name": "E-Waste", "url": "public/resources/env/notes/E WASTE.pdf" },
+    { "name": "Eco-friendly Polymers (PPT)", "url": "public/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
+    { "name": "Eco-friendly Polymers (2024-2025)", "url": "public/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+    { "name": "Energy Resources (2024-25, Complete PPT)", "url": "public/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+    { "name": "Environmental Management System (Final)", "url": "public/resources/env/notes/Env Management Sysem-final.pdf" },
+    { "name": "Environmental Laws (1)", "url": "public/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
+    { "name": "Green Tech & Green Chemistry (2023-2024)", "url": "public/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+    { "name": "Hazardous Waste (2024-2025)", "url": "public/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+    { "name": "Hydrogen Energy", "url": "public/resources/env/notes/HYDROGEN ENERGY.pdf" },
+    { "name": "Solid Waste Pollution (2024-2025)", "url": "public/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+    { "name": "Water Chemistry (Solved & Unsolved Numericals)", "url": "public/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
+    { "name": "Water Conservation & Rain Water Harvesting", "url": "public/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
+    { "name": "Water Pollution (2024-25, Final)", "url": "public/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
+    { "name": "Water Treatment Numericals (Unit 1)", "url": "public/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
+  ],
   },
 
   python: {
@@ -761,12 +712,105 @@ pyqs: [
   
 },
 
+
+
+ ECE: {
+      subjects: {
+        semester1: [
+          { id: "math", name: "Applied Mathematics" },
+          { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
+          { id: "signals", name: "Signals & Systems" },
+          { id: "ids", name: "Intro to Data Science" },
+          { id: "workshop", name: "Electronic Workshop" },
+          { id: "communication", name: "Communication Skills" },
+        ],
+        semester2: [],
+      },
+      stats: {
+        notes: [
+          { name: "Continous Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
+          { name: "Continous Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
+          { name: "Correlation and Regression", url: "/resources/stats/notes/Correlation and Regression.pdf" },
+          { name: "Discrete Distributions1", url: "/resources/stats/notes/Discrete Distributions1.pdf" },
+          { name: "Expectation, variance, covariance", url: "/resources/stats/notes/Expectation, variance, covariance.pdf" },
+          { name: "Joint prob dist notes", url: "/resources/stats/notes/joint prob dist notes.pdf" },
+          { name: "MOD-I", url: "/resources/stats/notes/MOD-I.pdf" },
+          { name: "Moments and MGF", url: "/resources/stats/notes/moments and mgf (1).pdf" },
+          { name: "PS notes", url: "/resources/stats/notes/Ps notes.pdf" },
+          { name: "Random variables, pmf, pdf, cdf", url: "/resources/stats/notes/random variables, pmf, pdf, cdf.pdf" },
+        ],
+        pyqs: [],
+        books: [
+          { name: "Fundamental of Mathematical Statistics", url: "/resources/stats/books/FUNDAMENTAL OF MATHEMATICAL STATISTICS-S C GUPTA & V K KAPOOR.pdf" },
+          { name: "Schaum's Outline of Probability and Statistics", url: "/resources/stats/books/Schaums-Outlines-of-Probability-and-Statistics-4th-Edition-pdf-free-download.pdf" },
+        ],
+        "tutorial sheets": [
+          { name: "PS tut 5", url: "/resources/stats/tutorial sheets/PS tut 5.pdf" },
+          { name: "PS Tutorial Sheet-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-1.pdf" },
+          { name: "PS Tutorial Sheet-2", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-2.pdf" },
+          { name: "PS Tutorial Sheet-3", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
+          { name: "PS Tutorial Sheet-4-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
+        ]
+      },
+
+      communication: {
+      notes: [
+        { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
+      ],
+        books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
+    },
+
+      signals: {
+      notes: [
+        { name: "Unit-2", url: "/resources/signals/notes/ch2_copy.pdf" },
+        { name: "Unit-1", url: "/resources/signals/notes/https.pdf" },
+        { name: "Signals and Systems (Slideshare PPT)", url: "/resources/signals/notes/slideshare_net_slideshow_signals_systems_ppt_75004666.pdf" },
+        { name: "Signals and Systems Lecture ", url: "/resources/signals/notes/sysytem and signals lecture 1.pdf" }
+      ],
+    },
+
+      ids: {
+        notes: [
+          { name: "Common NumPy Array Functions", url: "/resources/ids/notes/Common NumPy Array Functions.pdf" },
+          { name: "Data Manipulation with Pandas", url: "/resources/ids/notes/Data Manipulation in Python using Pandas.pdf" },
+          { name: "Data Science Unit 1", url: "/resources/ids/notes/data science UNIT 1.docx" },
+          { name: "Data Wrangling", url: "/resources/ids/notes/Data Wrangling.pdf" },
+          { name: "NumPy Arithmetic Operations", url: "/resources/ids/notes/NumPy Arithmetic Array Operations.pdf" },
+          { name: "NumPy Array Indexing", url: "/resources/ids/notes/Numpy Array Indexing.pdf" },
+          { name: "NumPy Array Slicing", url: "/resources/ids/notes/NumPy Array Slicing Notes.pdf" },
+          { name: "Pandas Notes", url: "/resources/ids/notes/pandas.docx" },
+          { name: "Tableau Unit 4", url: "/resources/ids/notes/TABLEAU UNIT 4.docx" },
+          { name: "Unit 2-1", url: "/resources/ids/notes/UNIT 2-1.docx" },
+        ],
+        pyqs: [],
+        books: [],
+      },
+
+      math: {
+
+    tutorials: [
+      { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
+      { name: "Matrices Tutorial 2", url: "/resources/math/tutorial sheets/matrices tut-2.pdf" },
+      { name: "Matrices Tutorial 3", url: "/resources/math/tutorial sheets/matrices tut-3.pdf" },
+      { name: "Tutorial 7 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-7(differential calculas).pdf" },
+      { name: "Tutorial 8 - Differential Calculus", url: "/resources/math/tutorial sheets/tut-8(differential calculas).pdf" },
+      { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
+      { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
+      { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
+    ]
+},
+    },
+
+
   
     "ECE-AI": {
       subjects: {
         semester1: [
           { id: "math", name: "Applied Mathematics" },
-          { id: "env", name: "Environmental Sciences" },
+          { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
           { id: "signals", name: "Systems & Signals" },
           { id: "ids", name: "Intro to Data Science" },
           { id: "workshop", name: "Electronic Workshop" },
