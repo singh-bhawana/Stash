@@ -43,7 +43,11 @@ export const resources = {
       communication: {
       notes: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-      ]
+      ],
+        books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
     },
 
       signals: {
@@ -109,7 +113,11 @@ export const resources = {
       communication: {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-        ]
+        ],
+                books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
       },
       web: {
         notes: [
@@ -242,7 +250,11 @@ physics: {
       communication: {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-        ]
+        ],
+                books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
     },
       python: {
     notes: [
@@ -377,7 +389,11 @@ physics: {
       communication: {
       notes: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-      ]
+      ],
+      books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
     },
 
       bee: {
@@ -536,7 +552,11 @@ physics: {
     communication: {
       notes: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-      ]
+      ],
+      books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
     },
   
 },
@@ -555,7 +575,7 @@ physics: {
         semester2: [],
       },
 
-            math: {
+      math: {
 
     tutorials: [
       { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
@@ -581,7 +601,11 @@ physics: {
       communication: {
       notes: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
-      ]
+      ],
+      books: [
+    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  ],
     },
 
     ids: {
