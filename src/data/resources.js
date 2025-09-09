@@ -114,7 +114,7 @@ export const resources = {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
-                books: [
+      books: [
     { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
     { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
@@ -176,22 +176,18 @@ physics: {
     { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
   ],
 
-  pyqs: {
-    endsem: [
+  pyqs: [
       { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
       { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
       { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
-      { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" }
-    ],
-    midsem: [
+      { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" },
       { name: "MidSem Apr 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Apr2016_AP.pdf" },
       { name: "MidSem Jan 2023 Part 1", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_1.pdf" },
       { name: "MidSem Jan 2023 Part 2", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_2.pdf" },
       { name: "MidSem Nov 2014", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov_2014_AP.pdf" },
       { name: "MidSem Nov 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov2016_AP.pdf" },
       { name: "MidSem Oct 2023", url: "/resources/physics/pyqs/MIDSEM/MidSem_Oct2023_AP.pdf" }
-    ]
-  },
+  ],
 
   tutorials: [
     { name: "Unit I - Electromagnetic Theory", url: "/resources/physics/tutorial sheets/Unit I ELECTROMAGNETIC THEORY.pdf" }
@@ -227,7 +223,7 @@ physics: {
         semester2: [],
       },
 
-            math: {
+    math: {
 
     tutorials: [
       { name: "Matrices Tutorial 1", url: "/resources/math/tutorial sheets/matrices tut-1.pdf" },
@@ -251,7 +247,7 @@ physics: {
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
-                books: [
+      books: [
     { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
     { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
@@ -270,7 +266,18 @@ physics: {
       { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
       { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
-    pyqs: [],
+
+  pyqs: [
+    { "name": "2021 Batch", "url": "public/resources/python/pyqs/2021 batch.pdf" },
+    { "name": "2022 Batch", "url": "public/resources/python/pyqs/2022 batch.pdf" },
+    { "name": "2023", "url": "public/resources/python/pyqs/2023.pdf" },
+    { "name": "End Sem 2022", "url": "public/resources/python/pyqs/endsem_22.pdf" },
+    { "name": "End Sem 2023", "url": "public/resources/python/pyqs/endsem_23.pdf" },
+    { "name": "Mid Sem (1)", "url": "public/resources/python/pyqs/MIDSEM(1).pdf" },
+    { "name": "Mid Sem", "url": "public/resources/python/pyqs/midsem.pdf" },
+    { "name": "Mid Sem 2023", "url": "public/resources/python/pyqs/midsem_23.pdf" }
+  ],
+
     books: [
       { name: "Intro to ML with Python", url: "/resources/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
     ],
@@ -305,22 +312,18 @@ physics: {
     { name: "Lecture 16 - Optical Fibre", url: "/resources/physics/notes/dinesh sir_s/BAS107Lecture_16OpticalFibre.pdf" }
   ],
 
-  pyqs: {
-    endsem: [
+  pyqs: [
       { name: "EndSem Apr 2022", url: "/resources/physics/pyqs/ENDSEM/EndSem_Apr2022_AP.pdf" },
       { name: "EndSem Dec 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2023_AP.pdf" },
       { name: "EndSem Dec 2024", url: "/resources/physics/pyqs/ENDSEM/EndSem_Dec2024_AP.pdf" },
-      { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" }
-    ],
-    midsem: [
+      { name: "EndSem Mar 2023", url: "/resources/physics/pyqs/ENDSEM/EndSem_Mar2023_AP.pdf" },
       { name: "MidSem Apr 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Apr2016_AP.pdf" },
       { name: "MidSem Jan 2023 Part 1", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_1.pdf" },
       { name: "MidSem Jan 2023 Part 2", url: "/resources/physics/pyqs/MIDSEM/MidSem_Jan2023_AP_2.pdf" },
       { name: "MidSem Nov 2014", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov_2014_AP.pdf" },
       { name: "MidSem Nov 2016", url: "/resources/physics/pyqs/MIDSEM/MidSem_Nov2016_AP.pdf" },
       { name: "MidSem Oct 2023", url: "/resources/physics/pyqs/MIDSEM/MidSem_Oct2023_AP.pdf" }
-    ]
-  },
+  ],
 
   tutorials: [
     { name: "Unit I - Electromagnetic Theory", url: "/resources/physics/tutorial sheets/Unit I ELECTROMAGNETIC THEORY.pdf" }
@@ -450,7 +453,17 @@ physics: {
       { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
       { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
-    pyqs: [],
+  pyqs: [
+    { "name": "2021 Batch", "url": "public/resources/python/pyqs/2021 batch.pdf" },
+    { "name": "2022 Batch", "url": "public/resources/python/pyqs/2022 batch.pdf" },
+    { "name": "2023", "url": "public/resources/python/pyqs/2023.pdf" },
+    { "name": "End Sem 2022", "url": "public/resources/python/pyqs/endsem_22.pdf" },
+    { "name": "End Sem 2023", "url": "public/resources/python/pyqs/endsem_23.pdf" },
+    { "name": "Mid Sem (1)", "url": "public/resources/python/pyqs/MIDSEM(1).pdf" },
+    { "name": "Mid Sem", "url": "public/resources/python/pyqs/midsem.pdf" },
+    { "name": "Mid Sem 2023", "url": "public/resources/python/pyqs/midsem_23.pdf" }
+  ],
+
     books: [
       { name: "Intro to ML with Python", url: "/resources/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
     ],
@@ -477,8 +490,8 @@ physics: {
       },
   stats: {
     notes: [
-      { name: "Continuos Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
-      { name: "Continuos Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
+      { name: "Continous Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
+      { name: "Continous Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
       { name: "Correlation and Regression", url: "/resources/stats/notes/Correlation and Regression.pdf" },
       { name: "Discrete Distributions1", url: "/resources/stats/notes/Discrete Distributions1.pdf" },
       { name: "Expectation, variance, covariance", url: "/resources/stats/notes/Expectation, variance, covariance.pdf" },
@@ -532,7 +545,17 @@ physics: {
       { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
       { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
-    pyqs: [],
+  pyqs: [
+    { "name": "2021 Batch", "url": "public/resources/python/pyqs/2021 batch.pdf" },
+    { "name": "2022 Batch", "url": "public/resources/python/pyqs/2022 batch.pdf" },
+    { "name": "2023", "url": "public/resources/python/pyqs/2023.pdf" },
+    { "name": "End Sem 2022", "url": "public/resources/python/pyqs/endsem_22.pdf" },
+    { "name": "End Sem 2023", "url": "public/resources/python/pyqs/endsem_23.pdf" },
+    { "name": "Mid Sem (1)", "url": "public/resources/python/pyqs/MIDSEM(1).pdf" },
+    { "name": "Mid Sem", "url": "public/resources/python/pyqs/midsem.pdf" },
+    { "name": "Mid Sem 2023", "url": "public/resources/python/pyqs/midsem_23.pdf" }
+  ],
+
     books: [
       { name: "Intro to ML with Python", url: "/resources/python/books/Introduction to Machine Learning with Python ( PDFDrive.com )-min.pdf" },
     ],
