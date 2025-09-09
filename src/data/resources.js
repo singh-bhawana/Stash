@@ -47,8 +47,8 @@ export const resources = {
       { name: "XML", url: "/resources/web/notes/XML.pdf" }
     ],
     tutorials: [
-    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
-    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+    { "name": "Question Bank", url: "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", url: "/resources/web/tutorial sheets/wad qb.pdf" }
   ]
     },
     communication:{
@@ -56,8 +56,8 @@ export const resources = {
       { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
     ],
       books: [
-  { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-  { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+  { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+  { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
 ],
 
     },
@@ -66,25 +66,25 @@ export const resources = {
         { name: "Ranu Gadi - EVS", url: "/resources/env/books/Ranu_Gadi_EVS.pdf" }
       ],
   notes: [
-    { "name": "Air Pollution (Unit 2)", "url": "/resources/env/notes/Air Pollution Unit 2.pdf" },
-    { "name": "Carbon Credits (Book)", "url": "/resources/env/notes/Carbon credits_ book.pdf" },
-    { "name": "Chemical Toxicology (Unit 4)", "url": "/resources/env/notes/Chemical Toxicology unit 4.pdf" },
-    { "name": "Classification of Water Pollutants (Unit 2)", "url": "/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
-    { "name": "DOC-20230512-WA0015", "url": "/resources/env/notes/DOC-20230512-WA0015..pdf" },
-    { "name": "E-Waste", "url": "/resources/env/notes/E WASTE.pdf" },
-    { "name": "Eco-friendly Polymers (PPT)", "url": "/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
-    { "name": "Eco-friendly Polymers (2024-2025)", "url": "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
-    { "name": "Energy Resources (2024-25, Complete PPT)", "url": "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
-    { "name": "Environmental Management System (Final)", "url": "/resources/env/notes/Env Management Sysem-final.pdf" },
-    { "name": "Environmental Laws (1)", "url": "/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
-    { "name": "Green Tech & Green Chemistry (2023-2024)", "url": "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
-    { "name": "Hazardous Waste (2024-2025)", "url": "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
-    { "name": "Hydrogen Energy", "url": "/resources/env/notes/HYDROGEN ENERGY.pdf" },
-    { "name": "Solid Waste Pollution (2024-2025)", "url": "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
-    { "name": "Water Chemistry (Solved & Unsolved Numericals)", "url": "/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
-    { "name": "Water Conservation & Rain Water Harvesting", "url": "/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
-    { "name": "Water Pollution (2024-25, Final)", "url": "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
-    { "name": "Water Treatment Numericals (Unit 1)", "url": "/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
+    { "name": "Air Pollution (Unit 2)", url: "/resources/env/notes/Air Pollution Unit 2.pdf" },
+    { "name": "Carbon Credits (Book)", url: "/resources/env/notes/Carbon credits_ book.pdf" },
+    { "name": "Chemical Toxicology (Unit 4)", url: "/resources/env/notes/Chemical Toxicology unit 4.pdf" },
+    { "name": "Classification of Water Pollutants (Unit 2)", url: "/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
+    { "name": "DOC-20230512-WA0015", url: "/resources/env/notes/DOC-20230512-WA0015..pdf" },
+    { "name": "E-Waste", url: "/resources/env/notes/E WASTE.pdf" },
+    { "name": "Eco-friendly Polymers (PPT)", url: "/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
+    { "name": "Eco-friendly Polymers (2024-2025)", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+    { "name": "Energy Resources (2024-25, Complete PPT)", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+    { "name": "Environmental Management System (Final)", url: "/resources/env/notes/Env Management Sysem-final.pdf" },
+    { "name": "Environmental Laws (1)", url: "/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
+    { "name": "Green Tech & Green Chemistry (2023-2024)", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+    { "name": "Hazardous Waste (2024-2025)", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+    { "name": "Hydrogen Energy", url: "/resources/env/notes/HYDROGEN ENERGY.pdf" },
+    { "name": "Solid Waste Pollution (2024-2025)", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+    { "name": "Water Chemistry (Solved & Unsolved Numericals)", url: "/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
+    { "name": "Water Conservation & Rain Water Harvesting", url: "/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
+    { "name": "Water Pollution (2024-25, Final)", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
+    { "name": "Water Treatment Numericals (Unit 1)", url: "/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
   ],
     },
 
@@ -182,8 +182,8 @@ export const resources = {
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
       ],
         books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
     },
     bee:{
@@ -219,8 +219,8 @@ export const resources = {
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
           books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
       },
       web: {
@@ -236,8 +236,8 @@ export const resources = {
           { name: "XML", url: "/resources/web/notes/XML.pdf" }
         ],
         tutorials: [
-    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
-    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+    { "name": "Question Bank", url: "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", url: "/resources/web/tutorial sheets/wad qb.pdf" }
   ]
       },
       programming: {
@@ -351,9 +351,9 @@ pyqs: [
         notes: [
           { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
         ],
-                books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+        books: [
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
     },
       python: {
@@ -371,15 +371,15 @@ pyqs: [
       { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
 
-  pyqs: [
-    { "name": "2021 Batch", "url": "/resources/python/pyqs/2021 batch.pdf" },
-    { "name": "2022 Batch", "url": "/resources/python/pyqs/2022 batch.pdf" },
-    { "name": "2023", "url": "/resources/python/pyqs/2023.pdf" },
-    { "name": "End Sem 2022", "url": "/resources/python/pyqs/endsem_22.pdf" },
-    { "name": "End Sem 2023", "url": "/resources/python/pyqs/endsem_23.pdf" },
-    { "name": "Mid Sem (1)", "url": "/resources/python/pyqs/MIDSEM(1).pdf" },
-    { "name": "Mid Sem", "url": "/resources/python/pyqs/midsem.pdf" },
-    { "name": "Mid Sem 2023", "url": "/resources/python/pyqs/midsem_23.pdf" }
+ pyqs: [
+    { "name": "2021 Batch", url: "/resources/python/pyqs/2021 batch.pdf" },
+    { "name": "2022 Batch", url: "/resources/python/pyqs/2022 batch.pdf" },
+    { "name": "2023", url: "/resources/python/pyqs/2023.pdf" },
+    { "name": "End Sem 2022", url: "/resources/python/pyqs/endsem_22.pdf" },
+    { "name": "End Sem 2023", url: "/resources/python/pyqs/endsem_23.pdf" },
+    { "name": "Mid Sem (1)", url: "/resources/python/pyqs/MIDSEM(1).pdf" },
+    { "name": "Mid Sem", url: "/resources/python/pyqs/midsem.pdf" },
+    { "name": "Mid Sem 2023", url: "/resources/python/pyqs/midsem_23.pdf" }
   ],
 
     books: [
@@ -498,8 +498,8 @@ pyqs: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
       ],
       books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
     },
 
@@ -515,25 +515,25 @@ pyqs: [
     ],
 
   notes: [
-    { "name": "Air Pollution (Unit 2)", "url": "/resources/env/notes/Air Pollution Unit 2.pdf" },
-    { "name": "Carbon Credits (Book)", "url": "/resources/env/notes/Carbon credits_ book.pdf" },
-    { "name": "Chemical Toxicology (Unit 4)", "url": "/resources/env/notes/Chemical Toxicology unit 4.pdf" },
-    { "name": "Classification of Water Pollutants (Unit 2)", "url": "/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
-    { "name": "DOC-20230512-WA0015", "url": "/resources/env/notes/DOC-20230512-WA0015..pdf" },
-    { "name": "E-Waste", "url": "/resources/env/notes/E WASTE.pdf" },
-    { "name": "Eco-friendly Polymers (PPT)", "url": "/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
-    { "name": "Eco-friendly Polymers (2024-2025)", "url": "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
-    { "name": "Energy Resources (2024-25, Complete PPT)", "url": "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
-    { "name": "Environmental Management System (Final)", "url": "/resources/env/notes/Env Management Sysem-final.pdf" },
-    { "name": "Environmental Laws (1)", "url": "/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
-    { "name": "Green Tech & Green Chemistry (2023-2024)", "url": "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
-    { "name": "Hazardous Waste (2024-2025)", "url": "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
-    { "name": "Hydrogen Energy", "url": "/resources/env/notes/HYDROGEN ENERGY.pdf" },
-    { "name": "Solid Waste Pollution (2024-2025)", "url": "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
-    { "name": "Water Chemistry (Solved & Unsolved Numericals)", "url": "/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
-    { "name": "Water Conservation & Rain Water Harvesting", "url": "/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
-    { "name": "Water Pollution (2024-25, Final)", "url": "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
-    { "name": "Water Treatment Numericals (Unit 1)", "url": "/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
+    { "name": "Air Pollution (Unit 2)", url: "/resources/env/notes/Air Pollution Unit 2.pdf" },
+    { "name": "Carbon Credits (Book)", url: "/resources/env/notes/Carbon credits_ book.pdf" },
+    { "name": "Chemical Toxicology (Unit 4)", url: "/resources/env/notes/Chemical Toxicology unit 4.pdf" },
+    { "name": "Classification of Water Pollutants (Unit 2)", url: "/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
+    { "name": "DOC-20230512-WA0015", url: "/resources/env/notes/DOC-20230512-WA0015..pdf" },
+    { "name": "E-Waste", url: "/resources/env/notes/E WASTE.pdf" },
+    { "name": "Eco-friendly Polymers (PPT)", url: "/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
+    { "name": "Eco-friendly Polymers (2024-2025)", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+    { "name": "Energy Resources (2024-25, Complete PPT)", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+    { "name": "Environmental Management System (Final)", url: "/resources/env/notes/Env Management Sysem-final.pdf" },
+    { "name": "Environmental Laws (1)", url: "/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
+    { "name": "Green Tech & Green Chemistry (2023-2024)", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+    { "name": "Hazardous Waste (2024-2025)", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+    { "name": "Hydrogen Energy", url: "/resources/env/notes/HYDROGEN ENERGY.pdf" },
+    { "name": "Solid Waste Pollution (2024-2025)", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+    { "name": "Water Chemistry (Solved & Unsolved Numericals)", url: "/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
+    { "name": "Water Conservation & Rain Water Harvesting", url: "/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
+    { "name": "Water Pollution (2024-25, Final)", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
+    { "name": "Water Treatment Numericals (Unit 1)", url: "/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
   ],
   },
 
@@ -550,8 +550,8 @@ pyqs: [
       { name: "XML", url: "/resources/web/notes/XML.pdf" }
     ],
     tutorials: [
-    { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
-    { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
+    { "name": "Question Bank", url: "/resources/web/tutorial sheets/Question Bank.pdf" },
+    { "name": "WAD QB", url: "/resources/web/tutorial sheets/wad qb.pdf" }
   ]
   },
 
@@ -569,15 +569,15 @@ pyqs: [
       { name: "OOPs Part 1 (IIT Delhi)", url: "/resources/python/notes/oops python iit delhi part 1.pdf" },
       { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
-  pyqs: [
-    { "name": "2021 Batch", "url": "/resources/python/pyqs/2021 batch.pdf" },
-    { "name": "2022 Batch", "url": "/resources/python/pyqs/2022 batch.pdf" },
-    { "name": "2023", "url": "/resources/python/pyqs/2023.pdf" },
-    { "name": "End Sem 2022", "url": "/resources/python/pyqs/endsem_22.pdf" },
-    { "name": "End Sem 2023", "url": "/resources/python/pyqs/endsem_23.pdf" },
-    { "name": "Mid Sem (1)", "url": "/resources/python/pyqs/MIDSEM(1).pdf" },
-    { "name": "Mid Sem", "url": "/resources/python/pyqs/midsem.pdf" },
-    { "name": "Mid Sem 2023", "url": "/resources/python/pyqs/midsem_23.pdf" }
+ pyqs: [
+    { "name": "2021 Batch", url: "/resources/python/pyqs/2021 batch.pdf" },
+    { "name": "2022 Batch", url: "/resources/python/pyqs/2022 batch.pdf" },
+    { "name": "2023", url: "/resources/python/pyqs/2023.pdf" },
+    { "name": "End Sem 2022", url: "/resources/python/pyqs/endsem_22.pdf" },
+    { "name": "End Sem 2023", url: "/resources/python/pyqs/endsem_23.pdf" },
+    { "name": "Mid Sem (1)", url: "/resources/python/pyqs/MIDSEM(1).pdf" },
+    { "name": "Mid Sem", url: "/resources/python/pyqs/midsem.pdf" },
+    { "name": "Mid Sem 2023", url: "/resources/python/pyqs/midsem_23.pdf" }
   ],
 
     books: [
@@ -637,25 +637,25 @@ pyqs: [
     ],
 
   notes: [
-    { "name": "Air Pollution (Unit 2)", "url": "/resources/env/notes/Air Pollution Unit 2.pdf" },
-    { "name": "Carbon Credits (Book)", "url": "/resources/env/notes/Carbon credits_ book.pdf" },
-    { "name": "Chemical Toxicology (Unit 4)", "url": "/resources/env/notes/Chemical Toxicology unit 4.pdf" },
-    { "name": "Classification of Water Pollutants (Unit 2)", "url": "/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
-    { "name": "DOC-20230512-WA0015", "url": "/resources/env/notes/DOC-20230512-WA0015..pdf" },
-    { "name": "E-Waste", "url": "/resources/env/notes/E WASTE.pdf" },
-    { "name": "Eco-friendly Polymers (PPT)", "url": "/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
-    { "name": "Eco-friendly Polymers (2024-2025)", "url": "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
-    { "name": "Energy Resources (2024-25, Complete PPT)", "url": "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
-    { "name": "Environmental Management System (Final)", "url": "/resources/env/notes/Env Management Sysem-final.pdf" },
-    { "name": "Environmental Laws (1)", "url": "/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
-    { "name": "Green Tech & Green Chemistry (2023-2024)", "url": "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
-    { "name": "Hazardous Waste (2024-2025)", "url": "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
-    { "name": "Hydrogen Energy", "url": "/resources/env/notes/HYDROGEN ENERGY.pdf" },
-    { "name": "Solid Waste Pollution (2024-2025)", "url": "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
-    { "name": "Water Chemistry (Solved & Unsolved Numericals)", "url": "/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
-    { "name": "Water Conservation & Rain Water Harvesting", "url": "/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
-    { "name": "Water Pollution (2024-25, Final)", "url": "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
-    { "name": "Water Treatment Numericals (Unit 1)", "url": "/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
+    { "name": "Air Pollution (Unit 2)", url: "/resources/env/notes/Air Pollution Unit 2.pdf" },
+    { "name": "Carbon Credits (Book)", url: "/resources/env/notes/Carbon credits_ book.pdf" },
+    { "name": "Chemical Toxicology (Unit 4)", url: "/resources/env/notes/Chemical Toxicology unit 4.pdf" },
+    { "name": "Classification of Water Pollutants (Unit 2)", url: "/resources/env/notes/Classification of water pollutants-Unit 2.pdf" },
+    { "name": "DOC-20230512-WA0015", url: "/resources/env/notes/DOC-20230512-WA0015..pdf" },
+    { "name": "E-Waste", url: "/resources/env/notes/E WASTE.pdf" },
+    { "name": "Eco-friendly Polymers (PPT)", url: "/resources/env/notes/Eco-friendly POLYMERS ppt.pdf" },
+    { "name": "Eco-friendly Polymers (2024-2025)", url: "/resources/env/notes/Eco-friendly POLYMERS-2024-2025.pdf" },
+    { "name": "Energy Resources (2024-25, Complete PPT)", url: "/resources/env/notes/Energy Resources-2024-25-complete.ppt" },
+    { "name": "Environmental Management System (Final)", url: "/resources/env/notes/Env Management Sysem-final.pdf" },
+    { "name": "Environmental Laws (1)", url: "/resources/env/notes/ENVIRONMENTAL LAWS (1).pptx" },
+    { "name": "Green Tech & Green Chemistry (2023-2024)", url: "/resources/env/notes/GREEN TECH AND GREEN CHEMISTRY-2023-2024.pdf" },
+    { "name": "Hazardous Waste (2024-2025)", url: "/resources/env/notes/Hazardous waste-2024-2025.pdf" },
+    { "name": "Hydrogen Energy", url: "/resources/env/notes/HYDROGEN ENERGY.pdf" },
+    { "name": "Solid Waste Pollution (2024-2025)", url: "/resources/env/notes/Solid waste pollution-2024-2025.pdf" },
+    { "name": "Water Chemistry (Solved & Unsolved Numericals)", url: "/resources/env/notes/Water Chemistry Solved Unsolved Numericals .pdf" },
+    { "name": "Water Conservation & Rain Water Harvesting", url: "/resources/env/notes/Water Conservation and Rain water Harvesting .pdf" },
+    { "name": "Water Pollution (2024-25, Final)", url: "/resources/env/notes/WATER POLLUTION-2024-25 final.pdf" },
+    { "name": "Water Treatment Numericals (Unit 1)", url: "/resources/env/notes/Water Treatment Numericals Unit1.pdf" }
   ],
   },
 
@@ -674,14 +674,14 @@ pyqs: [
       { name: "PP & DS Unit III", url: "/resources/python/notes/PP&DS UNIT III.pdf" },
     ],
   pyqs: [
-    { "name": "2021 Batch", "url": "/resources/python/pyqs/2021 batch.pdf" },
-    { "name": "2022 Batch", "url": "/resources/python/pyqs/2022 batch.pdf" },
-    { "name": "2023", "url": "/resources/python/pyqs/2023.pdf" },
-    { "name": "End Sem 2022", "url": "/resources/python/pyqs/endsem_22.pdf" },
-    { "name": "End Sem 2023", "url": "/resources/python/pyqs/endsem_23.pdf" },
-    { "name": "Mid Sem (1)", "url": "/resources/python/pyqs/MIDSEM(1).pdf" },
-    { "name": "Mid Sem", "url": "/resources/python/pyqs/midsem.pdf" },
-    { "name": "Mid Sem 2023", "url": "/resources/python/pyqs/midsem_23.pdf" }
+    { "name": "2021 Batch", url: "/resources/python/pyqs/2021 batch.pdf" },
+    { "name": "2022 Batch", url: "/resources/python/pyqs/2022 batch.pdf" },
+    { "name": "2023", url: "/resources/python/pyqs/2023.pdf" },
+    { "name": "End Sem 2022", url: "/resources/python/pyqs/endsem_22.pdf" },
+    { "name": "End Sem 2023", url: "/resources/python/pyqs/endsem_23.pdf" },
+    { "name": "Mid Sem (1)", url: "/resources/python/pyqs/MIDSEM(1).pdf" },
+    { "name": "Mid Sem", url: "/resources/python/pyqs/midsem.pdf" },
+    { "name": "Mid Sem 2023", url: "/resources/python/pyqs/midsem_23.pdf" }
   ],
 
     books: [
@@ -704,9 +704,9 @@ pyqs: [
       notes: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
       ],
-      books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+        books: [
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
     },
   
@@ -758,8 +758,8 @@ pyqs: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
       ],
         books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
     },
 
@@ -847,8 +847,8 @@ pyqs: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
       ],
       books: [
-    { "name": "Ashraf Rizvi", "url": "/resources/communication/books/AshrafRizvi.pdf" },
-    { "name": "Meenakshi Raman & Sangeeta Sharma", "url": "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
+    { "name": "Ashraf Rizvi", url: "/resources/communication/books/AshrafRizvi.pdf" },
+    { "name": "Meenakshi Raman & Sangeeta Sharma", url: "/resources/communication/books/MeenakshiRaman-SangeetaSharma.pdf" }
   ],
     },
 
