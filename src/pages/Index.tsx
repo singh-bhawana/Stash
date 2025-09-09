@@ -22,6 +22,8 @@ const branches = [
   { id: "CSE-AI", name: "CSE-AI", fullName: "CSE - Artificial Intelligence" },
   { id: "ECE", name: "ECE", fullName: "Electronics & Communication" },
   { id: "ECE-AI", name: "ECE-AI", fullName: "ECE - Artificial Intelligence" },
+  { id: "MAE", name: "MAE", fullName: "Mechanical & Automation Engineering" },
+  { id: "MAC", name: "MAC", fullName: "Mathematics & Computing" },
 ];
 
 const Index = () => {

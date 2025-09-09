@@ -19,6 +19,10 @@ import AIML from "./pages/AIML";
 import CSEAI from "./pages/CSEAI";
 import ECEAI from "./pages/ECEAI";
 import FunGame from "@/components/FunGame";
+import MAC from "./pages/MAC";
+import MAE from "./pages/MAE";
+
+
 
 const queryClient = new QueryClient();
 
@@ -46,6 +50,8 @@ const App = () => (
             <Route path="/resources/:branch/:subject" element={<SubjectSectionViewer />} />
             <Route path="/resources/:branch/:subject/:type" element={<ResourceViewer />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/resources/MAE" element={<MAE />} />
+            <Route path="/resources/MAC" element={<MAC />} />
           </Routes>
         </main>
         <Analytics />  {/* Step 2: Add Analytics here */}

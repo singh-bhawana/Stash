@@ -121,6 +121,36 @@ const branchData: Record<string, Branch> = {
       semester2: [],
     },
   },
+  MAE: {
+    id: "MAE",
+    name: "Mechanical & Automation Engineering",
+    subjects: {
+      semester1: [
+        { id: "math", name: "Applied Mathematics" },
+        { id: "physics", name: "Applied Physics" },
+        { id: "signals", name: "Baiscs of Electrical " },
+        { id: "ids", name: "Intro to Data Science" },
+        { id: "workshop", name: "Workshop Practice" },
+        { id: "communication", name: "Communication Skills" },
+      ],
+      semester2: [],
+    },
+  },
+  MAC: {
+    id: "MAC",
+    name: "Mathematics & Computing",
+    subjects: {
+      semester1: [
+        { id: "calc1", name: "Calculus-1" },
+        { id: "env", name: "Environmental Sciences" },
+        { id: "programming", name: "Programming with C" },
+        { id: "bee", name: "Basics of Electrical Engineering" },
+        { id: "web", name: "Web Application Development" },
+        { id: "communication", name: "Communication Skills" },
+      ],
+      semester2: [],
+    },
+  },
 };
 
 const ResourceFlow = ({ selectedBranch, onBack }) => {
