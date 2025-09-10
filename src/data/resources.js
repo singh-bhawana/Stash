@@ -487,7 +487,7 @@ export const resources = {
         { id: "python", name: "Programming with Python" },
         { id: "stats", name: "Probability & Statistics" },
         { id: "env", name: "Environmental Sciences" },
-        { id: "bee", name: "BEE" },
+        { id: "itworkshop", name: "IT Workshop" },
         { id: "web", name: "Web Development" },
         { id: "communication", name: "Communication Skills" },
       ],
@@ -531,10 +531,21 @@ export const resources = {
       ],
     },
 
-    bee: {
-      books: [
-        { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
+    itworkshop: {
+      notes: [
+        { name: "Visualization (Unit 3)", url: "/resources/itworkshop/notes/3.Visualization.pdf" },
+        { name: "Arrays", url: "/resources/itworkshop/notes/Arrays.docx" },
+        { name: "Attributes", url: "/resources/itworkshop/notes/Attributes.docx" },
+        { name: "Control Statements (R Programming)", url: "/resources/itworkshop/notes/Control Statements R prog.docx" },
+        { name: "Data Frames", url: "/resources/itworkshop/notes/Data frames.docx" },
+        { name: "R Language (Overview)", url: "/resources/itworkshop/notes/R language.pdf" },
+        { name: "Unit 1 & 2 (Combined Notes)", url: "/resources/itworkshop/notes/unit 1 and 2.pdf" },
+        { name: "Unit 3 (Detailed Notes)", url: "/resources/itworkshop/notes/Unit 3.pdf" },
+        { name: "Unit 4 (Detailed Notes)", url: "/resources/itworkshop/notes/unit 4.pdf" }
       ],
+      tutorials: [
+        { name: "Practice Questions", url: "/resources/itworkshop/tutorial/Questions.docx" }
+      ]
     },
 
     env: {
