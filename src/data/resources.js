@@ -637,7 +637,7 @@ export const resources = {
         { id: "python", name: "Programming with Python" },
         { id: "stats", name: "Probability & Statistics" },
         { id: "env", name: "Environmental Sciences" },
-        { id: "bee", name: "BEE" },
+        { id: "bee", name: "Basics of Electrical Engineering" },
         { id: "workshop", name: "IT Workshop" },
         { id: "communication", name: "Communication Skills" },
       ],
