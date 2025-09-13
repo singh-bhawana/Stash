@@ -59,7 +59,7 @@ export default function SimpleMemoryGame() {
         curDeck.map((c) => ({ ...c, flipped: false }))
       );
       setDisableAll(false);
-    }, 2000);
+    }, 4000);
   };
 
   const handleCardClick = (id: number) => {
