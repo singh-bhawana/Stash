@@ -134,8 +134,23 @@ export const resources = {
         { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
-      ]
+      ],
+
+  pyqs: [
+    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+  ]
     },
+
     physics: {
       books: [
         { name: "HK Malik", url: "/resources/physics/books/HK MALIK.pdf" },
@@ -325,7 +340,21 @@ export const resources = {
         { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
-      ]
+      ],
+      
+  pyqs: [
+    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+  ]
     },
 
   },
@@ -355,7 +384,21 @@ export const resources = {
         { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
-      ]
+      ],
+      
+  pyqs: [
+    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+  ]
     },
 
     communication: {
@@ -765,32 +808,6 @@ export const resources = {
       ],
       semester2: [],
     },
-    stats: {
-      notes: [
-        { name: "Continous Dist1", url: "/resources/stats/notes/Continuos Dist1.pdf" },
-        { name: "Continous Dist2", url: "/resources/stats/notes/Continuos Dist2.pdf" },
-        { name: "Correlation and Regression", url: "/resources/stats/notes/Correlation and Regression.pdf" },
-        { name: "Discrete Distributions1", url: "/resources/stats/notes/Discrete Distributions1.pdf" },
-        { name: "Expectation, variance, covariance", url: "/resources/stats/notes/Expectation, variance, covariance.pdf" },
-        { name: "Joint prob dist notes", url: "/resources/stats/notes/joint prob dist notes.pdf" },
-        { name: "MOD-I", url: "/resources/stats/notes/MOD-I.pdf" },
-        { name: "Moments and MGF", url: "/resources/stats/notes/moments and mgf (1).pdf" },
-        { name: "PS notes", url: "/resources/stats/notes/Ps notes.pdf" },
-        { name: "Random variables, pmf, pdf, cdf", url: "/resources/stats/notes/random variables, pmf, pdf, cdf.pdf" },
-      ],
-      pyqs: [],
-      books: [
-        { name: "Fundamental of Mathematical Statistics", url: "/resources/stats/books/FUNDAMENTAL OF MATHEMATICAL STATISTICS-S C GUPTA & V K KAPOOR.pdf" },
-        { name: "Schaum's Outline of Probability and Statistics", url: "/resources/stats/books/Schaums-Outlines-of-Probability-and-Statistics-4th-Edition-pdf-free-download.pdf" },
-      ],
-      "tutorial sheets": [
-        { name: "PS tut 5", url: "/resources/stats/tutorial sheets/PS tut 5.pdf" },
-        { name: "PS Tutorial Sheet-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-1.pdf" },
-        { name: "PS Tutorial Sheet-2", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-2.pdf" },
-        { name: "PS Tutorial Sheet-3", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
-        { name: "PS Tutorial Sheet-4-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
-      ]
-    },
 
     communication: {
       notes: [
@@ -839,7 +856,21 @@ export const resources = {
         { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
-      ]
+      ],
+      
+  pyqs: [
+    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+  ]
     },
 
 elecworkshop: {
@@ -877,7 +908,21 @@ elecworkshop: {
         { name: "Tutorial 6 - Curve Tracing", url: "/resources/math/tutorial sheets/Tutorial sheet 6 (Curve Tracing).pdf" },
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
-      ]
+      ],
+      
+  pyqs: [
+    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+  ]
     },
 
     signals: {
