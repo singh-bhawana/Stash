@@ -33,6 +33,13 @@ export const resources = {
       books: [
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
+      pyqs: [
+        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
+        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+      ]
+
     },
     web: {
       notes: [
@@ -136,19 +143,19 @@ export const resources = {
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
       ],
 
-  pyqs: [
-    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
-    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
-    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
-    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
-    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
-    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
-    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
-  ]
+      pyqs: [
+        { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+        { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+        { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+        { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+        { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+        { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+        { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+      ]
     },
 
     physics: {
@@ -222,6 +229,13 @@ export const resources = {
       books: [
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
+      pyqs: [
+        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
+        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+      ]
+
     },
 
   },
@@ -245,6 +259,13 @@ export const resources = {
       books: [
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
+      pyqs: [
+        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
+        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+      ]
+
     },
     communication: {
       notes: [
@@ -341,20 +362,20 @@ export const resources = {
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
       ],
-      
-  pyqs: [
-    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
-    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
-    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
-    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
-    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
-    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
-    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
-  ]
+
+      pyqs: [
+        { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+        { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+        { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+        { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+        { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+        { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+        { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+      ]
     },
 
   },
@@ -385,20 +406,20 @@ export const resources = {
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
       ],
-      
-  pyqs: [
-    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
-    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
-    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
-    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
-    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
-    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
-    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
-  ]
+
+      pyqs: [
+        { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+        { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+        { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+        { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+        { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+        { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+        { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+      ]
     },
 
     communication: {
@@ -780,6 +801,13 @@ export const resources = {
       books: [
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
+      pyqs: [
+        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
+        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+      ]
+
     },
 
     communication: {
@@ -857,31 +885,30 @@ export const resources = {
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
       ],
-      
-  pyqs: [
-    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
-    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
-    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
-    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
-    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
-    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
-    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
-  ]
+
+      pyqs: [
+        { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+        { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+        { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+        { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+        { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+        { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+        { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+      ]
     },
 
-elecworkshop: {
-  pyqs: [
-    { name: "Electronic Workshop PYQ - 1st", url: "/resources/elecworkshop/pyqs/electronic workshop _1st.pdf" },
-    { name: "Electronic Workshop PYQ - Mid 2024", url: "/resources/elecworkshop/pyqs/Electronics Workshop_1st sem_Mid_2024.pdf" },
-    { name: "Electronic Workshop PYQ - Remid", url: "/resources/elecworkshop/pyqs/electronics_workshop_remid.pdf" }
-  ]
-}
+    elecworkshop: {
+      pyqs: [
+        { name: "Electronic Workshop PYQ - 1st", url: "/resources/elecworkshop/pyqs/electronic workshop _1st.pdf" },
+        { name: "Electronic Workshop PYQ - Mid 2024", url: "/resources/elecworkshop/pyqs/Electronics Workshop_1st sem_Mid_2024.pdf" },
+        { name: "Electronic Workshop PYQ - Remid", url: "/resources/elecworkshop/pyqs/electronics_workshop_remid.pdf" }
+      ]
+    }
   },
-
 
 
   "ECE-AI": {
@@ -909,20 +936,20 @@ elecworkshop: {
         { name: "Tutorial 7 - Integral Calculus", url: "/resources/math/tutorial sheets/Tutorial sheet 7 (Integral Calculus).pdf" },
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
       ],
-      
-  pyqs: [
-    { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
-    { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
-    { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
-    { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
-    { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
-    { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
-    { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
-    { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
-  ]
+
+      pyqs: [
+        { name: "Applied Mathematics - 1st Sem", url: "/resources/math/pyq/am_1sem.pdf" },
+        { name: "Applied Mathematics - Sem 1", url: "/resources/math/pyq/am_sem1.pdf" },
+        { name: "Applied Mathematics - Sem 1 Offline", url: "/resources/math/pyq/AM_sem1_offline.pdf" },
+        { name: "Applied Mathematics - Sem 1 Reappear End Sem", url: "/resources/math/pyq/am_sem1_reappear_endssm.pdf" },
+        { name: "Applied Mathematics - Mid 2024", url: "/resources/math/pyq/Applied Mathematics_Mid_2024.pdf" },
+        { name: "Applied Mathematics - 1st", url: "/resources/math/pyq/applied maths_1st.pdf" },
+        { name: "Applied Mathematics - Mid Sem 2019", url: "/resources/math/pyq/MidSem_2019_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2021", url: "/resources/math/pyq/MidSem_Jan2021_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Jan 2023", url: "/resources/math/pyq/MidSem_Jan2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2023", url: "/resources/math/pyq/MidSem_Oct2023_AM.pdf" },
+        { name: "Applied Mathematics - Mid Sem Oct 2024", url: "/resources/math/pyq/MidSem_Oct2024_AM.pdf" }
+      ]
     },
 
     signals: {
@@ -961,12 +988,12 @@ elecworkshop: {
       books: [],
     },
 
-  elecworkshop: {
-  pyqs: [
-    { name: "Electronic Workshop PYQ - 1st", url: "/resources/elecworkshop/pyqs/electronic workshop _1st.pdf" },
-    { name: "Electronic Workshop PYQ - Mid 2024", url: "/resources/elecworkshop/pyqs/Electronics Workshop_1st sem_Mid_2024.pdf" },
-    { name: "Electronic Workshop PYQ - Remid", url: "/resources/elecworkshop/pyqs/electronics_workshop_remid.pdf" }
-  ]
-}
+    elecworkshop: {
+      pyqs: [
+        { name: "Electronic Workshop PYQ - 1st", url: "/resources/elecworkshop/pyqs/electronic workshop _1st.pdf" },
+        { name: "Electronic Workshop PYQ - Mid 2024", url: "/resources/elecworkshop/pyqs/Electronics Workshop_1st sem_Mid_2024.pdf" },
+        { name: "Electronic Workshop PYQ - Remid", url: "/resources/elecworkshop/pyqs/electronics_workshop_remid.pdf" }
+      ]
+    }
   },
 };
