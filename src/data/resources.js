@@ -760,7 +760,7 @@ export const resources = {
         { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
         { id: "signals", name: "Signals & Systems" },
         { id: "ids", name: "Intro to Data Science" },
-        { id: "workshop", name: "Electronic Workshop" },
+        { id: "elecworkshop", name: "Electronics Workshop" },
         { id: "communication", name: "Communication Skills" },
       ],
       semester2: [],
@@ -841,6 +841,14 @@ export const resources = {
         { name: "Tutorial 8 - Vector Calculus", url: "/resources/math/tutorial sheets/Tutorial Sheet 8 (Vector Calculus).pdf" }
       ]
     },
+
+elecworkshop: {
+  pyqs: [
+    { name: "Electronic Workshop PYQ - 1st", url: "/resources/elecworkshop/pyqs/electronic workshop _1st.pdf" },
+    { name: "Electronic Workshop PYQ - Mid 2024", url: "/resources/elecworkshop/pyqs/Electronics Workshop_1st sem_Mid_2024.pdf" },
+    { name: "Electronic Workshop PYQ - Remid", url: "/resources/elecworkshop/pyqs/electronics_workshop_remid.pdf" }
+  ]
+}
   },
 
 
@@ -852,7 +860,7 @@ export const resources = {
         { id: "elec_sci", name: "Fundamentals of electrical  Sciences" },
         { id: "signals", name: "Systems & Signals" },
         { id: "ids", name: "Intro to Data Science" },
-        { id: "workshop", name: "Electronic Workshop" },
+        { id: "elecworkshop", name: "Electronics Workshop" },
         { id: "communication", name: "Communication Skills" },
       ],
       semester2: [],
@@ -908,5 +916,12 @@ export const resources = {
       books: [],
     },
 
+  elecworkshop: {
+  pyqs: [
+    { name: "Electronic Workshop PYQ - 1st", url: "/resources/elecworkshop/pyqs/electronic workshop _1st.pdf" },
+    { name: "Electronic Workshop PYQ - Mid 2024", url: "/resources/elecworkshop/pyqs/Electronics Workshop_1st sem_Mid_2024.pdf" },
+    { name: "Electronic Workshop PYQ - Remid", url: "/resources/elecworkshop/pyqs/electronics_workshop_remid.pdf" }
+  ]
+}
   },
 };
