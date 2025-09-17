@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, BookOpen, Clock, NotebookText } from "lucide-react";
+import { FileText, BookOpen, Clock, NotebookText, PlayCircle } from "lucide-react";
 import { resources } from "@/data/resources";
 
 const HSL_COLOR = {
@@ -18,6 +18,7 @@ const iconMap = {
   pyqs: Clock,
   books: BookOpen,
   "tutorial sheets": NotebookText,
+  videos: PlayCircle,
 };
 
 export default function SubjectSectionViewer() {
@@ -33,8 +34,11 @@ export default function SubjectSectionViewer() {
     );
   }
 
-  const sections = Object.keys(branchData[subject.toLowerCase()]).filter(
-    (key) => branchData[subject.toLowerCase()][key].length > 0
+  const subjectKey = subject.toLowerCase();
+  const subjectData = branchData[subjectKey];
+
+  const sections = Object.keys(subjectData || {}).filter(
+    (key) => Array.isArray(subjectData[key]) && subjectData[key].length > 0
   );
 
   return (
@@ -46,7 +50,7 @@ export default function SubjectSectionViewer() {
         {sections.map((section, index) => {
           const Icon = iconMap[section] || FileText;
           return (
-            <Link key={index} to={`/resources/${branch}/${subject}/${section}`}>
+            <Link key={index} to={`/resources/${branch}/${subjectKey}/${section}`}>
               <Card
                 className="relative hover-lift cursor-pointer shadow-xl border border-transparent"
                 style={{

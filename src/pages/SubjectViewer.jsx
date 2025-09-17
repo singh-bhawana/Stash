@@ -14,7 +14,6 @@ const HSL_COLOR = {
 
 export default function SubjectViewer() {
   const { branch } = useParams();
-
   const branchData = resources[branch.toUpperCase()];
 
   if (!branchData) {
@@ -25,21 +24,8 @@ export default function SubjectViewer() {
     );
   }
 
-  // Get all subjects, including those that are nested
-  let subjects = Object.keys(branchData).flatMap(key => {
-    // Check if the key is a subject itself or a category of subjects
-    const subjectContent = branchData[key];
-    if (typeof subjectContent === 'object' && subjectContent !== null && !Array.isArray(subjectContent) && Object.values(subjectContent).some(val => Array.isArray(val))) {
-      return Object.keys(subjectContent).map(subKey => `${key}/${subKey}`);
-    }
-    return [key];
-  });
-  
-  // To handle the case where the subject has a space, e.g. "tutorial sheets"
-  const getSubjectName = (fullSubject) => {
-    const parts = fullSubject.split('/');
-    return parts[parts.length - 1];
-  }
+  // Get subjects as IDs (keys)
+  const subjects = Object.keys(branchData);
 
   return (
     <div className="flex flex-col items-center p-6 min-h-screen">
@@ -47,8 +33,8 @@ export default function SubjectViewer() {
         Choose Your Subject
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
-        {subjects.map((subject, index) => (
-          <Link key={index} to={`/resources/${branch}/${subject}`}>
+        {subjects.map((subjectKey, index) => (
+          <Link key={index} to={`/resources/${branch}/${subjectKey.toLowerCase()}`}>
             <Card
               className="relative hover-lift cursor-pointer shadow-xl border border-transparent"
               style={{
@@ -58,10 +44,10 @@ export default function SubjectViewer() {
             >
               <CardContent className="p-6 text-center flex flex-col items-center">
                 <h3 className="text-xl font-bold mb-2 transition-colors duration-300" style={{ color: HSL_COLOR.text_primary }}>
-                  {getSubjectName(subject).toUpperCase()}
+                  {subjectKey.toUpperCase()}
                 </h3>
                 <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>
-                  {getSubjectName(subject)} Resources
+                  {subjectKey} Resources
                 </p>
               </CardContent>
             </Card>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, FileText, Download, GraduationCap, Code } from "lucide-react";
 import { useNavigate } from "react-router-dom"; // ADD THIS
+import { PlayCircle } from "lucide-react";
 
 // New color palette in HSL
 const HSL_COLOR = {
@@ -185,7 +186,7 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
 
   const handleResourceClick = (resourceType) => {
     if (!selectedSubject) return;
-    console.log(`Opening ${resourceType} for ${selectedSubject.name}. This is a demo.`);
+    navigate(`/resources/${selectedBranch}/${selectedSubject.id}/${resourceType.toLowerCase()}`);
   };
 
   const getIcon = (type) => {
@@ -198,6 +199,8 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
         return <Download className="h-12 w-12" style={{ color: HSL_COLOR.accent_primary }} />;
       case "Tutorial Sheets":
         return <Code className="h-12 w-12" style={{ color: HSL_COLOR.accent_secondary }} />;
+      case "Videos": // ✅ NEW
+        return <PlayCircle className="h-12 w-12" style={{ color: HSL_COLOR.accent_primary }} />;
       default:
         return <BookOpen className="h-12 w-12" style={{ color: HSL_COLOR.text_muted }} />;
     }
@@ -283,6 +286,7 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
             Resources - {selectedSubject.name}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* PYQs */}
             <Card
               className="hover-lift cursor-pointer shadow-xl border border-transparent"
               style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
@@ -294,6 +298,8 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
                 <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Previous Year Questions</p>
               </CardContent>
             </Card>
+
+            {/* Notes */}
             <Card
               className="hover-lift cursor-pointer shadow-xl border border-transparent"
               style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
@@ -305,6 +311,8 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
                 <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Study Notes & Materials</p>
               </CardContent>
             </Card>
+
+            {/* Books */}
             <Card
               className="hover-lift cursor-pointer shadow-xl border border-transparent"
               style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
@@ -316,6 +324,8 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
                 <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Reference Books & PDFs</p>
               </CardContent>
             </Card>
+
+            {/* Tutorial Sheets */}
             <Card
               className="hover-lift cursor-pointer shadow-xl border border-transparent"
               style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
@@ -325,6 +335,19 @@ const ResourceFlow = ({ selectedBranch, onBack }) => {
                 {getIcon("Tutorial Sheets")}
                 <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_primary }}>Tutorial Sheets</h3>
                 <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>Practice & Tutorial PDFs</p>
+              </CardContent>
+            </Card>
+
+            {/* ✅ NEW Videos */}
+            <Card
+              className="hover-lift cursor-pointer shadow-xl border border-transparent"
+              style={{ backgroundColor: HSL_COLOR.bg_solid_component }}
+              onClick={() => handleResourceClick("Videos")}
+            >
+              <CardContent className="p-6 text-center">
+                {getIcon("Videos")}
+                <h3 className="text-lg font-semibold mb-2" style={{ color: HSL_COLOR.text_primary }}>Videos</h3>
+                <p className="text-sm" style={{ color: HSL_COLOR.text_muted }}>YouTube Lectures & Playlists</p>
               </CardContent>
             </Card>
           </div>
