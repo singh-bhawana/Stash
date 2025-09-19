@@ -32,7 +32,12 @@ export const resources = {
       videos: [
         { name: "Jenny's lectures", url: "https://www.youtube.com/embed/videoseries?si=ZLmj1O514KOY8A2k&list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S" },
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=R9QHoIiEH40sT1wE&list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" }
-      ]
+      ],
+      pyqs: [
+        { name: "Programming - End Term Dec 2024 (Sem 1)", url: "/resources/programming/pyqs/endterm_dec24_sem1.pdf" },
+        { name: "Programming - End Term Dec 2024 (Sem 2)", url: "/resources/programming/pyqs/endterm_dec24_sem2.pdf" },
+        { name: "Programming - Remidial Nov 2024", url: "/resources/programming/pyqs/pwc_remid_nov24.pdf" }
+      ],
     },
     bee: {
       books: [
@@ -361,7 +366,12 @@ export const resources = {
       videos: [
         { name: "Jenny's lectures", url: "https://www.youtube.com/embed/videoseries?si=ZLmj1O514KOY8A2k&list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S" },
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=R9QHoIiEH40sT1wE&list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" }
-      ]
+      ],
+      pyqs: [
+        { name: "Programming - End Term Dec 2024 (Sem 1)", url: "/resources/programming/pyqs/endterm_dec24_sem1.pdf" },
+        { name: "Programming - End Term Dec 2024 (Sem 2)", url: "/resources/programming/pyqs/endterm_dec24_sem2.pdf" },
+        { name: "Programming - Remidial Nov 2024", url: "/resources/programming/pyqs/pwc_remid_nov24.pdf" }
+      ],
     },
     physics: {
       books: [
@@ -797,7 +807,7 @@ export const resources = {
         { name: "End Term Dec 2024", url: "/resources/python/pyqs/endterm_dec24.pdf" },
         { name: "End Term Sem 1 Dec 2024", url: "/resources/python/pyqs/endterm_sem1_dec24.pdf" },
         { name: "Remid Sem 1 Nov 2024", url: "/resources/python/pyqs/remid_sem1_nov24.pdf" },
-      
+
       ],
 
       books: [
@@ -913,7 +923,7 @@ export const resources = {
         { name: "End Term Dec 2024", url: "/resources/python/pyqs/endterm_dec24.pdf" },
         { name: "End Term Sem 1 Dec 2024", url: "/resources/python/pyqs/endterm_sem1_dec24.pdf" },
         { name: "Remid Sem 1 Nov 2024", url: "/resources/python/pyqs/remid_sem1_nov24.pdf" },
-      
+
       ],
 
       books: [
