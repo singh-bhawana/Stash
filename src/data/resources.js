@@ -29,7 +29,7 @@ export const resources = {
         { name: "Unit II - Control Structures", url: "/resources/programming/notes/Unit-II-Control-Structures.pdf" },
         { name: "Unit III - Functions Complete", url: "/resources/programming/notes/Unit - III - Functions Complete.pdf" }
       ],
-      videos:[
+      videos: [
         { name: "Jenny's lectures", url: "https://www.youtube.com/embed/videoseries?si=ZLmj1O514KOY8A2k&list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S" },
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=R9QHoIiEH40sT1wE&list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" }
       ]
@@ -39,15 +39,16 @@ export const resources = {
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
       pyqs: [
-        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
-        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Mid 2024", url: "/resources/bee/pyqs/Bee_mid_2024.pdf" },
         { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
-        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" },
+        { name: "BEE - Reappear Dec 2024", url: "/resources/bee/pyqs/reappear_dec24.pdf" },
+        { name: "BEE - Remid 2024", url: "/resources/bee/pyqs/remid_bee_2024.pdf" }
       ],
-      videos:[
+      videos: [
         { name: "Umesh Dhandhe", url: "https://www.youtube.com/embed/videoseries?si=XaeVEpVuVj4jjJN2&amp;list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc" },
         { name: "Gautam varde", url: "https://www.youtube.com/embed/videoseries?si=UDDdrb-IpEPGJb5L&amp;list=PL3qvHcrYGy1v2kJX4SSsurE3_GdVe0ZD5" },
-        {name: "Neso Academy: Theories", url:"https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ"}
+        { name: "Neso Academy: Theories", url: "https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ" }
       ]
 
     },
@@ -67,11 +68,11 @@ export const resources = {
         { "name": "Question Bank", url: "/resources/web/tutorial sheets/Question Bank.pdf" },
         { "name": "WAD QB", url: "/resources/web/tutorial sheets/wad qb.pdf" }
       ],
-      videos:[
-        {name:"w3school-html",url: "https://www.w3schools.com/html/default.asp"},
-        {name:"w3school-css",url: "https://www.w3schools.com/css/default.asp"},
-        {name:"w3school-js",url: "https://www.w3schools.com/js/default.asp"},
-        
+      videos: [
+        { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
+        { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
+        { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
+
       ]
     },
     communication: {
@@ -221,7 +222,7 @@ export const resources = {
       video: [
         { name: "diffraction", url: "https://www.youtube.com/embed/videoseries?si=GR7aMX_3vY1FmDi-&amp;list=PLV2UTYNuWLfE_b-u5anVdvW1Zuu1uhYTL" },
         { name: "gradient,divergence,curl", url: "https://www.youtube.com/embed/videoseries?si=U5wdvyWlLxIRT_rQ&amp;list=PLAPKGqvQGg6oJAfjOACCCREiNcry-vWgZ" },
-        {name: "wave optics",url:"https://www.youtube.com/embed/videoseries?si=fv83nh9RGxP5wCa3&amp;list=PLAPKGqvQGg6qn70CBMyIcBz4WCRKQG58i"},
+        { name: "wave optics", url: "https://www.youtube.com/embed/videoseries?si=fv83nh9RGxP5wCa3&amp;list=PLAPKGqvQGg6qn70CBMyIcBz4WCRKQG58i" },
       ]
     },
     ids: {
@@ -239,10 +240,10 @@ export const resources = {
       ],
       pyqs: [],
       books: [],
-      videos:[
-        {name: "Pandas", url:"https://youtu.be/yFoVs3_wvPo?si=irpNxKn3WIfWeslj"},
-        {name: "Numpy", url:"https://youtu.be/9DhZ-JCWvDw?si=-zmoDkzD3VyzzIS_"},
-        {name:"Matplotlib", url:"https://www.youtube.com/embed/videoseries?si=K7N2spR30SASMVcK&amp;list=PLSwH4ViBDl2Tau2B--9cJB6P5394XN42O"}
+      videos: [
+        { name: "Pandas", url: "https://youtu.be/yFoVs3_wvPo?si=irpNxKn3WIfWeslj" },
+        { name: "Numpy", url: "https://youtu.be/9DhZ-JCWvDw?si=-zmoDkzD3VyzzIS_" },
+        { name: "Matplotlib", url: "https://www.youtube.com/embed/videoseries?si=K7N2spR30SASMVcK&amp;list=PLSwH4ViBDl2Tau2B--9cJB6P5394XN42O" }
       ]
     },
     workshop: {},
@@ -260,15 +261,16 @@ export const resources = {
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
       pyqs: [
-        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
-        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Mid 2024", url: "/resources/bee/pyqs/Bee_mid_2024.pdf" },
         { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
-        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" },
+        { name: "BEE - Reappear Dec 2024", url: "/resources/bee/pyqs/reappear_dec24.pdf" },
+        { name: "BEE - Remid 2024", url: "/resources/bee/pyqs/remid_bee_2024.pdf" }
       ],
-      videos:[
+      videos: [
         { name: "Umesh Dhandhe", url: "https://www.youtube.com/embed/videoseries?si=XaeVEpVuVj4jjJN2&amp;list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc" },
         { name: "Gautam varde", url: "https://www.youtube.com/embed/videoseries?si=UDDdrb-IpEPGJb5L&amp;list=PL3qvHcrYGy1v2kJX4SSsurE3_GdVe0ZD5" },
-        {name: "Neso Academy: Theories", url:"https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ"}
+        { name: "Neso Academy: Theories", url: "https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ" }
       ]
 
     },
@@ -295,18 +297,20 @@ export const resources = {
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
       pyqs: [
-        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
-        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Mid 2024", url: "/resources/bee/pyqs/Bee_mid_2024.pdf" },
         { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
-        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" },
+        { name: "BEE - Reappear Dec 2024", url: "/resources/bee/pyqs/reappear_dec24.pdf" },
+        { name: "BEE - Remid 2024", url: "/resources/bee/pyqs/remid_bee_2024.pdf" }
       ],
-      videos:[
+      videos: [
         { name: "Umesh Dhandhe", url: "https://www.youtube.com/embed/videoseries?si=XaeVEpVuVj4jjJN2&amp;list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc" },
         { name: "Gautam varde", url: "https://www.youtube.com/embed/videoseries?si=UDDdrb-IpEPGJb5L&amp;list=PL3qvHcrYGy1v2kJX4SSsurE3_GdVe0ZD5" },
-        {name: "Neso Academy: Theories", url:"https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ"}
+        { name: "Neso Academy: Theories", url: "https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ" }
       ]
 
     },
+
     communication: {
       notes: [
         { name: "CS Complete Notes", url: "/resources/communication/notes/CS complete notes.pdf" }
@@ -332,11 +336,11 @@ export const resources = {
         { "name": "Question Bank", url: "/resources/web/tutorial sheets/Question Bank.pdf" },
         { "name": "WAD QB", url: "/resources/web/tutorial sheets/wad qb.pdf" }
       ],
-      videos:[
-        {name:"w3school-html",url: "https://www.w3schools.com/html/default.asp"},
-        {name:"w3school-css",url: "https://www.w3schools.com/css/default.asp"},
-        {name:"w3school-js",url: "https://www.w3schools.com/js/default.asp"},
-        
+      videos: [
+        { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
+        { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
+        { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
+
       ]
     },
     programming: {
@@ -354,7 +358,7 @@ export const resources = {
         { name: "Unit II - Control Structures", url: "/resources/programming/notes/Unit-II-Control-Structures.pdf" },
         { name: "Unit III - Functions Complete", url: "/resources/programming/notes/Unit - III - Functions Complete.pdf" }
       ],
-      videos:[
+      videos: [
         { name: "Jenny's lectures", url: "https://www.youtube.com/embed/videoseries?si=ZLmj1O514KOY8A2k&list=PLdo5W4Nhv31a8UcMN9-35ghv8qyFWD9_S" },
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=R9QHoIiEH40sT1wE&list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR" }
       ]
@@ -402,7 +406,7 @@ export const resources = {
       video: [
         { name: "diffraction", url: "https://www.youtube.com/embed/videoseries?si=GR7aMX_3vY1FmDi-&amp;list=PLV2UTYNuWLfE_b-u5anVdvW1Zuu1uhYTL" },
         { name: "gradient,divergence,curl", url: "https://www.youtube.com/embed/videoseries?si=U5wdvyWlLxIRT_rQ&amp;list=PLAPKGqvQGg6oJAfjOACCCREiNcry-vWgZ" },
-        {name: "wave optics",url:"https://www.youtube.com/embed/videoseries?si=fv83nh9RGxP5wCa3&amp;list=PLAPKGqvQGg6qn70CBMyIcBz4WCRKQG58i"},
+        { name: "wave optics", url: "https://www.youtube.com/embed/videoseries?si=fv83nh9RGxP5wCa3&amp;list=PLAPKGqvQGg6qn70CBMyIcBz4WCRKQG58i" },
       ]
     },
     math: {
@@ -528,9 +532,9 @@ export const resources = {
         { name: "Python Question Bank (BTETPE405E)", url: "/resources/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
         { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
       ],
-      videos:[
+      videos: [
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=F9ux9fuwy_p7oeNk&amp;list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" },
-        {name: "w3school",url:"https://www.w3schools.com/python/"},
+        { name: "w3school", url: "https://www.w3schools.com/python/" },
       ]
     },
 
@@ -577,7 +581,7 @@ export const resources = {
       video: [
         { name: "diffraction", url: "https://www.youtube.com/embed/videoseries?si=GR7aMX_3vY1FmDi-&amp;list=PLV2UTYNuWLfE_b-u5anVdvW1Zuu1uhYTL" },
         { name: "gradient,divergence,curl", url: "https://www.youtube.com/embed/videoseries?si=U5wdvyWlLxIRT_rQ&amp;list=PLAPKGqvQGg6oJAfjOACCCREiNcry-vWgZ" },
-        {name: "wave optics",url:"https://www.youtube.com/embed/videoseries?si=fv83nh9RGxP5wCa3&amp;list=PLAPKGqvQGg6qn70CBMyIcBz4WCRKQG58i"},
+        { name: "wave optics", url: "https://www.youtube.com/embed/videoseries?si=fv83nh9RGxP5wCa3&amp;list=PLAPKGqvQGg6qn70CBMyIcBz4WCRKQG58i" },
       ]
     },
 
@@ -597,11 +601,11 @@ export const resources = {
         { "name": "Question Bank", "url": "/resources/web/tutorial sheets/Question Bank.pdf" },
         { "name": "WAD QB", "url": "/resources/web/tutorial sheets/wad qb.pdf" }
       ],
-      videos:[
-        {name:"w3school-html",url: "https://www.w3schools.com/html/default.asp"},
-        {name:"w3school-css",url: "https://www.w3schools.com/css/default.asp"},
-        {name:"w3school-js",url: "https://www.w3schools.com/js/default.asp"},
-        
+      videos: [
+        { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
+        { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
+        { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
+
       ]
     },
     itworkshop: {
@@ -619,8 +623,14 @@ export const resources = {
       tutorials: [
         { name: "Practice Questions", url: "/resources/itworkshop/tutorial/Questions.docx" }
       ],
-      videos:[
-        {name:"w3school", url:"https://www.w3schools.com/r/"}
+      pyqs: [
+        { name: "IT Workshop - Mid 2024", url: "/resources/itworkshop/pyqs/IT Workshop_Mid_2024.pdf" },
+        { name: "IT Workshop - Sem 1 2024", url: "/resources/itworkshop/pyqs/IT_workshop_sem1_24.pdf" },
+        { name: "IT Workshop - Mid Sem 2 2025", url: "/resources/itworkshop/pyqs/ITworkshop_mid_sem2_25.pdf" },
+        { name: "IT Workshop - Remidial 2024", url: "/resources/itworkshop/pyqs/itworkshop_remid24.pdf" }
+      ],
+      videos: [
+        { name: "w3school", url: "https://www.w3schools.com/r/" }
       ]
     }
 
@@ -664,9 +674,9 @@ export const resources = {
         { name: "PS Tutorial Sheet-3", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
         { name: "PS Tutorial Sheet-4-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
       ],
-      videos:[
+      videos: [
         { name: "Gajendra Purohit", url: "https://www.youtube.com/embed/videoseries?si=BEps_d3C27m8qBqY&amp;list=PLU6SqdYcYsfJPF-4HphQQ8OceDtqhlSW8" },
-        {name: "GP (extended v)",url: "https://www.youtube.com/embed/videoseries?si=b_3pDguiONHboTPV&amp;list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK"}
+        { name: "GP (extended v)", url: "https://www.youtube.com/embed/videoseries?si=b_3pDguiONHboTPV&amp;list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK" }
       ]
     },
 
@@ -695,8 +705,14 @@ export const resources = {
       tutorials: [
         { name: "Practice Questions", url: "/resources/itworkshop/tutorial/Questions.docx" }
       ],
-      videos:[
-        {name:"w3school", url:"https://www.w3schools.com/r/"}
+      pyqs: [
+        { name: "IT Workshop - Mid 2024", url: "/resources/itworkshop/pyqs/IT Workshop_Mid_2024.pdf" },
+        { name: "IT Workshop - Sem 1 2024", url: "/resources/itworkshop/pyqs/IT_workshop_sem1_24.pdf" },
+        { name: "IT Workshop - Mid Sem 2 2025", url: "/resources/itworkshop/pyqs/ITworkshop_mid_sem2_25.pdf" },
+        { name: "IT Workshop - Remidial 2024", url: "/resources/itworkshop/pyqs/itworkshop_remid24.pdf" }
+      ],
+      videos: [
+        { name: "w3school", url: "https://www.w3schools.com/r/" }
       ]
     },
 
@@ -744,11 +760,11 @@ export const resources = {
         { "name": "Question Bank", url: "/resources/web/tutorial sheets/Question Bank.pdf" },
         { "name": "WAD QB", url: "/resources/web/tutorial sheets/wad qb.pdf" }
       ],
-      videos:[
-        {name:"w3school-html",url: "https://www.w3schools.com/html/default.asp"},
-        {name:"w3school-css",url: "https://www.w3schools.com/css/default.asp"},
-        {name:"w3school-js",url: "https://www.w3schools.com/js/default.asp"},
-        
+      videos: [
+        { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
+        { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
+        { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
+
       ]
     },
 
@@ -785,9 +801,9 @@ export const resources = {
         { name: "Python Question Bank (BTETPE405E)", url: "/resources/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
         { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
       ],
-      videos:[
+      videos: [
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=F9ux9fuwy_p7oeNk&amp;list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" },
-        {name: "w3school",url:"https://www.w3schools.com/python/"}
+        { name: "w3school", url: "https://www.w3schools.com/python/" }
       ]
     },
 
@@ -830,9 +846,9 @@ export const resources = {
         { name: "PS Tutorial Sheet-3", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-3.pdf" },
         { name: "PS Tutorial Sheet-4-1", url: "/resources/stats/tutorial sheets/PS Tutorial Sheet-4-1.pdf" },
       ],
-      videos:[
+      videos: [
         { name: "Gajendra Purohit", url: "https://www.youtube.com/embed/videoseries?si=BEps_d3C27m8qBqY&amp;list=PLU6SqdYcYsfJPF-4HphQQ8OceDtqhlSW8" },
-        {name: "GP (extended v)",url: "https://www.youtube.com/embed/videoseries?si=b_3pDguiONHboTPV&amp;list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK"}
+        { name: "GP (extended v)", url: "https://www.youtube.com/embed/videoseries?si=b_3pDguiONHboTPV&amp;list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK" }
       ]
     },
 
@@ -897,9 +913,9 @@ export const resources = {
         { name: "Python Question Bank (BTETPE405E)", url: "/resources/python/tutorial sheets/Python_Question_Bank-Python-Programming-BTETPE405E.pdf" },
         { name: "Python Question Bank (Unit 1 & 2)", url: "/resources/python/tutorial sheets/Question bank python ( unit 1 and 2).docx" },
       ],
-      videos:[
+      videos: [
         { name: "Code w Harry", url: "https://www.youtube.com/embed/videoseries?si=F9ux9fuwy_p7oeNk&amp;list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" },
-        {name: "w3school",url:"https://www.w3schools.com/python/"},
+        { name: "w3school", url: "https://www.w3schools.com/python/" },
       ]
     },
 
@@ -908,15 +924,16 @@ export const resources = {
         { name: "BL Theraja BEE Vol1", url: "/resources/bee/books/BL_theraja_BEE_vol1.pdf" }
       ],
       pyqs: [
-        { name: "BEE - 1st Sem Mid 2024", url: "/resources/bee/pyqs/Bee_1st sem_mid_2024.pdf" },
-        { name: "BEE - 1st", url: "/resources/bee/pyqs/bee_1st.pdf" },
+        { name: "BEE - Mid 2024", url: "/resources/bee/pyqs/Bee_mid_2024.pdf" },
         { name: "BEE - Reappear Mid 2024", url: "/resources/bee/pyqs/BEE_Reappear_Mid_2024.pdf" },
-        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" }
+        { name: "BEE - 2025", url: "/resources/bee/pyqs/bee25.pdf" },
+        { name: "BEE - Reappear Dec 2024", url: "/resources/bee/pyqs/reappear_dec24.pdf" },
+        { name: "BEE - Remid 2024", url: "/resources/bee/pyqs/remid_bee_2024.pdf" }
       ],
-      videos:[
+      videos: [
         { name: "Umesh Dhandhe", url: "https://www.youtube.com/embed/videoseries?si=XaeVEpVuVj4jjJN2&amp;list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc" },
         { name: "Gautam varde", url: "https://www.youtube.com/embed/videoseries?si=UDDdrb-IpEPGJb5L&amp;list=PL3qvHcrYGy1v2kJX4SSsurE3_GdVe0ZD5" },
-        {name: "Neso Academy: Theories", url:"https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ"}
+        { name: "Neso Academy: Theories", url: "https://www.youtube.com/embed/videoseries?si=2i_hKOsh5Wu5H7PN&amp;list=PLBlnK6fEyqRg41HzkHScol5bdRebCDOAZ" }
       ]
 
     },
@@ -965,9 +982,9 @@ export const resources = {
         { name: "Signals and Systems (Slideshare PPT)", url: "/resources/signals/notes/slideshare_net_slideshow_signals_systems_ppt_75004666.pdf" },
         { name: "Signals and Systems Lecture ", url: "/resources/signals/notes/sysytem and signals lecture 1.pdf" }
       ],
-      videos:[
-        {name: "RK Classes", url:"https://www.youtube.com/embed/videoseries?si=E7G9m5Tl-cPYrv43&amp;list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_"},
-        {name:"Topper's Secret", url:"https://www.youtube.com/embed/videoseries?si=9RDFAjPJSFPC3Gtr&amp;list=PLXnsjPD8-xuvq34afqKrJ2tJ-Ppj6BEfC"}
+      videos: [
+        { name: "RK Classes", url: "https://www.youtube.com/embed/videoseries?si=E7G9m5Tl-cPYrv43&amp;list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_" },
+        { name: "Topper's Secret", url: "https://www.youtube.com/embed/videoseries?si=9RDFAjPJSFPC3Gtr&amp;list=PLXnsjPD8-xuvq34afqKrJ2tJ-Ppj6BEfC" }
       ]
     },
 
@@ -986,10 +1003,10 @@ export const resources = {
       ],
       pyqs: [],
       books: [],
-      videos:[
-        {name: "Pandas", url:"https://youtu.be/yFoVs3_wvPo?si=irpNxKn3WIfWeslj"},
-        {name: "Numpy", url:"https://youtu.be/9DhZ-JCWvDw?si=-zmoDkzD3VyzzIS_"},
-        {name:"Matplotlib", url:"https://www.youtube.com/embed/videoseries?si=K7N2spR30SASMVcK&amp;list=PLSwH4ViBDl2Tau2B--9cJB6P5394XN42O"}
+      videos: [
+        { name: "Pandas", url: "https://youtu.be/yFoVs3_wvPo?si=irpNxKn3WIfWeslj" },
+        { name: "Numpy", url: "https://youtu.be/9DhZ-JCWvDw?si=-zmoDkzD3VyzzIS_" },
+        { name: "Matplotlib", url: "https://www.youtube.com/embed/videoseries?si=K7N2spR30SASMVcK&amp;list=PLSwH4ViBDl2Tau2B--9cJB6P5394XN42O" }
       ]
     },
 
@@ -1087,9 +1104,9 @@ export const resources = {
         { name: "Signals and Systems (Slideshare PPT)", url: "/resources/signals/notes/slideshare_net_slideshow_signals_systems_ppt_75004666.pdf" },
         { name: "Signals and Systems Lecture ", url: "/resources/signals/notes/sysytem and signals lecture 1.pdf" }
       ],
-      videos:[
-        {name: "RK Classes", url:"https://www.youtube.com/embed/videoseries?si=E7G9m5Tl-cPYrv43&amp;list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_"},
-        {name:"Topper's Secret", url:"https://www.youtube.com/embed/videoseries?si=9RDFAjPJSFPC3Gtr&amp;list=PLXnsjPD8-xuvq34afqKrJ2tJ-Ppj6BEfC"}
+      videos: [
+        { name: "RK Classes", url: "https://www.youtube.com/embed/videoseries?si=E7G9m5Tl-cPYrv43&amp;list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_" },
+        { name: "Topper's Secret", url: "https://www.youtube.com/embed/videoseries?si=9RDFAjPJSFPC3Gtr&amp;list=PLXnsjPD8-xuvq34afqKrJ2tJ-Ppj6BEfC" }
       ]
     },
 
@@ -1118,10 +1135,10 @@ export const resources = {
       ],
       pyqs: [],
       books: [],
-      videos:[
-        {name: "Pandas", url:"https://youtu.be/yFoVs3_wvPo?si=irpNxKn3WIfWeslj"},
-        {name: "Numpy", url:"https://youtu.be/9DhZ-JCWvDw?si=-zmoDkzD3VyzzIS_"},
-        {name:"Matplotlib", url:"https://www.youtube.com/embed/videoseries?si=K7N2spR30SASMVcK&amp;list=PLSwH4ViBDl2Tau2B--9cJB6P5394XN42O"}
+      videos: [
+        { name: "Pandas", url: "https://youtu.be/yFoVs3_wvPo?si=irpNxKn3WIfWeslj" },
+        { name: "Numpy", url: "https://youtu.be/9DhZ-JCWvDw?si=-zmoDkzD3VyzzIS_" },
+        { name: "Matplotlib", url: "https://www.youtube.com/embed/videoseries?si=K7N2spR30SASMVcK&amp;list=PLSwH4ViBDl2Tau2B--9cJB6P5394XN42O" }
       ]
     },
 
