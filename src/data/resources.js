@@ -77,8 +77,13 @@ export const resources = {
         { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
         { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
         { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
+      ],
+      pyqs: [
+        { name: "Web Development - Mid 2024", url: "/resources/web/pyqs/WAD_Mid_2024.pdf" },
+        { name: "Web Development - Mid 2025", url: "/resources/web/pyqs/wadmid25.pdf" },
+        { name: "Web Development - Remidial", url: "/resources/web/pyqs/wadremid.pdf" }
+      ],
 
-      ]
     },
     communication: {
       notes: [
@@ -345,8 +350,12 @@ export const resources = {
         { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
         { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
         { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
-
-      ]
+      ],
+      pyqs: [
+        { name: "Web Development - Mid 2024", url: "/resources/web/pyqs/WAD_Mid_2024.pdf" },
+        { name: "Web Development - Mid 2025", url: "/resources/web/pyqs/wadmid25.pdf" },
+        { name: "Web Development - Remidial", url: "/resources/web/pyqs/wadremid.pdf" }
+      ],
     },
     programming: {
       books: [
@@ -618,8 +627,12 @@ export const resources = {
         { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
         { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
         { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
-
-      ]
+      ],
+      pyqs: [
+        { name: "Web Development - Mid 2024", url: "/resources/web/pyqs/WAD_Mid_2024.pdf" },
+        { name: "Web Development - Mid 2025", url: "/resources/web/pyqs/wadmid25.pdf" },
+        { name: "Web Development - Remidial", url: "/resources/web/pyqs/wadremid.pdf" }
+      ],
     },
     itworkshop: {
       notes: [
@@ -777,8 +790,12 @@ export const resources = {
         { name: "w3school-html", url: "https://www.w3schools.com/html/default.asp" },
         { name: "w3school-css", url: "https://www.w3schools.com/css/default.asp" },
         { name: "w3school-js", url: "https://www.w3schools.com/js/default.asp" },
-
-      ]
+      ],
+      pyqs: [
+        { name: "Web Development - Mid 2024", url: "/resources/web/pyqs/WAD_Mid_2024.pdf" },
+        { name: "Web Development - Mid 2025", url: "/resources/web/pyqs/wadmid25.pdf" },
+        { name: "Web Development - Remidial", url: "/resources/web/pyqs/wadremid.pdf" }
+      ],
     },
 
     python: {
@@ -1006,7 +1023,11 @@ export const resources = {
       videos: [
         { name: "RK Classes", url: "https://www.youtube.com/embed/videoseries?si=E7G9m5Tl-cPYrv43&amp;list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_" },
         { name: "Topper's Secret", url: "https://www.youtube.com/embed/videoseries?si=9RDFAjPJSFPC3Gtr&amp;list=PLXnsjPD8-xuvq34afqKrJ2tJ-Ppj6BEfC" }
+      ],
+      pyqs: [
+        { name: "Signals - Reappear Midterm March 2025", url: "/resources/signals/pyqs/reapeear_midterm_march25.pdf" }
       ]
+
     },
 
     ids: {
@@ -1128,6 +1149,9 @@ export const resources = {
       videos: [
         { name: "RK Classes", url: "https://www.youtube.com/embed/videoseries?si=E7G9m5Tl-cPYrv43&amp;list=PLc3zKsWdO93cdmOgATsErDKhOkneho_f_" },
         { name: "Topper's Secret", url: "https://www.youtube.com/embed/videoseries?si=9RDFAjPJSFPC3Gtr&amp;list=PLXnsjPD8-xuvq34afqKrJ2tJ-Ppj6BEfC" }
+      ],
+      pyqs: [
+        { name: "Signals - Reappear Midterm March 2025", url: "/resources/signals/pyqs/reapeear_midterm_march25.pdf" }
       ]
     },
 
